@@ -9,6 +9,7 @@
 #import "HHPatientDataViewController.h"
 #import "textField_AtViewWithImage.h"
 #import "FTPrettyRulerView.h"
+#import "HCGDatePickerAppearance.h"
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 @interface HHPatientDataViewController ()<UITextFieldDelegate,UIPickerViewDelegate,UIPickerViewDataSource,FTPrettyRulerViewDelegate>
@@ -133,6 +134,13 @@
 #pragma mark - 开始随访按钮
 -(void)beginBtnClick:(UIButton *)btn{
     NSLog(@"点击了随访");
+//    HCGDatePickerAppearance *picker = [[HCGDatePickerAppearance alloc]initWithDatePickerMode:DatePickerHourMode completeBlock:^(NSDate *date) {
+//        NSString *formatStr = @"yyyy年MM月dd日HH:mm:ss";
+//        NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//        [dateFormatter setDateFormat:formatStr];
+//        NSLog(@"%@",[dateFormatter stringFromDate:date]);
+//    }];
+//    [picker show];
 
 }
 -(void)clickssss:(UIToolbar *)toobar{
@@ -256,8 +264,6 @@
         
         return 0;
     }
-
-    
 }
 
 -(CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component{

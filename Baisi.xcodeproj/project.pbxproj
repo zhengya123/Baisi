@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0401190C723F42EDEDC788BC /* libPods-Baisi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */; };
+		DF428A121E8DF69F003E2A79 /* HCGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */; };
+		DF428A131E8DF69F003E2A79 /* HCGDatePickerAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A111E8DF69F003E2A79 /* HCGDatePickerAppearance.m */; };
 		DF5B3DEA1E8C963000E04C27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3DE91E8C963000E04C27 /* main.m */; };
 		DF5B3DF31E8C963000E04C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5B3DF11E8C963000E04C27 /* Main.storyboard */; };
 		DF5B3DF51E8C963000E04C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5B3DF41E8C963000E04C27 /* Assets.xcassets */; };
@@ -268,6 +270,10 @@
 /* Begin PBXFileReference section */
 		36D9D7AC75B5EC04B0B5B839 /* Pods-Baisi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baisi/Pods-Baisi.debug.xcconfig"; sourceTree = "<group>"; };
 		84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baisi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF428A0E1E8DF69F003E2A79 /* HCGDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGDatePicker.h; sourceTree = "<group>"; };
+		DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCGDatePicker.m; sourceTree = "<group>"; };
+		DF428A101E8DF69F003E2A79 /* HCGDatePickerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGDatePickerAppearance.h; sourceTree = "<group>"; };
+		DF428A111E8DF69F003E2A79 /* HCGDatePickerAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCGDatePickerAppearance.m; sourceTree = "<group>"; };
 		DF5B3DE51E8C963000E04C27 /* Baisi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5B3DE91E8C963000E04C27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF5B3DF21E8C963000E04C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -698,6 +704,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DF428A0D1E8DF69F003E2A79 /* HcgDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				DF428A0E1E8DF69F003E2A79 /* HCGDatePicker.h */,
+				DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */,
+				DF428A101E8DF69F003E2A79 /* HCGDatePickerAppearance.h */,
+				DF428A111E8DF69F003E2A79 /* HCGDatePickerAppearance.m */,
+			);
+			path = HcgDatePicker;
+			sourceTree = "<group>";
+		};
 		DF5B3DDC1E8C963000E04C27 = {
 			isa = PBXGroup;
 			children = (
@@ -781,6 +798,7 @@
 		DF5B3E201E8C98BC00E04C27 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				DF428A0D1E8DF69F003E2A79 /* HcgDatePicker */,
 				DF5B3E211E8C98BC00E04C27 /* FDFullscreenPopGesture */,
 				DF5B3E241E8C98BC00E04C27 /* FTPrettyRulerView */,
 				DF5B3E291E8C98BC00E04C27 /* HeartBeat */,
@@ -2056,6 +2074,7 @@
 				DF5B3F301E8C98BC00E04C27 /* XWDrawerAnimator.m in Sources */,
 				DF5B3F011E8C98BC00E04C27 /* IQBarButtonItem.m in Sources */,
 				DF5B40B21E8C98E900E04C27 /* MainTabBar.m in Sources */,
+				DF428A121E8DF69F003E2A79 /* HCGDatePicker.m in Sources */,
 				DF5B40981E8C98DC00E04C27 /* ZPDFPageController.m in Sources */,
 				DF5B3F031E8C98BC00E04C27 /* IQTitleBarButtonItem.m in Sources */,
 				DF5B3F341E8C98BC00E04C27 /* XWFilterAnimator+XWFlash.m in Sources */,
@@ -2159,6 +2178,7 @@
 				DF5B3F381E8C98BC00E04C27 /* XWFilterAnimator+XWRipple.m in Sources */,
 				DF5B3F121E8C98BC00E04C27 /* UIViewController+WXSTransitionProperty.m in Sources */,
 				DF5B3E1E1E8C984700E04C27 /* AppDelegate.m in Sources */,
+				DF428A131E8DF69F003E2A79 /* HCGDatePickerAppearance.m in Sources */,
 				DF5B3EFC1E8C98BC00E04C27 /* IQUIViewController+Additions.m in Sources */,
 				DF5B3F211E8C98BC00E04C27 /* UIViewController+XWTransition.m in Sources */,
 				DF5B3DEA1E8C963000E04C27 /* main.m in Sources */,

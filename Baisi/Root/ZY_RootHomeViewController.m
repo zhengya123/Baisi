@@ -12,11 +12,13 @@
 
 @property (nonatomic, strong) UIImageView * imageV;
 @property (nonatomic, strong) UILabel     * imageLabel;
+
 @end
 
 @implementation ZY_RootHomeViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     self.NoNetImage.frame = CGRectMake(0, 0, SCREEN_W, SCREEN_H);
     [self.view addSubview:self.NoNetImage];
