@@ -248,6 +248,7 @@
 		DF5B40BD1E8C990B00E04C27 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40BA1E8C990B00E04C27 /* LoginViewController.m */; };
 		DF5B40BE1E8C990B00E04C27 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5B40BB1E8C990B00E04C27 /* LoginViewController.xib */; };
 		DF5B40C31E8CA5D300E04C27 /* ZY_BottonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40C21E8CA5D300E04C27 /* ZY_BottonView.m */; };
+		DFB767B91E9B5DBE00D480F8 /* ZY_AlertNotesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB767B81E9B5DBE00D480F8 /* ZY_AlertNotesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -658,6 +659,8 @@
 		DF5B40C01E8CA49200E04C27 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DF5B40C11E8CA5D300E04C27 /* ZY_BottonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_BottonView.h; sourceTree = "<group>"; };
 		DF5B40C21E8CA5D300E04C27 /* ZY_BottonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_BottonView.m; sourceTree = "<group>"; };
+		DFB767B71E9B5DBE00D480F8 /* ZY_AlertNotesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_AlertNotesView.h; sourceTree = "<group>"; };
+		DFB767B81E9B5DBE00D480F8 /* ZY_AlertNotesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_AlertNotesView.m; sourceTree = "<group>"; };
 		FA142A9CF5B427F8C8E697E3 /* Pods-Baisi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baisi/Pods-Baisi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1193,6 +1196,8 @@
 				DF5B3EF21E8C98BC00E04C27 /* ZYTextField.m */,
 				DF5B40C11E8CA5D300E04C27 /* ZY_BottonView.h */,
 				DF5B40C21E8CA5D300E04C27 /* ZY_BottonView.m */,
+				DFB767B71E9B5DBE00D480F8 /* ZY_AlertNotesView.h */,
+				DFB767B81E9B5DBE00D480F8 /* ZY_AlertNotesView.m */,
 			);
 			path = ZY_Method;
 			sourceTree = "<group>";
@@ -2108,6 +2113,7 @@
 				DF5B40941E8C98DC00E04C27 /* MY_HeartNumVCViewController.m in Sources */,
 				DF5B3F3B1E8C98BC00E04C27 /* XWFilterTransitionView.m in Sources */,
 				DF5B3EF61E8C98BC00E04C27 /* HeartBeat.m in Sources */,
+				DFB767B91E9B5DBE00D480F8 /* ZY_AlertNotesView.m in Sources */,
 				DF5B3F4C1E8C98BC00E04C27 /* ZY_Method.m in Sources */,
 				DF5B3F281E8C98BC00E04C27 /* XWCoolAnimator+XWExplode.m in Sources */,
 				DF5B407D1E8C98DC00E04C27 /* SeniorityVC.m in Sources */,

@@ -16,6 +16,7 @@
 #import "ZY_RootNavigationController.h"
 #import "ZY_BottonView.h"
 #import "ZY_ErrorView.h"
+#import "ZY_AlertNotesView.h"
 #define ImageName @"imageName"
 #define TitleName @"titleName"
 @interface MeViewController ()<
@@ -168,6 +169,11 @@
         {
         
          [[ZY_ErrorView shareError] showWithStr:@"反正这是一个很长的字符串,我想让他换行看看行不行,反正这是一个很长的字符串,我想让他换行看看行不行,反正这是一个很长的字符串,我想让他换行看看行不行" Font:18 Time:3];
+        }
+            break;
+            case 6:
+        {
+            [[ZY_AlertNotesView shareView]show:@"反正这是一个很长的字符串,我想让他换行看看行不行,反正这是一个很长的字符串,我想让他换行看看行不行,反正这是一个很长的字符串,我想让他换行看看行不行" Font:15];
         }
             break;
         default:
