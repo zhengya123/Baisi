@@ -20,6 +20,7 @@
 #import "MyQr_CodeVC.h"
 #import "MY_HeartNumVCViewController.h"
 #import "ZPDFReaderController.h"
+#import "HHAllMemberViewController.h"
 #define zytitle @"cities"
 #define zytitleName @"titleName"
 @interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,TXScrollLabelViewDelegate>
@@ -203,6 +204,13 @@
                 // [self.navigationController pushViewController:vc animated:YES];
             
             }
+                break;
+                case 5:
+            {
+                HHAllMemberViewController * hhallMemberVC = [HHAllMemberViewController new];
+                [self.navigationController pushViewController:hhallMemberVC animated:YES];
+            }
+                break;
             default:
                 break;
         }

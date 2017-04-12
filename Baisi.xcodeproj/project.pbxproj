@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0401190C723F42EDEDC788BC /* libPods-Baisi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */; };
+		DF19B6331E9DCF48001B5E69 /* PaymentListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19B6321E9DCF47001B5E69 /* PaymentListVC.m */; };
+		DF19B6371E9DFDDD001B5E69 /* HHAllMemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19B6351E9DFDDD001B5E69 /* HHAllMemberViewController.m */; };
+		DF19B6381E9DFDDD001B5E69 /* HHAllMemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19B6361E9DFDDD001B5E69 /* HHAllMemberViewController.xib */; };
+		DF19B63C1E9E0242001B5E69 /* HHAllMemberViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19B63A1E9E0242001B5E69 /* HHAllMemberViewCell.m */; };
+		DF19B63D1E9E0242001B5E69 /* HHAllMemberViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19B63B1E9E0242001B5E69 /* HHAllMemberViewCell.xib */; };
+		DF19B6411E9E03DF001B5E69 /* HHAllMemberVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19B6401E9E03DF001B5E69 /* HHAllMemberVCModel.m */; };
 		DF428A121E8DF69F003E2A79 /* HCGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */; };
 		DF428A131E8DF69F003E2A79 /* HCGDatePickerAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A111E8DF69F003E2A79 /* HCGDatePickerAppearance.m */; };
 		DF5B3DEA1E8C963000E04C27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3DE91E8C963000E04C27 /* main.m */; };
@@ -271,6 +277,16 @@
 /* Begin PBXFileReference section */
 		36D9D7AC75B5EC04B0B5B839 /* Pods-Baisi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baisi/Pods-Baisi.debug.xcconfig"; sourceTree = "<group>"; };
 		84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baisi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF19B6311E9DCF47001B5E69 /* PaymentListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentListVC.h; sourceTree = "<group>"; };
+		DF19B6321E9DCF47001B5E69 /* PaymentListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentListVC.m; sourceTree = "<group>"; };
+		DF19B6341E9DFDDC001B5E69 /* HHAllMemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAllMemberViewController.h; sourceTree = "<group>"; };
+		DF19B6351E9DFDDD001B5E69 /* HHAllMemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAllMemberViewController.m; sourceTree = "<group>"; };
+		DF19B6361E9DFDDD001B5E69 /* HHAllMemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHAllMemberViewController.xib; sourceTree = "<group>"; };
+		DF19B6391E9E0242001B5E69 /* HHAllMemberViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAllMemberViewCell.h; sourceTree = "<group>"; };
+		DF19B63A1E9E0242001B5E69 /* HHAllMemberViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAllMemberViewCell.m; sourceTree = "<group>"; };
+		DF19B63B1E9E0242001B5E69 /* HHAllMemberViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHAllMemberViewCell.xib; sourceTree = "<group>"; };
+		DF19B63F1E9E03DF001B5E69 /* HHAllMemberVCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAllMemberVCModel.h; sourceTree = "<group>"; };
+		DF19B6401E9E03DF001B5E69 /* HHAllMemberVCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAllMemberVCModel.m; sourceTree = "<group>"; };
 		DF428A0E1E8DF69F003E2A79 /* HCGDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGDatePicker.h; sourceTree = "<group>"; };
 		DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCGDatePicker.m; sourceTree = "<group>"; };
 		DF428A101E8DF69F003E2A79 /* HCGDatePickerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGDatePickerAppearance.h; sourceTree = "<group>"; };
@@ -705,6 +721,15 @@
 				84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF19B63E1E9E0391001B5E69 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF19B63F1E9E03DF001B5E69 /* HHAllMemberVCModel.h */,
+				DF19B6401E9E03DF001B5E69 /* HHAllMemberVCModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DF428A0D1E8DF69F003E2A79 /* HcgDatePicker */ = {
@@ -1468,6 +1493,8 @@
 			isa = PBXGroup;
 			children = (
 				DF5B401C1E8C98DC00E04C27 /* Controller */,
+				DF6A29501E9CB797009BC806 /* Model */,
+				DF6A29511E9CB797009BC806 /* View */,
 			);
 			path = "Follow-关注";
 			sourceTree = "<group>";
@@ -1509,6 +1536,7 @@
 			isa = PBXGroup;
 			children = (
 				DF5B40221E8C98DC00E04C27 /* Controller */,
+				DF19B63E1E9E0391001B5E69 /* Model */,
 				DF5B40251E8C98DC00E04C27 /* View */,
 			);
 			path = HanlonglongVC;
@@ -1519,6 +1547,9 @@
 			children = (
 				DF5B40231E8C98DC00E04C27 /* HHjiujiuHomeViewController.h */,
 				DF5B40241E8C98DC00E04C27 /* HHjiujiuHomeViewController.m */,
+				DF19B6341E9DFDDC001B5E69 /* HHAllMemberViewController.h */,
+				DF19B6351E9DFDDD001B5E69 /* HHAllMemberViewController.m */,
+				DF19B6361E9DFDDD001B5E69 /* HHAllMemberViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1530,6 +1561,9 @@
 				DF5B40271E8C98DC00E04C27 /* ButtonView.m */,
 				DF5B40281E8C98DC00E04C27 /* HeaderTableViewCell.h */,
 				DF5B40291E8C98DC00E04C27 /* HeaderTableViewCell.m */,
+				DF19B6391E9E0242001B5E69 /* HHAllMemberViewCell.h */,
+				DF19B63A1E9E0242001B5E69 /* HHAllMemberViewCell.m */,
+				DF19B63B1E9E0242001B5E69 /* HHAllMemberViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1612,6 +1646,8 @@
 			children = (
 				DF5B404C1E8C98DC00E04C27 /* MY_HeartNumVCViewController.h */,
 				DF5B404D1E8C98DC00E04C27 /* MY_HeartNumVCViewController.m */,
+				DF19B6311E9DCF47001B5E69 /* PaymentListVC.h */,
+				DF19B6321E9DCF47001B5E69 /* PaymentListVC.m */,
 			);
 			path = MY_HeartNum;
 			sourceTree = "<group>";
@@ -1763,6 +1799,20 @@
 				DF5B40A91E8C98E900E04C27 /* MainTabBar.m */,
 				DF5B40AA1E8C98E900E04C27 /* MainTabBarButton.h */,
 				DF5B40AB1E8C98E900E04C27 /* MainTabBarButton.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF6A29501E9CB797009BC806 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF6A29511E9CB797009BC806 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1955,6 +2005,7 @@
 				DF5B3DF51E8C963000E04C27 /* Assets.xcassets in Resources */,
 				DF5B40971E8C98DC00E04C27 /* 003.pdf in Resources */,
 				DF5B3FED1E8C98D100E04C27 /* setup-head-default@2x.png in Resources */,
+				DF19B63D1E9E0242001B5E69 /* HHAllMemberViewCell.xib in Resources */,
 				DF5B40A01E8C98DC00E04C27 /* CollectionTableViewCell.xib in Resources */,
 				DF5B3FBC1E8C98D100E04C27 /* login_register_right_line@3x.png in Resources */,
 				DF5B40A21E8C98DC00E04C27 /* Me_tableFootViewCollectionViewCell.xib in Resources */,
@@ -1979,6 +2030,7 @@
 				DF5B3FF61E8C98D100E04C27 /* screenShotone.gif in Resources */,
 				DF5B3FC71E8C98D100E04C27 /* login_tecent_icon@2x.png in Resources */,
 				DF5B3FBD1E8C98D100E04C27 /* login_rgister_textfield_bg.png in Resources */,
+				DF19B6381E9DFDDD001B5E69 /* HHAllMemberViewController.xib in Resources */,
 				DF5B3FAE1E8C98D100E04C27 /* login_QQ_icon@3x.png in Resources */,
 				DF5B3FB11E8C98D100E04C27 /* login_QQ_icon_click@3x.png in Resources */,
 			);
@@ -2065,6 +2117,7 @@
 				DF5B40851E8C98DC00E04C27 /* FirstHTMLVC.m in Sources */,
 				DF5B3F131E8C98BC00E04C27 /* WXSPercentDrivenInteractiveTransition.m in Sources */,
 				DF5B40B61E8C98E900E04C27 /* ZY_RootTabBarController.m in Sources */,
+				DF19B63C1E9E0242001B5E69 /* HHAllMemberViewCell.m in Sources */,
 				DF5B40A31E8C98DC00E04C27 /* NewViewController.m in Sources */,
 				DF5B40871E8C98DC00E04C27 /* UserDTO.m in Sources */,
 				DF5B409C1E8C98DC00E04C27 /* MyQr_CodeVC.m in Sources */,
@@ -2122,8 +2175,10 @@
 				DF5B3F0C1E8C98BC00E04C27 /* UIView+TXFrame.m in Sources */,
 				DF5B40921E8C98DC00E04C27 /* MyInformationController.m in Sources */,
 				DF5B3F4E1E8C98BC00E04C27 /* ZY_textField_View.m in Sources */,
+				DF19B6411E9E03DF001B5E69 /* HHAllMemberVCModel.m in Sources */,
 				DF5B3F491E8C98BC00E04C27 /* textField_AtViewWithImage.m in Sources */,
 				DF5B3F051E8C98BC00E04C27 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				DF19B6371E9DFDDD001B5E69 /* HHAllMemberViewController.m in Sources */,
 				DF5B3F271E8C98BC00E04C27 /* XWCircleSpreadAnimator.m in Sources */,
 				DF5B3F2F1E8C98BC00E04C27 /* XWCoolAnimator.m in Sources */,
 				DF5B40791E8C98DC00E04C27 /* ImageLookVC.m in Sources */,
@@ -2136,6 +2191,7 @@
 				DF5B40931E8C98DC00E04C27 /* PersonalViewController.m in Sources */,
 				DF5B3F1A1E8C98BC00E04C27 /* WXSTransitionManager+SpreadAnimation.m in Sources */,
 				DF5B40A51E8C98DC00E04C27 /* OtherViewController.m in Sources */,
+				DF19B6331E9DCF48001B5E69 /* PaymentListVC.m in Sources */,
 				DF5B3EF51E8C98BC00E04C27 /* FTRulerScrollView.m in Sources */,
 				DF5B3EFE1E8C98BC00E04C27 /* IQKeyboardManager.m in Sources */,
 				DF5B3F101E8C98BC00E04C27 /* UINavigationController+WXSTransition.m in Sources */,

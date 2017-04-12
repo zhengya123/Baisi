@@ -9,8 +9,9 @@
 #import "FellowViewController.h"
 #import "PrefixHeader.pch"
 #import "HHPatientDataViewController.h"
-@interface FellowViewController ()
-@property (nonatomic, strong) UIButton * LoginAndRegistBtn;
+@interface FellowViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView * tableView;
 @end
 
 @implementation FellowViewController
@@ -19,27 +20,46 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
     self.navigationItem.title = @"关注";
+    [self createUI];
+    [self getData];
+}
+
+-(void)createUI{
+    [self.view addSubview:self.tableView];
+
+
+}
+-(void)getData{
     
-    self.LoginAndRegistBtn.frame = CGRectMake(50, SCREEN_H/2, SCREEN_W - 100, 40);
-    [self.view addSubview:self.LoginAndRegistBtn];
+    
 }
+-(void)dealWithData:(id)response{
 
--(void)LoginClickss:(UIButton *)btn{
-   
-    HHPatientDataViewController * LoginVC = [HHPatientDataViewController new];
-    [self.navigationController pushViewController:LoginVC animated:YES];
 
 }
-#pragma mark - 登录注册按钮
--(UIButton *)LoginAndRegistBtn{
-    if (_LoginAndRegistBtn == nil) {
-        _LoginAndRegistBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _LoginAndRegistBtn.backgroundColor = [UIColor whiteColor];
-        [_LoginAndRegistBtn setTitle:@"立即登录注册" forState:UIControlStateNormal];
-        [_LoginAndRegistBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        [_LoginAndRegistBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateHighlighted];
-        [_LoginAndRegistBtn addTarget:self action:@selector(LoginClickss:) forControlEvents:UIControlEventTouchUpInside];
+#pragma mark - tableViewDelegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 20;
+
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    cell.textLabel.text = @"测试";
+    return cell;
+}
+#pragma mark - 懒
+-(UITableView *)tableView{
+    if (_tableView == nil) {
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_W, SCREEN_H) style:UITableViewStyleGrouped];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     }
-    return _LoginAndRegistBtn;
+    return _tableView;
+
 }
 @end
