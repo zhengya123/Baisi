@@ -17,6 +17,9 @@
 #import "ZY_BottonView.h"
 #import "ZY_ErrorView.h"
 #import "ZY_AlertNotesView.h"
+#import "OcTopUs-Loading.h"
+#import "PeopleWorking-Loading.h"
+#import "Waiting_Loading.h"
 #define ImageName @"imageName"
 #define TitleName @"titleName"
 @interface MeViewController ()<
@@ -40,6 +43,7 @@
     [super viewWillDisappear:animated];
    // self.navigationController.navigationBar.hidden = NO;
     [[ZY_BottonView shareView] remove];
+    [[OcTopUs_Loading shareLoading] hides];
     
 }
 - (void)viewDidLoad {
@@ -176,9 +180,35 @@
             [[ZY_AlertNotesView shareView]show:@"反正这是一个很长的字符串,我想让他换行看看行不行,反正这是一个很长的字符串,我想让他换行看看行不行,反正这是一个很长的字符串,我想让他换行看看行不行" Font:15];
         }
             break;
+            case 7:
+        {
+        
+            [[OcTopUs_Loading shareLoading] show];
+            [self performSelector:@selector(OcTopUs_Load) withObject:nil afterDelay:10];
+        }
+            break;
+            case 8:
+        {
+            [[PeopleWorking_Loading shareLoading] show];
+            [self performSelector:@selector(OcTopUs_Load) withObject:nil afterDelay:10];
+        
+        }
+            break;
+            case 9:
+        {
+            [[Waiting_Loading shareLoading] show];
+             [self performSelector:@selector(OcTopUs_Load) withObject:nil afterDelay:10];
+        }
+            break;
         default:
             break;
     }
+
+}
+-(void)OcTopUs_Load{
+    [[OcTopUs_Loading shareLoading] hides];
+    [[PeopleWorking_Loading shareLoading] hides];
+    [[Waiting_Loading shareLoading] hides];
 
 }
 #pragma mark - lan

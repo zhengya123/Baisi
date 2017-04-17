@@ -254,6 +254,12 @@
 		DF5B40BD1E8C990B00E04C27 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40BA1E8C990B00E04C27 /* LoginViewController.m */; };
 		DF5B40BE1E8C990B00E04C27 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5B40BB1E8C990B00E04C27 /* LoginViewController.xib */; };
 		DF5B40C31E8CA5D300E04C27 /* ZY_BottonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40C21E8CA5D300E04C27 /* ZY_BottonView.m */; };
+		DF868A081EA4920200378800 /* OcTopUs-Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF868A071EA4920200378800 /* OcTopUs-Loading.m */; };
+		DF868A0A1EA4950900378800 /* OcTopUs_Image.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF868A091EA4950900378800 /* OcTopUs_Image.gif */; };
+		DF868A0D1EA49B1F00378800 /* PeopleWorking-Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF868A0C1EA49B1E00378800 /* PeopleWorking-Loading.m */; };
+		DF868A0F1EA49BC300378800 /* peopleworking_Images.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF868A0E1EA49BC300378800 /* peopleworking_Images.gif */; };
+		DF868A121EA49D5F00378800 /* Waiting_Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF868A111EA49D5F00378800 /* Waiting_Loading.m */; };
+		DF868A141EA49E3C00378800 /* wait_Images.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF868A131EA49E3C00378800 /* wait_Images.gif */; };
 		DFB767B91E9B5DBE00D480F8 /* ZY_AlertNotesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB767B81E9B5DBE00D480F8 /* ZY_AlertNotesView.m */; };
 /* End PBXBuildFile section */
 
@@ -675,6 +681,15 @@
 		DF5B40C01E8CA49200E04C27 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DF5B40C11E8CA5D300E04C27 /* ZY_BottonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_BottonView.h; sourceTree = "<group>"; };
 		DF5B40C21E8CA5D300E04C27 /* ZY_BottonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_BottonView.m; sourceTree = "<group>"; };
+		DF868A061EA4920200378800 /* OcTopUs-Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OcTopUs-Loading.h"; sourceTree = "<group>"; };
+		DF868A071EA4920200378800 /* OcTopUs-Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OcTopUs-Loading.m"; sourceTree = "<group>"; };
+		DF868A091EA4950900378800 /* OcTopUs_Image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = OcTopUs_Image.gif; sourceTree = "<group>"; };
+		DF868A0B1EA49B1E00378800 /* PeopleWorking-Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PeopleWorking-Loading.h"; sourceTree = "<group>"; };
+		DF868A0C1EA49B1E00378800 /* PeopleWorking-Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PeopleWorking-Loading.m"; sourceTree = "<group>"; };
+		DF868A0E1EA49BC300378800 /* peopleworking_Images.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = peopleworking_Images.gif; sourceTree = "<group>"; };
+		DF868A101EA49D5F00378800 /* Waiting_Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Waiting_Loading.h; sourceTree = "<group>"; };
+		DF868A111EA49D5F00378800 /* Waiting_Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Waiting_Loading.m; sourceTree = "<group>"; };
+		DF868A131EA49E3C00378800 /* wait_Images.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wait_Images.gif; sourceTree = "<group>"; };
 		DFB767B71E9B5DBE00D480F8 /* ZY_AlertNotesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_AlertNotesView.h; sourceTree = "<group>"; };
 		DFB767B81E9B5DBE00D480F8 /* ZY_AlertNotesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_AlertNotesView.m; sourceTree = "<group>"; };
 		FA142A9CF5B427F8C8E697E3 /* Pods-Baisi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baisi/Pods-Baisi.release.xcconfig"; sourceTree = "<group>"; };
@@ -963,6 +978,12 @@
 				DF5B3E5B1E8C98BC00E04C27 /* LoadingViewForOC.m */,
 				DF5B3E5C1E8C98BC00E04C27 /* ZY_Runing_Loding.h */,
 				DF5B3E5D1E8C98BC00E04C27 /* ZY_Runing_Loding.m */,
+				DF868A061EA4920200378800 /* OcTopUs-Loading.h */,
+				DF868A071EA4920200378800 /* OcTopUs-Loading.m */,
+				DF868A0B1EA49B1E00378800 /* PeopleWorking-Loading.h */,
+				DF868A0C1EA49B1E00378800 /* PeopleWorking-Loading.m */,
+				DF868A101EA49D5F00378800 /* Waiting_Loading.h */,
+				DF868A111EA49D5F00378800 /* Waiting_Loading.m */,
 			);
 			path = LoadingView;
 			sourceTree = "<group>";
@@ -1237,6 +1258,9 @@
 				DF5B3F9B1E8C98D000E04C27 /* Running_Loading */,
 				DF5B3FA41E8C98D000E04C27 /* screenShotone.gif */,
 				DF5B3FA51E8C98D000E04C27 /* screenShotTwo.gif */,
+				DF868A091EA4950900378800 /* OcTopUs_Image.gif */,
+				DF868A0E1EA49BC300378800 /* peopleworking_Images.gif */,
+				DF868A131EA49E3C00378800 /* wait_Images.gif */,
 				DF5B3FA61E8C98D000E04C27 /* yxs_playBack_nomessage.png */,
 			);
 			path = Resources;
@@ -1936,6 +1960,7 @@
 				DF5B3FF01E8C98D100E04C27 /* Running_Loading_3.png in Resources */,
 				DF5B3FF21E8C98D100E04C27 /* Running_Loading_5.png in Resources */,
 				DF5B3FA71E8C98D000E04C27 /* backImage.png in Resources */,
+				DF868A0F1EA49BC300378800 /* peopleworking_Images.gif in Resources */,
 				DF5B3FE81E8C98D100E04C27 /* mine_icon_random@2x.png in Resources */,
 				DF5B40BE1E8C990B00E04C27 /* LoginViewController.xib in Resources */,
 				DF5B409D1E8C98DC00E04C27 /* MyQr_CodeVC.xib in Resources */,
@@ -1952,10 +1977,12 @@
 				DF5B3FB51E8C98D100E04C27 /* login_register_button.png in Resources */,
 				DF5B40901E8C98DC00E04C27 /* KaidianCompanyInfoController.xib in Resources */,
 				DF5B3FD41E8C98D100E04C27 /* mine-icon-manhua.png in Resources */,
+				DF868A141EA49E3C00378800 /* wait_Images.gif in Resources */,
 				DF5B3FAD1E8C98D100E04C27 /* login_QQ_icon@2x.png in Resources */,
 				DF5B3FCF1E8C98D100E04C27 /* loginBtnBgClick@2x.png in Resources */,
 				DF5B3FC81E8C98D100E04C27 /* login_tecent_icon@3x.png in Resources */,
 				DF5B3FE71E8C98D100E04C27 /* mine_icon_random.png in Resources */,
+				DF868A0A1EA4950900378800 /* OcTopUs_Image.gif in Resources */,
 				DF5B3DF81E8C963000E04C27 /* LaunchScreen.storyboard in Resources */,
 				DF5B3FE61E8C98D100E04C27 /* mine_icon_nearby@2x.png in Resources */,
 				DF5B3FBE1E8C98D100E04C27 /* login_rgister_textfield_bg@2x.png in Resources */,
@@ -2165,6 +2192,7 @@
 				DF5B408E1E8C98DC00E04C27 /* HHPatientDataViewController.m in Sources */,
 				DF5B40941E8C98DC00E04C27 /* MY_HeartNumVCViewController.m in Sources */,
 				DF5B3F3B1E8C98BC00E04C27 /* XWFilterTransitionView.m in Sources */,
+				DF868A081EA4920200378800 /* OcTopUs-Loading.m in Sources */,
 				DF5B3EF61E8C98BC00E04C27 /* HeartBeat.m in Sources */,
 				DFB767B91E9B5DBE00D480F8 /* ZY_AlertNotesView.m in Sources */,
 				DF5B3F4C1E8C98BC00E04C27 /* ZY_Method.m in Sources */,
@@ -2192,9 +2220,11 @@
 				DF5B3F1A1E8C98BC00E04C27 /* WXSTransitionManager+SpreadAnimation.m in Sources */,
 				DF5B40A51E8C98DC00E04C27 /* OtherViewController.m in Sources */,
 				DF19B6331E9DCF48001B5E69 /* PaymentListVC.m in Sources */,
+				DF868A0D1EA49B1F00378800 /* PeopleWorking-Loading.m in Sources */,
 				DF5B3EF51E8C98BC00E04C27 /* FTRulerScrollView.m in Sources */,
 				DF5B3EFE1E8C98BC00E04C27 /* IQKeyboardManager.m in Sources */,
 				DF5B3F101E8C98BC00E04C27 /* UINavigationController+WXSTransition.m in Sources */,
+				DF868A121EA49D5F00378800 /* Waiting_Loading.m in Sources */,
 				DF5B40861E8C98DC00E04C27 /* NSString+pinyin.m in Sources */,
 				DF5B3F361E8C98BC00E04C27 /* XWFilterAnimator+XWMod.m in Sources */,
 				DF5B40911E8C98DC00E04C27 /* MeViewController.m in Sources */,
@@ -2405,6 +2435,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Baisi/Main_VC/PrefixHeader.pch";
 				INFOPLIST_FILE = Baisi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zy.Baisi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2420,6 +2451,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Baisi/Main_VC/PrefixHeader.pch";
 				INFOPLIST_FILE = Baisi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zy.Baisi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
