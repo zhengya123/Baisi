@@ -16,6 +16,14 @@
 		DF19B6411E9E03DF001B5E69 /* HHAllMemberVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19B6401E9E03DF001B5E69 /* HHAllMemberVCModel.m */; };
 		DF428A121E8DF69F003E2A79 /* HCGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */; };
 		DF428A131E8DF69F003E2A79 /* HCGDatePickerAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A111E8DF69F003E2A79 /* HCGDatePickerAppearance.m */; };
+		DF49BCEC1EA608A100806C80 /* HyPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCEB1EA608A100806C80 /* HyPopMenuView.m */; };
+		DF49BCF21EA608BB00806C80 /* PopMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCEF1EA608BB00806C80 /* PopMenuButton.m */; };
+		DF49BCF31EA608BB00806C80 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCF11EA608BB00806C80 /* PopMenuModel.m */; };
+		DF49BCF61EA608C300806C80 /* UIColor+ImageGetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCF51EA608C300806C80 /* UIColor+ImageGetColor.m */; };
+		DF49BCFA1EA608EF00806C80 /* popMenvTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCF81EA608EF00806C80 /* popMenvTopView.m */; };
+		DF49BCFB1EA608EF00806C80 /* popMenvTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF49BCF91EA608EF00806C80 /* popMenvTopView.xib */; };
+		DF49BCFF1EA60B2E00806C80 /* AddMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCFD1EA60B2E00806C80 /* AddMainVC.m */; };
+		DF49BD001EA60B2E00806C80 /* AddMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF49BCFE1EA60B2E00806C80 /* AddMainVC.xib */; };
 		DF5B3DEA1E8C963000E04C27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3DE91E8C963000E04C27 /* main.m */; };
 		DF5B3DF31E8C963000E04C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5B3DF11E8C963000E04C27 /* Main.storyboard */; };
 		DF5B3DF51E8C963000E04C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5B3DF41E8C963000E04C27 /* Assets.xcassets */; };
@@ -297,6 +305,21 @@
 		DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCGDatePicker.m; sourceTree = "<group>"; };
 		DF428A101E8DF69F003E2A79 /* HCGDatePickerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGDatePickerAppearance.h; sourceTree = "<group>"; };
 		DF428A111E8DF69F003E2A79 /* HCGDatePickerAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCGDatePickerAppearance.m; sourceTree = "<group>"; };
+		DF49BCEA1EA608A100806C80 /* HyPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyPopMenuView.h; sourceTree = "<group>"; };
+		DF49BCEB1EA608A100806C80 /* HyPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyPopMenuView.m; sourceTree = "<group>"; };
+		DF49BCED1EA608AF00806C80 /* HyPopMenuViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyPopMenuViewDelegate.h; sourceTree = "<group>"; };
+		DF49BCEE1EA608BB00806C80 /* PopMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuButton.h; sourceTree = "<group>"; };
+		DF49BCEF1EA608BB00806C80 /* PopMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuButton.m; sourceTree = "<group>"; };
+		DF49BCF01EA608BB00806C80 /* PopMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuModel.h; sourceTree = "<group>"; };
+		DF49BCF11EA608BB00806C80 /* PopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuModel.m; sourceTree = "<group>"; };
+		DF49BCF41EA608C300806C80 /* UIColor+ImageGetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ImageGetColor.h"; sourceTree = "<group>"; };
+		DF49BCF51EA608C300806C80 /* UIColor+ImageGetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ImageGetColor.m"; sourceTree = "<group>"; };
+		DF49BCF71EA608EF00806C80 /* popMenvTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popMenvTopView.h; sourceTree = "<group>"; };
+		DF49BCF81EA608EF00806C80 /* popMenvTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popMenvTopView.m; sourceTree = "<group>"; };
+		DF49BCF91EA608EF00806C80 /* popMenvTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popMenvTopView.xib; sourceTree = "<group>"; };
+		DF49BCFC1EA60B2E00806C80 /* AddMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMainVC.h; sourceTree = "<group>"; };
+		DF49BCFD1EA60B2E00806C80 /* AddMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMainVC.m; sourceTree = "<group>"; };
+		DF49BCFE1EA60B2E00806C80 /* AddMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMainVC.xib; sourceTree = "<group>"; };
 		DF5B3DE51E8C963000E04C27 /* Baisi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5B3DE91E8C963000E04C27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF5B3DF21E8C963000E04C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -758,6 +781,25 @@
 			path = HcgDatePicker;
 			sourceTree = "<group>";
 		};
+		DF49BCE91EA6086D00806C80 /* PopMenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				DF49BCED1EA608AF00806C80 /* HyPopMenuViewDelegate.h */,
+				DF49BCEA1EA608A100806C80 /* HyPopMenuView.h */,
+				DF49BCEB1EA608A100806C80 /* HyPopMenuView.m */,
+				DF49BCEE1EA608BB00806C80 /* PopMenuButton.h */,
+				DF49BCEF1EA608BB00806C80 /* PopMenuButton.m */,
+				DF49BCF01EA608BB00806C80 /* PopMenuModel.h */,
+				DF49BCF11EA608BB00806C80 /* PopMenuModel.m */,
+				DF49BCF41EA608C300806C80 /* UIColor+ImageGetColor.h */,
+				DF49BCF51EA608C300806C80 /* UIColor+ImageGetColor.m */,
+				DF49BCF71EA608EF00806C80 /* popMenvTopView.h */,
+				DF49BCF81EA608EF00806C80 /* popMenvTopView.m */,
+				DF49BCF91EA608EF00806C80 /* popMenvTopView.xib */,
+			);
+			path = PopMenuVC;
+			sourceTree = "<group>";
+		};
 		DF5B3DDC1E8C963000E04C27 = {
 			isa = PBXGroup;
 			children = (
@@ -841,6 +883,7 @@
 		DF5B3E201E8C98BC00E04C27 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				DF49BCE91EA6086D00806C80 /* PopMenuVC */,
 				DF428A0D1E8DF69F003E2A79 /* HcgDatePicker */,
 				DF5B3E211E8C98BC00E04C27 /* FDFullscreenPopGesture */,
 				DF5B3E241E8C98BC00E04C27 /* FTPrettyRulerView */,
@@ -1798,6 +1841,9 @@
 			children = (
 				DF5B40761E8C98DC00E04C27 /* OtherViewController.h */,
 				DF5B40771E8C98DC00E04C27 /* OtherViewController.m */,
+				DF49BCFC1EA60B2E00806C80 /* AddMainVC.h */,
+				DF49BCFD1EA60B2E00806C80 /* AddMainVC.m */,
+				DF49BCFE1EA60B2E00806C80 /* AddMainVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1955,6 +2001,7 @@
 			files = (
 				DF5B3FB61E8C98D100E04C27 /* login_register_button_click.png in Resources */,
 				DF5B3FD71E8C98D100E04C27 /* mine-icon-more@2x.png in Resources */,
+				DF49BD001EA60B2E00806C80 /* AddMainVC.xib in Resources */,
 				DF5B40961E8C98DC00E04C27 /* MY_MapVC.xib in Resources */,
 				DF5B3FC01E8C98D100E04C27 /* login_sina_icon.png in Resources */,
 				DF5B3FF01E8C98D100E04C27 /* Running_Loading_3.png in Resources */,
@@ -2031,6 +2078,7 @@
 				DF5B3FAB1E8C98D000E04C27 /* login_close_icon@3x.png in Resources */,
 				DF5B3DF51E8C963000E04C27 /* Assets.xcassets in Resources */,
 				DF5B40971E8C98DC00E04C27 /* 003.pdf in Resources */,
+				DF49BCFB1EA608EF00806C80 /* popMenvTopView.xib in Resources */,
 				DF5B3FED1E8C98D100E04C27 /* setup-head-default@2x.png in Resources */,
 				DF19B63D1E9E0242001B5E69 /* HHAllMemberViewCell.xib in Resources */,
 				DF5B40A01E8C98DC00E04C27 /* CollectionTableViewCell.xib in Resources */,
@@ -2140,6 +2188,7 @@
 				DF5B3F411E8C98BC00E04C27 /* XHLaunchAd.m in Sources */,
 				DF5B409A1E8C98DC00E04C27 /* ZPDFPageModel.m in Sources */,
 				DF5B3F141E8C98BC00E04C27 /* WXSTransitionManager+BoomAnimation.m in Sources */,
+				DF49BCEC1EA608A100806C80 /* HyPopMenuView.m in Sources */,
 				DF5B3F321E8C98BC00E04C27 /* XWFilterAnimator+XWBoxBlur.m in Sources */,
 				DF5B40851E8C98DC00E04C27 /* FirstHTMLVC.m in Sources */,
 				DF5B3F131E8C98BC00E04C27 /* WXSPercentDrivenInteractiveTransition.m in Sources */,
@@ -2215,6 +2264,7 @@
 				DF5B3F1D1E8C98BC00E04C27 /* WXSTransitionManager+ViewMoveAnimation.m in Sources */,
 				DF5B3F151E8C98BC00E04C27 /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				DF5B3EFA1E8C98BC00E04C27 /* IQUITextFieldView+Additions.m in Sources */,
+				DF49BCF61EA608C300806C80 /* UIColor+ImageGetColor.m in Sources */,
 				DF5B40C31E8CA5D300E04C27 /* ZY_BottonView.m in Sources */,
 				DF5B40931E8C98DC00E04C27 /* PersonalViewController.m in Sources */,
 				DF5B3F1A1E8C98BC00E04C27 /* WXSTransitionManager+SpreadAnimation.m in Sources */,
@@ -2241,8 +2291,10 @@
 				DF5B3F0D1E8C98BC00E04C27 /* NSArray+UnicodeReadable.m in Sources */,
 				DF5B3F1F1E8C98BC00E04C27 /* WXSTransitionProperty.m in Sources */,
 				DF5B40BC1E8C990B00E04C27 /* ADViewController.m in Sources */,
+				DF49BCFF1EA60B2E00806C80 /* AddMainVC.m in Sources */,
 				DF5B3EFF1E8C98BC00E04C27 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				DF5B3F041E8C98BC00E04C27 /* IQToolbar.m in Sources */,
+				DF49BCF31EA608BB00806C80 /* PopMenuModel.m in Sources */,
 				DF5B3F3F1E8C98BC00E04C27 /* UIImageView+XHWebCache.m in Sources */,
 				DF5B3F1C1E8C98BC00E04C27 /* WXSTransitionManager+TypeTool.m in Sources */,
 				DF5B3F2E1E8C98BC00E04C27 /* XWCoolAnimator+XWScanning.m in Sources */,
@@ -2258,7 +2310,9 @@
 				DF5B40781E8C98DC00E04C27 /* AllEssenceViewController.m in Sources */,
 				DF5B3F081E8C98BC00E04C27 /* UIView+Extension.m in Sources */,
 				DF5B409E1E8C98DC00E04C27 /* MyHeaderView.m in Sources */,
+				DF49BCFA1EA608EF00806C80 /* popMenvTopView.m in Sources */,
 				DF5B3F3D1E8C98BC00E04C27 /* UIButton+XHEnlarged.m in Sources */,
+				DF49BCF21EA608BB00806C80 /* PopMenuButton.m in Sources */,
 				DF5B3F371E8C98BC00E04C27 /* XWFilterAnimator+XWPageCurl.m in Sources */,
 				DF5B40B41E8C98E900E04C27 /* ZY_RootHomeViewController.m in Sources */,
 				DF5B3F501E8C98BC00E04C27 /* ZYTextField.m in Sources */,

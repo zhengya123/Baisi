@@ -12,7 +12,6 @@
 #define ZY_SCREEN_H [UIScreen mainScreen].bounds.size.height
 @implementation OcTopUs_Loading
 
-
 +(OcTopUs_Loading *)shareLoading{
     static OcTopUs_Loading * octopus_loading;
     static dispatch_once_t onceToken;
@@ -33,7 +32,6 @@
 -(void)show{
 
     self.imageV.image = [UIImage sd_animatedGIFNamed:@"OcTopUs_Image"];
-    
     CAKeyframeAnimation* animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
     animation.duration = 0.5;
     NSMutableArray *values = [NSMutableArray array];
