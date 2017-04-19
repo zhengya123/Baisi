@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MainTabBarButton : UIButton
-@property(nonatomic, strong)UITabBarItem *tabBarItem;
+
+@property (nonatomic, strong) UITabBarItem * tabBarItem;
+//@property (nonatomic, strong) UIView       * badgeView;
 @end

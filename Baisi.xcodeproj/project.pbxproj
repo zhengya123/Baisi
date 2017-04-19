@@ -14,6 +14,8 @@
 		DF19B63C1E9E0242001B5E69 /* HHAllMemberViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19B63A1E9E0242001B5E69 /* HHAllMemberViewCell.m */; };
 		DF19B63D1E9E0242001B5E69 /* HHAllMemberViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19B63B1E9E0242001B5E69 /* HHAllMemberViewCell.xib */; };
 		DF19B6411E9E03DF001B5E69 /* HHAllMemberVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19B6401E9E03DF001B5E69 /* HHAllMemberVCModel.m */; };
+		DF39573D1EA7035300D796D1 /* GooeySlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39573A1EA7035300D796D1 /* GooeySlideMenu.m */; };
+		DF39573E1EA7035300D796D1 /* SlideMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39573C1EA7035300D796D1 /* SlideMenuButton.m */; };
 		DF428A121E8DF69F003E2A79 /* HCGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */; };
 		DF428A131E8DF69F003E2A79 /* HCGDatePickerAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A111E8DF69F003E2A79 /* HCGDatePickerAppearance.m */; };
 		DF49BCEC1EA608A100806C80 /* HyPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCEB1EA608A100806C80 /* HyPopMenuView.m */; };
@@ -301,6 +303,10 @@
 		DF19B63B1E9E0242001B5E69 /* HHAllMemberViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHAllMemberViewCell.xib; sourceTree = "<group>"; };
 		DF19B63F1E9E03DF001B5E69 /* HHAllMemberVCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAllMemberVCModel.h; sourceTree = "<group>"; };
 		DF19B6401E9E03DF001B5E69 /* HHAllMemberVCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAllMemberVCModel.m; sourceTree = "<group>"; };
+		DF3957391EA7035300D796D1 /* GooeySlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooeySlideMenu.h; sourceTree = "<group>"; };
+		DF39573A1EA7035300D796D1 /* GooeySlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooeySlideMenu.m; sourceTree = "<group>"; };
+		DF39573B1EA7035300D796D1 /* SlideMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuButton.h; sourceTree = "<group>"; };
+		DF39573C1EA7035300D796D1 /* SlideMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuButton.m; sourceTree = "<group>"; };
 		DF428A0E1E8DF69F003E2A79 /* HCGDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGDatePicker.h; sourceTree = "<group>"; };
 		DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCGDatePicker.m; sourceTree = "<group>"; };
 		DF428A101E8DF69F003E2A79 /* HCGDatePickerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGDatePickerAppearance.h; sourceTree = "<group>"; };
@@ -770,6 +776,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DF3957381EA7033A00D796D1 /* LeftSliderMenuVC */ = {
+			isa = PBXGroup;
+			children = (
+				DF3957391EA7035300D796D1 /* GooeySlideMenu.h */,
+				DF39573A1EA7035300D796D1 /* GooeySlideMenu.m */,
+				DF39573B1EA7035300D796D1 /* SlideMenuButton.h */,
+				DF39573C1EA7035300D796D1 /* SlideMenuButton.m */,
+			);
+			path = LeftSliderMenuVC;
+			sourceTree = "<group>";
+		};
 		DF428A0D1E8DF69F003E2A79 /* HcgDatePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -883,6 +900,7 @@
 		DF5B3E201E8C98BC00E04C27 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				DF3957381EA7033A00D796D1 /* LeftSliderMenuVC */,
 				DF49BCE91EA6086D00806C80 /* PopMenuVC */,
 				DF428A0D1E8DF69F003E2A79 /* HcgDatePicker */,
 				DF5B3E211E8C98BC00E04C27 /* FDFullscreenPopGesture */,
@@ -2221,6 +2239,7 @@
 				DF5B3F001E8C98BC00E04C27 /* IQTextView.m in Sources */,
 				DF5B3F0A1E8C98BC00E04C27 /* ZY_Runing_Loding.m in Sources */,
 				DF5B3EF91E8C98BC00E04C27 /* IQUIScrollView+Additions.m in Sources */,
+				DF39573D1EA7035300D796D1 /* GooeySlideMenu.m in Sources */,
 				DF5B40831E8C98DC00E04C27 /* ButtonView.m in Sources */,
 				DF5B40841E8C98DC00E04C27 /* HeaderTableViewCell.m in Sources */,
 				DF5B3F391E8C98BC00E04C27 /* XWFilterAnimator+XWSwipe.m in Sources */,
@@ -2265,6 +2284,7 @@
 				DF5B3F151E8C98BC00E04C27 /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				DF5B3EFA1E8C98BC00E04C27 /* IQUITextFieldView+Additions.m in Sources */,
 				DF49BCF61EA608C300806C80 /* UIColor+ImageGetColor.m in Sources */,
+				DF39573E1EA7035300D796D1 /* SlideMenuButton.m in Sources */,
 				DF5B40C31E8CA5D300E04C27 /* ZY_BottonView.m in Sources */,
 				DF5B40931E8C98DC00E04C27 /* PersonalViewController.m in Sources */,
 				DF5B3F1A1E8C98BC00E04C27 /* WXSTransitionManager+SpreadAnimation.m in Sources */,

@@ -150,6 +150,14 @@
     childVc.tabBarItem.title = title;
     [self.mainTabBar addTabBarButtonWithTabBarItem:childVc.tabBarItem];
     [self addChildViewController:nav];
+    
+//    UIView * redV = [UIView new];
+//    redV.backgroundColor = [UIColor redColor];
+//    redV.frame = CGRectMake(10, 5, 2, 2);
+//    redV.layer.masksToBounds = YES;
+//    redV.layer.cornerRadius  = 1;
+//    [childVc.tabBarItem];
+    
 }
 
 #pragma mark --------------------mainTabBar delegate

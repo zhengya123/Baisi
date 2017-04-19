@@ -27,6 +27,8 @@
 
         [self setTitleColor:[UIColor colorWithRed:117/255.0f green:117/255.0f blue:117/255.0f alpha:1.0] forState:UIControlStateNormal];
         
+//        self.badgeView.frame = CGRectMake(CGRectGetMaxX(frame)- 10, 5, 4, 4);
+//        [self addSubview:self.badgeView];
 
     }
     return self;
@@ -63,5 +65,15 @@
     [self setImage:self.tabBarItem.image forState:UIControlStateNormal];
     [self setImage:self.tabBarItem.selectedImage forState:UIControlStateSelected];
 }
+
+//-(UIView *)badgeView{
+//    if (_badgeView == nil) {
+//        _badgeView = [UIView new];
+//        _badgeView.backgroundColor = [UIColor redColor];
+//        _badgeView.layer.masksToBounds = YES;
+//        _badgeView.layer.cornerRadius  = 2;
+//    }
+//    return _badgeView;
+//}
 
 @end

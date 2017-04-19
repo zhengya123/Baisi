@@ -58,6 +58,7 @@
         }
         tabBarBtn.frame = CGRectMake(btnX, btnY, btnW, btnH);
         tabBarBtn.tag = nIndex;
+       
     }
 }
 

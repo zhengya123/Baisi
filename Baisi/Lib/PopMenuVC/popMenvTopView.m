@@ -13,12 +13,11 @@
 #define drakColor RGB(60, 60, 60)
 #define lightColor RGB(249, 247, 234)
 
-
 @interface popMenvTopView ()
-@property (strong, nonatomic) NSArray *datas;
+@property (strong, nonatomic) NSArray       * datas;
 @property (nonatomic, assign) NSUInteger idx;
-@property (nonatomic, strong) NSTimer *timer;
-@property (nonatomic, strong) HyPopMenuView* menu;
+@property (nonatomic, strong) NSTimer       * timer;
+@property (nonatomic, strong) HyPopMenuView * menu;
 @end
 
 @implementation popMenvTopView

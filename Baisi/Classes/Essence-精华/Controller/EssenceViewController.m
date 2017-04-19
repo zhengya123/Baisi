@@ -14,6 +14,8 @@
 #import "CrossVC.h"
 #import "SeniorityVC.h"
 #import "UIView+UIView_ZYExtension.h"
+#import "GooeySlideMenu.h"
+#import "PersonalViewController.h"
 static CGFloat const titleH = 44;
 static CGFloat const navBarH = 64;
 static CGFloat const maxTitleScale = 1.5;
@@ -29,6 +31,9 @@ static CGFloat const maxTitleScale = 1.5;
 @property (nonatomic, weak  ) UILabel          * selTitleLabel;
 
 @property (nonatomic, strong) NSMutableArray  * buttons;
+
+//左侧滑菜单
+@property (nonatomic, strong) GooeySlideMenu * menu;
 
 @end
 
@@ -47,7 +52,7 @@ static CGFloat const maxTitleScale = 1.5;
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
     self.navigationItem.title = @"精选";
-    
+    [self createrLeftSlide];
     [self setupTitleScrollView];
     [self setupContentScrollView];
     [self addChildViewController];
@@ -61,6 +66,47 @@ static CGFloat const maxTitleScale = 1.5;
     self.contentScrollView.showsHorizontalScrollIndicator = NO;
     self.contentScrollView.delegate = self;
    
+}
+#pragma mark - 设置左侧滑菜单
+-(void)createrLeftSlide{
+    
+    UIButton * menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    menuBtn.frame=CGRectMake(0, 0, 40, 24);
+    [menuBtn setTitle:@"菜单" forState:UIControlStateNormal];
+    [menuBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    menuBtn.contentHorizontalAlignment=UIControlContentHorizontalAlignmentLeft;
+    menuBtn.titleLabel.font = [UIFont systemFontOfSize:17];
+    [menuBtn addTarget:self action:@selector(menuBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *barbtn = [[UIBarButtonItem alloc]initWithCustomView:menuBtn];
+    barbtn.width = -20;
+    self.navigationItem.leftBarButtonItem = barbtn;
+    
+}
+-(void)menuBtnClick:(UIButton *)btn{
+    NSArray * arr = @[@"首页",@"消息",@"发布",@"发现",@"个人",@"设置",@"取消"];
+    //self.menu = [[GooeySlideMenu alloc]initWithTitles:arr];
+    self.menu = [[GooeySlideMenu alloc]initWithTitles:arr withButtonHeight:40 withMenuColor:[UIColor colorWithRed:0 green:0.722 blue:1 alpha:1] withBackBlurStyle:UIBlurEffectStyleRegular];
+    __weak typeof(self) weakSelf = self;
+    self.menu.menuClickBlock = ^(NSInteger index, NSString *title, NSInteger titleCounts) {
+        
+        ZYLog(@"index:%ld title:%@ titleCounts:%ld",index,title,titleCounts);
+        
+            switch (index) {
+                case 0:
+                {
+                    PersonalViewController * person = [PersonalViewController new];
+                    [weakSelf.navigationController pushViewController:person animated:YES];
+                
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+    
+    };
+    [self.menu trigger];
+
 }
 #pragma mark - 设置头部标题栏
 - (void)setupTitleScrollView
