@@ -120,6 +120,7 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 
 }
 #pragma mark - 懒加载

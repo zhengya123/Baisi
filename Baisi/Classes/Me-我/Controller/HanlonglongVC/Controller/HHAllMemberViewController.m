@@ -9,6 +9,7 @@
 #import "HHAllMemberViewController.h"
 #import "HHAllMemberViewCell.h"
 #import "HHAllMemberVCModel.h"
+#import "HHjiujiuDetailViewController.h"
 @interface HHAllMemberViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property (nonatomic, strong) UICollectionView * collectionView;
@@ -103,7 +104,8 @@ HHAllMemberVCModel * model = self.dataArray[indexPath.row];
     if ([model.member_id isEqualToString:@"add"]) {
         NSLog(@"点击了添加按钮");
     }else{
-    
+        HHjiujiuDetailViewController * detail = [HHjiujiuDetailViewController new];
+        [self.navigationController pushViewController:detail animated:YES];
         ZYLog(@"id == %@ -- name == %@",model.member_id,model.name);
     }
 
