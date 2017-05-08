@@ -29,6 +29,7 @@
 		DF49BCFB1EA608EF00806C80 /* popMenvTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF49BCF91EA608EF00806C80 /* popMenvTopView.xib */; };
 		DF49BCFF1EA60B2E00806C80 /* AddMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCFD1EA60B2E00806C80 /* AddMainVC.m */; };
 		DF49BD001EA60B2E00806C80 /* AddMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF49BCFE1EA60B2E00806C80 /* AddMainVC.xib */; };
+		DF4EC5851EC05F9600B1681C /* SureCustomActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4EC5841EC05F9600B1681C /* SureCustomActionSheet.m */; };
 		DF5B3DEA1E8C963000E04C27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3DE91E8C963000E04C27 /* main.m */; };
 		DF5B3DF31E8C963000E04C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5B3DF11E8C963000E04C27 /* Main.storyboard */; };
 		DF5B3DF51E8C963000E04C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5B3DF41E8C963000E04C27 /* Assets.xcassets */; };
@@ -334,6 +335,8 @@
 		DF49BCFC1EA60B2E00806C80 /* AddMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMainVC.h; sourceTree = "<group>"; };
 		DF49BCFD1EA60B2E00806C80 /* AddMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMainVC.m; sourceTree = "<group>"; };
 		DF49BCFE1EA60B2E00806C80 /* AddMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMainVC.xib; sourceTree = "<group>"; };
+		DF4EC5831EC05F9500B1681C /* SureCustomActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SureCustomActionSheet.h; sourceTree = "<group>"; };
+		DF4EC5841EC05F9600B1681C /* SureCustomActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SureCustomActionSheet.m; sourceTree = "<group>"; };
 		DF5B3DE51E8C963000E04C27 /* Baisi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF5B3DE91E8C963000E04C27 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF5B3DF21E8C963000E04C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -1285,6 +1288,8 @@
 				DF5B3EDE1E8C98BC00E04C27 /* UIView+Toast.m */,
 				DF5B3EDF1E8C98BC00E04C27 /* ZY_AlertViews.h */,
 				DF5B3EE01E8C98BC00E04C27 /* ZY_AlertViews.m */,
+				DF4EC5831EC05F9500B1681C /* SureCustomActionSheet.h */,
+				DF4EC5841EC05F9600B1681C /* SureCustomActionSheet.m */,
 			);
 			path = ZY_Alert;
 			sourceTree = "<group>";
@@ -2308,6 +2313,7 @@
 				DF19B6331E9DCF48001B5E69 /* PaymentListVC.m in Sources */,
 				DF868A0D1EA49B1F00378800 /* PeopleWorking-Loading.m in Sources */,
 				DF5B3EF51E8C98BC00E04C27 /* FTRulerScrollView.m in Sources */,
+				DF4EC5851EC05F9600B1681C /* SureCustomActionSheet.m in Sources */,
 				DF5B3EFE1E8C98BC00E04C27 /* IQKeyboardManager.m in Sources */,
 				DF5B3F101E8C98BC00E04C27 /* UINavigationController+WXSTransition.m in Sources */,
 				DF868A121EA49D5F00378800 /* Waiting_Loading.m in Sources */,

@@ -21,6 +21,7 @@
 #import "MY_HeartNumVCViewController.h"
 #import "ZPDFReaderController.h"
 #import "HHAllMemberViewController.h"
+#import "SureCustomActionSheet.h"
 #define zytitle @"cities"
 #define zytitleName @"titleName"
 @interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,TXScrollLabelViewDelegate>
@@ -226,8 +227,39 @@
                 case 1:
             {
             //我的二维码
-                MyQr_CodeVC * QrVC = [MyQr_CodeVC new];
-                [self.navigationController pushViewController:QrVC animated:YES];
+//                MyQr_CodeVC * QrVC = [MyQr_CodeVC new];
+//                [self.navigationController pushViewController:QrVC animated:YES];
+                
+                SureCustomActionSheet * optionView = [[SureCustomActionSheet alloc]initWithTitleView:nil optionsArr:@[@"第一个",@"第二个",@"第三个"] cancelTitle:@"取消" selectedBlock:^(NSInteger index) {
+                    switch (index) {
+                        case 0:
+                        {
+                            ZYLog(@"点击了第一个");
+                        }
+                            break;
+                        case 1:
+                        {
+                            
+                            ZYLog(@"点击了第2个");
+                        }
+                            break;
+                        case 2:
+                        {
+                            ZYLog(@"点击了第3个");
+                        }
+                            break;
+                        default:
+                            break;
+                    }
+                    
+                    
+                    
+                } cancelBlock:^{
+                    ZYLog(@"取消了");
+                }];
+                
+                [self.view addSubview:optionView];
+
             }
                 break;
                 

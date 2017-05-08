@@ -20,6 +20,7 @@
 #import "OcTopUs-Loading.h"
 #import "PeopleWorking-Loading.h"
 #import "Waiting_Loading.h"
+#import "SureCustomActionSheet.h"
 #define ImageName @"imageName"
 #define TitleName @"titleName"
 @interface MeViewController ()<
@@ -198,6 +199,11 @@
         {
             [[Waiting_Loading shareLoading] show];
              [self performSelector:@selector(OcTopUs_Load) withObject:nil afterDelay:10];
+        }
+            break;
+            case 10:
+        {
+        
         }
             break;
         default:
