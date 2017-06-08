@@ -17,6 +17,13 @@
 		DF19B63C1E9E0242001B5E69 /* HHAllMemberViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19B63A1E9E0242001B5E69 /* HHAllMemberViewCell.m */; };
 		DF19B63D1E9E0242001B5E69 /* HHAllMemberViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF19B63B1E9E0242001B5E69 /* HHAllMemberViewCell.xib */; };
 		DF19B6411E9E03DF001B5E69 /* HHAllMemberVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF19B6401E9E03DF001B5E69 /* HHAllMemberVCModel.m */; };
+		DF33261B1EE8ECBE00450755 /* EditSignVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3326191EE8ECBE00450755 /* EditSignVC.m */; };
+		DF33261C1EE8ECBE00450755 /* EditSignVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF33261A1EE8ECBE00450755 /* EditSignVC.xib */; };
+		DF33261F1EE8FBA500450755 /* DescribeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF33261E1EE8FBA500450755 /* DescribeView.m */; };
+		DF3326231EE9136900450755 /* describeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3326211EE9136900450755 /* describeTableViewCell.m */; };
+		DF3326241EE9136900450755 /* describeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF3326221EE9136900450755 /* describeTableViewCell.xib */; };
+		DF33262D1EE92AB700450755 /* SeconddescribeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF33262B1EE92AB700450755 /* SeconddescribeTableViewCell.m */; };
+		DF33262E1EE92AB700450755 /* SeconddescribeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF33262C1EE92AB700450755 /* SeconddescribeTableViewCell.xib */; };
 		DF39573D1EA7035300D796D1 /* GooeySlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39573A1EA7035300D796D1 /* GooeySlideMenu.m */; };
 		DF39573E1EA7035300D796D1 /* SlideMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39573C1EA7035300D796D1 /* SlideMenuButton.m */; };
 		DF428A121E8DF69F003E2A79 /* HCGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */; };
@@ -312,6 +319,17 @@
 		DF19B63B1E9E0242001B5E69 /* HHAllMemberViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHAllMemberViewCell.xib; sourceTree = "<group>"; };
 		DF19B63F1E9E03DF001B5E69 /* HHAllMemberVCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHAllMemberVCModel.h; sourceTree = "<group>"; };
 		DF19B6401E9E03DF001B5E69 /* HHAllMemberVCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHAllMemberVCModel.m; sourceTree = "<group>"; };
+		DF3326181EE8ECBE00450755 /* EditSignVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditSignVC.h; sourceTree = "<group>"; };
+		DF3326191EE8ECBE00450755 /* EditSignVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditSignVC.m; sourceTree = "<group>"; };
+		DF33261A1EE8ECBE00450755 /* EditSignVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditSignVC.xib; sourceTree = "<group>"; };
+		DF33261D1EE8FBA500450755 /* DescribeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescribeView.h; sourceTree = "<group>"; };
+		DF33261E1EE8FBA500450755 /* DescribeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescribeView.m; sourceTree = "<group>"; };
+		DF3326201EE9136900450755 /* describeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = describeTableViewCell.h; sourceTree = "<group>"; };
+		DF3326211EE9136900450755 /* describeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = describeTableViewCell.m; sourceTree = "<group>"; };
+		DF3326221EE9136900450755 /* describeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = describeTableViewCell.xib; sourceTree = "<group>"; };
+		DF33262A1EE92AB700450755 /* SeconddescribeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeconddescribeTableViewCell.h; sourceTree = "<group>"; };
+		DF33262B1EE92AB700450755 /* SeconddescribeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeconddescribeTableViewCell.m; sourceTree = "<group>"; };
+		DF33262C1EE92AB700450755 /* SeconddescribeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeconddescribeTableViewCell.xib; sourceTree = "<group>"; };
 		DF3957391EA7035300D796D1 /* GooeySlideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GooeySlideMenu.h; sourceTree = "<group>"; };
 		DF39573A1EA7035300D796D1 /* GooeySlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooeySlideMenu.m; sourceTree = "<group>"; };
 		DF39573B1EA7035300D796D1 /* SlideMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuButton.h; sourceTree = "<group>"; };
@@ -785,6 +803,48 @@
 				DF19B6401E9E03DF001B5E69 /* HHAllMemberVCModel.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DF3326141EE8EC7E00450755 /* WSPVC */ = {
+			isa = PBXGroup;
+			children = (
+				DF3326151EE8EC7E00450755 /* Controller */,
+				DF3326161EE8EC7E00450755 /* Model */,
+				DF3326171EE8EC7E00450755 /* View */,
+			);
+			path = WSPVC;
+			sourceTree = "<group>";
+		};
+		DF3326151EE8EC7E00450755 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF3326181EE8ECBE00450755 /* EditSignVC.h */,
+				DF3326191EE8ECBE00450755 /* EditSignVC.m */,
+				DF33261A1EE8ECBE00450755 /* EditSignVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DF3326161EE8EC7E00450755 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF3326171EE8EC7E00450755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF33261D1EE8FBA500450755 /* DescribeView.h */,
+				DF33261E1EE8FBA500450755 /* DescribeView.m */,
+				DF3326201EE9136900450755 /* describeTableViewCell.h */,
+				DF3326211EE9136900450755 /* describeTableViewCell.m */,
+				DF3326221EE9136900450755 /* describeTableViewCell.xib */,
+				DF33262A1EE92AB700450755 /* SeconddescribeTableViewCell.h */,
+				DF33262B1EE92AB700450755 /* SeconddescribeTableViewCell.m */,
+				DF33262C1EE92AB700450755 /* SeconddescribeTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		DF3957381EA7033A00D796D1 /* LeftSliderMenuVC */ = {
@@ -1619,6 +1679,7 @@
 			isa = PBXGroup;
 			children = (
 				DF5B403D1E8C98DC00E04C27 /* Main */,
+				DF3326141EE8EC7E00450755 /* WSPVC */,
 				DF5B40211E8C98DC00E04C27 /* HanlonglongVC */,
 				DF5B402A1E8C98DC00E04C27 /* HTMLVC */,
 				DF5B404B1E8C98DC00E04C27 /* MY_HeartNum */,
@@ -2043,11 +2104,13 @@
 				DF5B3FF01E8C98D100E04C27 /* Running_Loading_3.png in Resources */,
 				DF5B3FF21E8C98D100E04C27 /* Running_Loading_5.png in Resources */,
 				DF5B3FA71E8C98D000E04C27 /* backImage.png in Resources */,
+				DF33261C1EE8ECBE00450755 /* EditSignVC.xib in Resources */,
 				DF868A0F1EA49BC300378800 /* peopleworking_Images.gif in Resources */,
 				DF5B3FE81E8C98D100E04C27 /* mine_icon_random@2x.png in Resources */,
 				DF5B40BE1E8C990B00E04C27 /* LoginViewController.xib in Resources */,
 				DF5B409D1E8C98DC00E04C27 /* MyQr_CodeVC.xib in Resources */,
 				DF5B3F451E8C98BC00E04C27 /* tipBg.jpg in Resources */,
+				DF3326241EE9136900450755 /* describeTableViewCell.xib in Resources */,
 				DF5B3FF11E8C98D100E04C27 /* Running_Loading_4.png in Resources */,
 				DF5B3FCC1E8C98D100E04C27 /* loginBtnBg.png in Resources */,
 				DF5B3FDF1E8C98D100E04C27 /* mine-icon-search@2x.png in Resources */,
@@ -2075,6 +2138,7 @@
 				DF5B3FEA1E8C98D100E04C27 /* mine_msg_icon@2x.png in Resources */,
 				DF5B3FF81E8C98D100E04C27 /* yxs_playBack_nomessage.png in Resources */,
 				DF5B3FF71E8C98D100E04C27 /* screenShotTwo.gif in Resources */,
+				DF33262E1EE92AB700450755 /* SeconddescribeTableViewCell.xib in Resources */,
 				DF5B3F261E8C98BC00E04C27 /* restrictedshine.tiff in Resources */,
 				DF5B3FD91E8C98D100E04C27 /* mine-icon-nearby@2x.png in Resources */,
 				DF5B3FF41E8C98D100E04C27 /* Running_Loading_7.png in Resources */,
@@ -2271,7 +2335,9 @@
 				DF5B3F331E8C98BC00E04C27 /* XWFilterAnimator+XWCopyMachine.m in Sources */,
 				DF5B3EFD1E8C98BC00E04C27 /* IQUIWindow+Hierarchy.m in Sources */,
 				DF5B3EF71E8C98BC00E04C27 /* HeartLive.m in Sources */,
+				DF33261F1EE8FBA500450755 /* DescribeView.m in Sources */,
 				DF5B408F1E8C98DC00E04C27 /* KaidianCompanyInfoController.m in Sources */,
+				DF3326231EE9136900450755 /* describeTableViewCell.m in Sources */,
 				DF5B3F4F1E8C98BC00E04C27 /* ZY_verification_Button.m in Sources */,
 				DF5B3F0F1E8C98BC00E04C27 /* NSSet+UnicodeReadable.m in Sources */,
 				DF5B3EFB1E8C98BC00E04C27 /* IQUIView+Hierarchy.m in Sources */,
@@ -2324,6 +2390,7 @@
 				DF5B3F401E8C98BC00E04C27 /* XHImageCache.m in Sources */,
 				DF5B3F1B1E8C98BC00E04C27 /* WXSTransitionManager+SystermAnimation.m in Sources */,
 				DF5B3F2B1E8C98BC00E04C27 /* XWCoolAnimator+XWMiddlePageFlip.m in Sources */,
+				DF33262D1EE92AB700450755 /* SeconddescribeTableViewCell.m in Sources */,
 				DF5B3EF31E8C98BC00E04C27 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				DF5B40991E8C98DC00E04C27 /* ZPDFReaderController.m in Sources */,
 				DF5B3F181E8C98BC00E04C27 /* WXSTransitionManager+InsideThenPushAnimation.m in Sources */,
@@ -2352,6 +2419,7 @@
 				DF5B40781E8C98DC00E04C27 /* AllEssenceViewController.m in Sources */,
 				DF5B3F081E8C98BC00E04C27 /* UIView+Extension.m in Sources */,
 				DF5B409E1E8C98DC00E04C27 /* MyHeaderView.m in Sources */,
+				DF33261B1EE8ECBE00450755 /* EditSignVC.m in Sources */,
 				DF49BCFA1EA608EF00806C80 /* popMenvTopView.m in Sources */,
 				DF5B3F3D1E8C98BC00E04C27 /* UIButton+XHEnlarged.m in Sources */,
 				DF49BCF21EA608BB00806C80 /* PopMenuButton.m in Sources */,

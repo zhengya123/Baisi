@@ -11,11 +11,13 @@
 #import "ALLEssenceModel.h"
 #import "ALLEssenceListCell.h"
 #import "ImageLookVC.h"
-
+#import "MJRefresh.h"
 @interface AllEssenceViewController ()<UITableViewDelegate,UITableViewDataSource,ALLEssenceClickDelegate>
 
 @property (nonatomic, strong) UITableView    * tableView;
 @property (nonatomic, strong) NSMutableArray * dataArray;
+/** maxtime */
+@property (nonatomic, strong) NSString *currentMaxtime;
 @end
 
 @implementation AllEssenceViewController
@@ -24,19 +26,30 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor greenColor];
     [self createUI];
-    [self requestData];
+    [self requestDataisFirst:YES];
+    [self setUpRefresh];
 }
--(void)requestData{
+-(void)requestDataisFirst:(BOOL)isfirst{
     
     NSMutableDictionary * params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
-    params[@"c"] = @"data";
+    if (isfirst == YES) {
+        params[@"a"] = @"list";
+        params[@"c"] = @"data";
+    }else{
+        params[@"a"] = @"list";
+        params[@"c"] = @"data";
+        params[@"type"] = @1;
+        params[@"maxtime"] = [NSString stringWithFormat:@"%@",self.currentMaxtime];
+    
+    }
+   
     __weak typeof(self) weakSelf = self;
     [HYBNetworking getWithUrl:@"http://api.budejie.com/api/api_open.php" refreshCache:YES params:params success:^(id response) {
         
-        [weakSelf dealWithData:response];
+        [weakSelf dealWithData:response isFirst:(BOOL)isfirst];
         //有网的时候正常显示，父类图片隐藏
         weakSelf.NoNetImage.hidden = YES;
+        
     } fail:^(NSError *error) {
         ZYLog(@"失败 == %@",error);
         ZYLog(@"失败code = %ld",(long)error.code);
@@ -47,20 +60,28 @@
     
 }
 
--(void)dealWithData:(NSDictionary *)response{
+-(void)dealWithData:(NSDictionary *)response isFirst:(BOOL)isF{
     ZYLog(@"成功 = %@",response);
+    if (isF == YES) {
+        
+            [self.dataArray removeAllObjects];
+            [self.tableView reloadData];
+        
+    }
     NSArray * listArray = [response objectForKey:@"list"];
+    self.currentMaxtime = response[@"info"][@"maxtime"];
     for (NSDictionary * dic in listArray) {
         ALLEssenceModel * model = [ALLEssenceModel setModelWithDic:dic];
         [self.dataArray addObject:model];
     }
     [self.tableView reloadData];
+    [self.tableView.mj_header endRefreshing];
+    [self.tableView.mj_footer endRefreshing];
 }
 
 #pragma mark - createUI
 -(void)createUI{
     [self.view addSubview:self.tableView];
-
 
 }
 #pragma mark - tableViewDelegate
@@ -113,6 +134,25 @@
     lookImage.imageHeight   = height;
     [self presentViewController:lookImage animated:NO completion:nil];
 
+}
+#pragma mark - 刷新
+- (void)setUpRefresh{
+    MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerFresh)];
+    self.tableView.mj_header = header;
+    
+    MJRefreshBackNormalFooter * footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerFresh)];
+    self.tableView.mj_footer = footer;
+
+
+}
+-(void)headerFresh{
+
+    [self requestDataisFirst:YES];
+
+}
+-(void)footerFresh{
+
+    [self requestDataisFirst:NO];
 }
 #pragma mark - 懒加载
 -(UITableView *)tableView{

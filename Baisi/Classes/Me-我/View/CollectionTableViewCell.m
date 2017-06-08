@@ -85,7 +85,6 @@
     
     return UIEdgeInsetsMake(0,0, 0, 0);
     
-    
 }
 - (void)collectionView:(UICollectionView *)collectionView willDisplayCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
 {

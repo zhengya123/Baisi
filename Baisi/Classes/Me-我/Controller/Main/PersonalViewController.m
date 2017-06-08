@@ -22,6 +22,7 @@
 #import "ZPDFReaderController.h"
 #import "HHAllMemberViewController.h"
 #import "SureCustomActionSheet.h"
+#import "EditSignVC.h"
 #define zytitle @"cities"
 #define zytitleName @"titleName"
 @interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,TXScrollLabelViewDelegate>
@@ -196,6 +197,12 @@
                 break;
                 case 4:
             {
+                EditSignVC * editSignVC = [EditSignVC new];
+                [self.navigationController pushViewController:editSignVC animated:YES];
+            }
+                break;
+                case 5:
+            {
                 TeamSearchVC * vc = [TeamSearchVC new];
                 // [self.navigationController wxs_pushViewController:vc animationType:WXSTransitionAnimationTypeSysCameraIrisHollowOpen];
                 [self.navigationController wxs_pushViewController:vc makeTransition:^(WXSTransitionProperty *transition) {
@@ -206,7 +213,7 @@
             
             }
                 break;
-                case 5:
+                case 6:
             {
                 HHAllMemberViewController * hhallMemberVC = [HHAllMemberViewController new];
                 [self.navigationController pushViewController:hhallMemberVC animated:YES];
@@ -407,6 +414,7 @@
                                @{zytitleName:@"我的PDF"},
                                @{zytitleName:@"泡泡页面"},
                                @{zytitleName:@"泡泡首页"},
+                               @{zytitleName:@"编辑标记点"},
                                @{zytitleName:@"唐永刚界面"},
                                @{zytitleName:@"隐私设置"}
                                ]
