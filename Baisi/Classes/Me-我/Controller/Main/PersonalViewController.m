@@ -227,8 +227,8 @@
         switch (indexPath.row) {
             case 0:
             {
-                MY_MapVC * mapVC = [MY_MapVC new];
-                [self.navigationController pushViewController:mapVC animated:YES];
+                //MY_MapVC * mapVC = [MY_MapVC new];
+                //[self.navigationController pushViewController:mapVC animated:YES];
             }
                 break;
                 case 1:

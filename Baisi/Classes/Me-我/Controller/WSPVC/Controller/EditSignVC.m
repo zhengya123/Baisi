@@ -33,6 +33,7 @@
 }
 
 - (void)createUI{
+    
     UIBarButtonItem * rightBtn = [[UIBarButtonItem alloc]initWithCustomView:self.navSureBtn];
     UIBarButtonItem * navSpace = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
     navSpace.width = -20;
@@ -97,7 +98,6 @@
         _basescrollView.scrollEnabled = YES;
     }
     return _basescrollView;
-
 
 }
 - (UIButton *)navSureBtn{

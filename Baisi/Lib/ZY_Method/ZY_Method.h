@@ -30,4 +30,8 @@
  *  是不是空字段
  */
 +(id)isEmpty:(NSString *)str;
+/**
+ *  获取当前时间
+ */
++(NSString*)getCurrentTimes;
 @end

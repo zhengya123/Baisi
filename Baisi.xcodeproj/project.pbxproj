@@ -43,7 +43,7 @@
 		DF5B3DF81E8C963000E04C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5B3DF61E8C963000E04C27 /* LaunchScreen.storyboard */; };
 		DF5B3E031E8C963100E04C27 /* BaisiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3E021E8C963100E04C27 /* BaisiTests.m */; };
 		DF5B3E0E1E8C963100E04C27 /* BaisiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3E0D1E8C963100E04C27 /* BaisiUITests.m */; };
-		DF5B3E1E1E8C984700E04C27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3E1D1E8C984700E04C27 /* AppDelegate.m */; };
+		DF5B3E1E1E8C984700E04C27 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3E1D1E8C984700E04C27 /* AppDelegate.mm */; };
 		DF5B3EF31E8C98BC00E04C27 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3E231E8C98BC00E04C27 /* UINavigationController+FDFullscreenPopGesture.m */; };
 		DF5B3EF41E8C98BC00E04C27 /* FTPrettyRulerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3E261E8C98BC00E04C27 /* FTPrettyRulerView.m */; };
 		DF5B3EF51E8C98BC00E04C27 /* FTRulerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3E281E8C98BC00E04C27 /* FTRulerScrollView.m */; };
@@ -249,8 +249,6 @@
 		DF5B40921E8C98DC00E04C27 /* MyInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40481E8C98DC00E04C27 /* MyInformationController.m */; };
 		DF5B40931E8C98DC00E04C27 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B404A1E8C98DC00E04C27 /* PersonalViewController.m */; };
 		DF5B40941E8C98DC00E04C27 /* MY_HeartNumVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B404D1E8C98DC00E04C27 /* MY_HeartNumVCViewController.m */; };
-		DF5B40951E8C98DC00E04C27 /* MY_MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40501E8C98DC00E04C27 /* MY_MapVC.m */; };
-		DF5B40961E8C98DC00E04C27 /* MY_MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5B40511E8C98DC00E04C27 /* MY_MapVC.xib */; };
 		DF5B40971E8C98DC00E04C27 /* 003.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF5B40531E8C98DC00E04C27 /* 003.pdf */; };
 		DF5B40981E8C98DC00E04C27 /* ZPDFPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40561E8C98DC00E04C27 /* ZPDFPageController.m */; };
 		DF5B40991E8C98DC00E04C27 /* ZPDFReaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40581E8C98DC00E04C27 /* ZPDFReaderController.m */; };
@@ -275,6 +273,9 @@
 		DF5B40BD1E8C990B00E04C27 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40BA1E8C990B00E04C27 /* LoginViewController.m */; };
 		DF5B40BE1E8C990B00E04C27 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5B40BB1E8C990B00E04C27 /* LoginViewController.xib */; };
 		DF5B40C31E8CA5D300E04C27 /* ZY_BottonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40C21E8CA5D300E04C27 /* ZY_BottonView.m */; };
+		DF74B21B1EEA951000B266CC /* MY_MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF74B2171EEA951000B266CC /* MY_MapVC.m */; };
+		DF74B21C1EEA951000B266CC /* MY_MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF74B2181EEA951000B266CC /* MY_MapVC.xib */; };
+		DF74B21F1EEA954000B266CC /* BaiduMapBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF74B21E1EEA954000B266CC /* BaiduMapBottomView.m */; };
 		DF868A081EA4920200378800 /* OcTopUs-Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF868A071EA4920200378800 /* OcTopUs-Loading.m */; };
 		DF868A0A1EA4950900378800 /* OcTopUs_Image.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF868A091EA4950900378800 /* OcTopUs_Image.gif */; };
 		DF868A0D1EA49B1F00378800 /* PeopleWorking-Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF868A0C1EA49B1E00378800 /* PeopleWorking-Loading.m */; };
@@ -368,7 +369,7 @@
 		DF5B3E0D1E8C963100E04C27 /* BaisiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaisiUITests.m; sourceTree = "<group>"; };
 		DF5B3E0F1E8C963100E04C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DF5B3E1C1E8C984700E04C27 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DF5B3E1D1E8C984700E04C27 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF5B3E1D1E8C984700E04C27 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		DF5B3E1F1E8C988300E04C27 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		DF5B3E221E8C98BC00E04C27 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		DF5B3E231E8C98BC00E04C27 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
@@ -691,9 +692,6 @@
 		DF5B404A1E8C98DC00E04C27 /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		DF5B404C1E8C98DC00E04C27 /* MY_HeartNumVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MY_HeartNumVCViewController.h; sourceTree = "<group>"; };
 		DF5B404D1E8C98DC00E04C27 /* MY_HeartNumVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY_HeartNumVCViewController.m; sourceTree = "<group>"; };
-		DF5B404F1E8C98DC00E04C27 /* MY_MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MY_MapVC.h; sourceTree = "<group>"; };
-		DF5B40501E8C98DC00E04C27 /* MY_MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY_MapVC.m; sourceTree = "<group>"; };
-		DF5B40511E8C98DC00E04C27 /* MY_MapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MY_MapVC.xib; sourceTree = "<group>"; };
 		DF5B40531E8C98DC00E04C27 /* 003.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 003.pdf; sourceTree = "<group>"; };
 		DF5B40551E8C98DC00E04C27 /* ZPDFPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPDFPageController.h; sourceTree = "<group>"; };
 		DF5B40561E8C98DC00E04C27 /* ZPDFPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPDFPageController.m; sourceTree = "<group>"; };
@@ -739,6 +737,11 @@
 		DF5B40C01E8CA49200E04C27 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DF5B40C11E8CA5D300E04C27 /* ZY_BottonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_BottonView.h; sourceTree = "<group>"; };
 		DF5B40C21E8CA5D300E04C27 /* ZY_BottonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_BottonView.m; sourceTree = "<group>"; };
+		DF74B2161EEA951000B266CC /* MY_MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MY_MapVC.h; sourceTree = "<group>"; };
+		DF74B2171EEA951000B266CC /* MY_MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY_MapVC.m; sourceTree = "<group>"; };
+		DF74B2181EEA951000B266CC /* MY_MapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MY_MapVC.xib; sourceTree = "<group>"; };
+		DF74B21D1EEA954000B266CC /* BaiduMapBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapBottomView.h; sourceTree = "<group>"; };
+		DF74B21E1EEA954000B266CC /* BaiduMapBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMapBottomView.m; sourceTree = "<group>"; };
 		DF868A061EA4920200378800 /* OcTopUs-Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OcTopUs-Loading.h"; sourceTree = "<group>"; };
 		DF868A071EA4920200378800 /* OcTopUs-Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OcTopUs-Loading.m"; sourceTree = "<group>"; };
 		DF868A091EA4950900378800 /* OcTopUs_Image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = OcTopUs_Image.gif; sourceTree = "<group>"; };
@@ -957,7 +960,7 @@
 			isa = PBXGroup;
 			children = (
 				DF5B3E1C1E8C984700E04C27 /* AppDelegate.h */,
-				DF5B3E1D1E8C984700E04C27 /* AppDelegate.m */,
+				DF5B3E1D1E8C984700E04C27 /* AppDelegate.mm */,
 				DF5B40B71E8C990B00E04C27 /* ADViewController.h */,
 				DF5B40B81E8C990B00E04C27 /* ADViewController.m */,
 				DF5B40B91E8C990B00E04C27 /* LoginViewController.h */,
@@ -1819,9 +1822,9 @@
 		DF5B404E1E8C98DC00E04C27 /* MY_Map */ = {
 			isa = PBXGroup;
 			children = (
-				DF5B404F1E8C98DC00E04C27 /* MY_MapVC.h */,
-				DF5B40501E8C98DC00E04C27 /* MY_MapVC.m */,
-				DF5B40511E8C98DC00E04C27 /* MY_MapVC.xib */,
+				DF74B2151EEA951000B266CC /* Controller */,
+				DF74B2191EEA951000B266CC /* Model */,
+				DF74B21A1EEA951000B266CC /* View */,
 			);
 			path = MY_Map;
 			sourceTree = "<group>";
@@ -1984,6 +1987,32 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DF74B2151EEA951000B266CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF74B2161EEA951000B266CC /* MY_MapVC.h */,
+				DF74B2171EEA951000B266CC /* MY_MapVC.m */,
+				DF74B2181EEA951000B266CC /* MY_MapVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DF74B2191EEA951000B266CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF74B21A1EEA951000B266CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF74B21D1EEA954000B266CC /* BaiduMapBottomView.h */,
+				DF74B21E1EEA954000B266CC /* BaiduMapBottomView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2099,7 +2128,6 @@
 				DF5B3FB61E8C98D100E04C27 /* login_register_button_click.png in Resources */,
 				DF5B3FD71E8C98D100E04C27 /* mine-icon-more@2x.png in Resources */,
 				DF49BD001EA60B2E00806C80 /* AddMainVC.xib in Resources */,
-				DF5B40961E8C98DC00E04C27 /* MY_MapVC.xib in Resources */,
 				DF5B3FC01E8C98D100E04C27 /* login_sina_icon.png in Resources */,
 				DF5B3FF01E8C98D100E04C27 /* Running_Loading_3.png in Resources */,
 				DF5B3FF21E8C98D100E04C27 /* Running_Loading_5.png in Resources */,
@@ -2139,6 +2167,7 @@
 				DF5B3FF81E8C98D100E04C27 /* yxs_playBack_nomessage.png in Resources */,
 				DF5B3FF71E8C98D100E04C27 /* screenShotTwo.gif in Resources */,
 				DF33262E1EE92AB700450755 /* SeconddescribeTableViewCell.xib in Resources */,
+				DF74B21C1EEA951000B266CC /* MY_MapVC.xib in Resources */,
 				DF5B3F261E8C98BC00E04C27 /* restrictedshine.tiff in Resources */,
 				DF5B3FD91E8C98D100E04C27 /* mine-icon-nearby@2x.png in Resources */,
 				DF5B3FF41E8C98D100E04C27 /* Running_Loading_7.png in Resources */,
@@ -2319,7 +2348,6 @@
 				DF5B3F1E1E8C98BC00E04C27 /* WXSTransitionManager.m in Sources */,
 				DF5B407F1E8C98DC00E04C27 /* VideoVC.m in Sources */,
 				DF5B3F4B1E8C98BC00E04C27 /* ZY_ErrorView.m in Sources */,
-				DF5B40951E8C98DC00E04C27 /* MY_MapVC.m in Sources */,
 				DF5B3F001E8C98BC00E04C27 /* IQTextView.m in Sources */,
 				DF5B3F0A1E8C98BC00E04C27 /* ZY_Runing_Loding.m in Sources */,
 				DF5B3EF91E8C98BC00E04C27 /* IQUIScrollView+Additions.m in Sources */,
@@ -2348,6 +2376,7 @@
 				DF5B3F3B1E8C98BC00E04C27 /* XWFilterTransitionView.m in Sources */,
 				DF868A081EA4920200378800 /* OcTopUs-Loading.m in Sources */,
 				DF5B3EF61E8C98BC00E04C27 /* HeartBeat.m in Sources */,
+				DF74B21F1EEA954000B266CC /* BaiduMapBottomView.m in Sources */,
 				DFB767B91E9B5DBE00D480F8 /* ZY_AlertNotesView.m in Sources */,
 				DF5B3F4C1E8C98BC00E04C27 /* ZY_Method.m in Sources */,
 				DF5B3F281E8C98BC00E04C27 /* XWCoolAnimator+XWExplode.m in Sources */,
@@ -2357,6 +2386,7 @@
 				DF5B3F0C1E8C98BC00E04C27 /* UIView+TXFrame.m in Sources */,
 				DF5B40921E8C98DC00E04C27 /* MyInformationController.m in Sources */,
 				DF5B3F4E1E8C98BC00E04C27 /* ZY_textField_View.m in Sources */,
+				DF74B21B1EEA951000B266CC /* MY_MapVC.m in Sources */,
 				DF19B6411E9E03DF001B5E69 /* HHAllMemberVCModel.m in Sources */,
 				DF5B3F491E8C98BC00E04C27 /* textField_AtViewWithImage.m in Sources */,
 				DF5B3F051E8C98BC00E04C27 /* IQUIView+IQKeyboardToolbar.m in Sources */,
@@ -2433,7 +2463,7 @@
 				DF5B40891E8C98DC00E04C27 /* TeamSearchVC.m in Sources */,
 				DF5B3F381E8C98BC00E04C27 /* XWFilterAnimator+XWRipple.m in Sources */,
 				DF5B3F121E8C98BC00E04C27 /* UIViewController+WXSTransitionProperty.m in Sources */,
-				DF5B3E1E1E8C984700E04C27 /* AppDelegate.m in Sources */,
+				DF5B3E1E1E8C984700E04C27 /* AppDelegate.mm in Sources */,
 				DF428A131E8DF69F003E2A79 /* HCGDatePickerAppearance.m in Sources */,
 				DF5B3EFC1E8C98BC00E04C27 /* IQUIViewController+Additions.m in Sources */,
 				DF5B3F211E8C98BC00E04C27 /* UIViewController+XWTransition.m in Sources */,

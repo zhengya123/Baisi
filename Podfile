@@ -6,7 +6,8 @@ def pods
     pod 'SDWebImage', '~>3.8'
     pod 'SVProgressHUD'
     pod 'YYKit'
-    pod 'pop'	
+    pod 'pop'
+    pod 'BaiduMapKit'	
 end 
 target 'Baisi' do
     pods

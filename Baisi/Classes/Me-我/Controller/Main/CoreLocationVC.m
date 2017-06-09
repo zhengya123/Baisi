@@ -10,8 +10,11 @@
 #import <CoreLocation/CoreLocation.h>
 #import "PrefixHeader.pch"
 #import "TXScrollLabelView.h"
+#import "MY_MapVC.h"
 @interface CoreLocationVC ()<CLLocationManagerDelegate,ZY_alertViewDelegate,TXScrollLabelViewDelegate>
 
+
+@property (nonatomic, strong) UIButton * navMapBtn;
 @property (nonatomic, strong) UILabel * longitudeName;//经度
 @property (nonatomic, strong) UILabel * longitude;
 @property (nonatomic, strong) UILabel * latitudeName;//纬度
@@ -41,7 +44,10 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.title = @"我的位置";
-    
+    UIBarButtonItem * rightBtn = [[UIBarButtonItem alloc]initWithCustomView:self.navMapBtn];
+    UIBarButtonItem * navSpace = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    navSpace.width = -20;
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:navSpace,rightBtn, nil];
     
     //经度
     self.longitudeName.frame = CGRectMake(20, 100, 80, 40);
@@ -213,6 +219,13 @@
     }
 
 }
+- (void)navBtnClick:(UIButton *)btn{
+
+    MY_MapVC * mapvc = [MY_MapVC new];
+    [self.navigationController pushViewController:mapvc animated:YES];
+
+}
+
 #pragma mark-懒加载
 - (CLLocationManager *)locMgr{
     if (!_locMgr ) {
@@ -379,5 +392,16 @@
     }
     return _locationInformation;
 }
-
+- (UIButton *)navMapBtn{
+    if (_navMapBtn == nil) {
+        _navMapBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _navMapBtn.frame = CGRectMake(0, 0, 64, 64);
+        [_navMapBtn setTitle:@"我的\n地图" forState:UIControlStateNormal];
+        _navMapBtn.titleLabel.numberOfLines = 0;
+        _navMapBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+        [_navMapBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_navMapBtn addTarget:self action:@selector(navBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _navMapBtn;
+}
 @end
