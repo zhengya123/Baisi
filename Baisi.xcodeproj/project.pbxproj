@@ -26,6 +26,7 @@
 		DF33262E1EE92AB700450755 /* SeconddescribeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF33262C1EE92AB700450755 /* SeconddescribeTableViewCell.xib */; };
 		DF39573D1EA7035300D796D1 /* GooeySlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39573A1EA7035300D796D1 /* GooeySlideMenu.m */; };
 		DF39573E1EA7035300D796D1 /* SlideMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF39573C1EA7035300D796D1 /* SlideMenuButton.m */; };
+		DF3C47BD1EEE2EBE00512E88 /*  003.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3C47BC1EEE2EBE00512E88 /*  003.pdf */; };
 		DF428A121E8DF69F003E2A79 /* HCGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */; };
 		DF428A131E8DF69F003E2A79 /* HCGDatePickerAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A111E8DF69F003E2A79 /* HCGDatePickerAppearance.m */; };
 		DF49BCEC1EA608A100806C80 /* HyPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCEB1EA608A100806C80 /* HyPopMenuView.m */; };
@@ -249,7 +250,6 @@
 		DF5B40921E8C98DC00E04C27 /* MyInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40481E8C98DC00E04C27 /* MyInformationController.m */; };
 		DF5B40931E8C98DC00E04C27 /* PersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B404A1E8C98DC00E04C27 /* PersonalViewController.m */; };
 		DF5B40941E8C98DC00E04C27 /* MY_HeartNumVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B404D1E8C98DC00E04C27 /* MY_HeartNumVCViewController.m */; };
-		DF5B40971E8C98DC00E04C27 /* 003.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF5B40531E8C98DC00E04C27 /* 003.pdf */; };
 		DF5B40981E8C98DC00E04C27 /* ZPDFPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40561E8C98DC00E04C27 /* ZPDFPageController.m */; };
 		DF5B40991E8C98DC00E04C27 /* ZPDFReaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40581E8C98DC00E04C27 /* ZPDFReaderController.m */; };
 		DF5B409A1E8C98DC00E04C27 /* ZPDFPageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B405B1E8C98DC00E04C27 /* ZPDFPageModel.m */; };
@@ -335,6 +335,7 @@
 		DF39573A1EA7035300D796D1 /* GooeySlideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GooeySlideMenu.m; sourceTree = "<group>"; };
 		DF39573B1EA7035300D796D1 /* SlideMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuButton.h; sourceTree = "<group>"; };
 		DF39573C1EA7035300D796D1 /* SlideMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuButton.m; sourceTree = "<group>"; };
+		DF3C47BC1EEE2EBE00512E88 /*  003.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = " 003.pdf"; sourceTree = "<group>"; };
 		DF428A0E1E8DF69F003E2A79 /* HCGDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGDatePicker.h; sourceTree = "<group>"; };
 		DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCGDatePicker.m; sourceTree = "<group>"; };
 		DF428A101E8DF69F003E2A79 /* HCGDatePickerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGDatePickerAppearance.h; sourceTree = "<group>"; };
@@ -692,7 +693,6 @@
 		DF5B404A1E8C98DC00E04C27 /* PersonalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalViewController.m; sourceTree = "<group>"; };
 		DF5B404C1E8C98DC00E04C27 /* MY_HeartNumVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MY_HeartNumVCViewController.h; sourceTree = "<group>"; };
 		DF5B404D1E8C98DC00E04C27 /* MY_HeartNumVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY_HeartNumVCViewController.m; sourceTree = "<group>"; };
-		DF5B40531E8C98DC00E04C27 /* 003.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = 003.pdf; sourceTree = "<group>"; };
 		DF5B40551E8C98DC00E04C27 /* ZPDFPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPDFPageController.h; sourceTree = "<group>"; };
 		DF5B40561E8C98DC00E04C27 /* ZPDFPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZPDFPageController.m; sourceTree = "<group>"; };
 		DF5B40571E8C98DC00E04C27 /* ZPDFReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZPDFReaderController.h; sourceTree = "<group>"; };
@@ -1832,7 +1832,7 @@
 		DF5B40521E8C98DC00E04C27 /* PDF_files */ = {
 			isa = PBXGroup;
 			children = (
-				DF5B40531E8C98DC00E04C27 /* 003.pdf */,
+				DF3C47BC1EEE2EBE00512E88 /*  003.pdf */,
 				DF5B40541E8C98DC00E04C27 /* Controller */,
 				DF5B40591E8C98DC00E04C27 /* Model */,
 				DF5B405C1E8C98DC00E04C27 /* View */,
@@ -2156,6 +2156,7 @@
 				DF5B3FCF1E8C98D100E04C27 /* loginBtnBgClick@2x.png in Resources */,
 				DF5B3FC81E8C98D100E04C27 /* login_tecent_icon@3x.png in Resources */,
 				DF5B3FE71E8C98D100E04C27 /* mine_icon_random.png in Resources */,
+				DF3C47BD1EEE2EBE00512E88 /*  003.pdf in Resources */,
 				DF868A0A1EA4950900378800 /* OcTopUs_Image.gif in Resources */,
 				DF5B3DF81E8C963000E04C27 /* LaunchScreen.storyboard in Resources */,
 				DF5B3FE61E8C98D100E04C27 /* mine_icon_nearby@2x.png in Resources */,
@@ -2207,7 +2208,6 @@
 				DF5B3F241E8C98BC00E04C27 /* line.png in Resources */,
 				DF5B3FAB1E8C98D000E04C27 /* login_close_icon@3x.png in Resources */,
 				DF5B3DF51E8C963000E04C27 /* Assets.xcassets in Resources */,
-				DF5B40971E8C98DC00E04C27 /* 003.pdf in Resources */,
 				DF49BCFB1EA608EF00806C80 /* popMenvTopView.xib in Resources */,
 				DF5B3FED1E8C98D100E04C27 /* setup-head-default@2x.png in Resources */,
 				DF19B63D1E9E0242001B5E69 /* HHAllMemberViewCell.xib in Resources */,

@@ -24,14 +24,16 @@
 @implementation MY_MapVC
 {
 
-    BMKLocationService* _locService;
-    BMKGeoCodeSearch *_geocodesearch; //地理编码主类，用来查询、返回结果信息
+    BMKLocationService * _locService;
+    BMKGeoCodeSearch   * _geocodesearch; //地理编码主类，用来查询、返回结果信息
+    BMKPointAnnotation * _pointAnnotation;
+    
 
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"百度地图";
+    self.navigationItem.title = @"我的地图";
     [self createUI];
 }
 
@@ -41,26 +43,11 @@
     _locService = [[BMKLocationService alloc]init];
     _geocodesearch = [[BMKGeoCodeSearch alloc] init];
     _geocodesearch.delegate = self;
+    _pointAnnotation = [[BMKPointAnnotation alloc]init];
     [self.view addSubview:self.locationBtn];
     [self.view addSubview:self.bottomView];
     
-//    UIImageView * img = [UIImageView new];
-//    img.image = [UIImage imageNamed:@"zanLeftbat"];
-//    BMKActionPaopaoView * pView = [[BMKActionPaopaoView alloc]initWithCustomView:img];
-//    // ((BMKPinAnnotationView *)newAnnotationView).paopaoView = pView;
-    CLLocationCoordinate2D location4=CLLocationCoordinate2DMake(31.56, 114.09);
-    
-    BMKPointAnnotation *annotation4=[[BMKPointAnnotation alloc]init];
-    
-    annotation4.title=@"大悟";
-    
-    annotation4.subtitle=@"＊＊＊＊";
-    
-    annotation4.coordinate=location4;
-    
-    //annotation4.image = [UIImage imageNamed:@"zanLeftbat"];
-    
-    [self.mapView addAnnotation:annotation4];
+
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -88,8 +75,21 @@
     [_locService startUserLocationService];
     _mapView.userTrackingMode = BMKUserTrackingModeNone;
     _mapView.showsUserLocation = YES;
-   // _mapView.zoomLevel = 19;
-
+   
+    _mapView.mapPadding = UIEdgeInsetsMake(0, 0, 28, 0);
+    //去除百度地图定位后的蓝色圆圈和定位蓝点(精度圈)
+    
+    BMKLocationViewDisplayParam*displayParam = [[BMKLocationViewDisplayParam alloc]init];
+    
+    displayParam.isAccuracyCircleShow=false;//精度圈是否显示
+    
+    displayParam.locationViewOffsetX=0;//定位偏移量(经度)
+    
+    displayParam.locationViewOffsetY=0;//定位偏移量（纬度）
+    
+    displayParam.locationViewImgName=@"pin_red";//定位图标名称去除蓝色的圈
+    
+    [_mapView updateLocationViewWithParam:displayParam];
 }
 #pragma mark - 点击定位按钮
 - (void)locationBtnClick:(UIButton *)btn{
@@ -105,7 +105,6 @@
     _mapView.delegate = nil;
     _locService.delegate = nil;
     
-
 }
 - (void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
@@ -132,7 +131,7 @@
 - (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation{
     [_mapView updateLocationData:userLocation];
     _mapView.centerCoordinate = userLocation.location.coordinate;
-    BMKReverseGeoCodeOption *reverseGeocodeSearchOption = [[BMKReverseGeoCodeOption alloc]init];
+    BMKReverseGeoCodeOption * reverseGeocodeSearchOption = [[BMKReverseGeoCodeOption alloc]init];
     reverseGeocodeSearchOption.reverseGeoPoint = userLocation.location.coordinate;
     
     BOOL flag = [_geocodesearch reverseGeoCode:reverseGeocodeSearchOption];
@@ -146,20 +145,21 @@
     }else{
         
         ZYLog(@"反geo检索发送失败");
-        
     }
     
-    _mapView.zoomLevel = 19;
+    
+    
 }
 #pragma mark -------------地理反编码的delegate---------------
 
 -(void)onGetReverseGeoCodeResult:(BMKGeoCodeSearch *)searcher result:(BMKReverseGeoCodeResult *)result errorCode:(BMKSearchErrorCode)error
-
 {
-    
+    _mapView.zoomLevel = 25;
+    [_mapView setCompassPosition:CGPointMake(10, 100)];
     ZYLog(@"address:%@----%@",result.addressDetail,result.address);
     _bottomView.addressLabel.text = result.address;
     _bottomView.timeLabel.text = [ZY_Method getCurrentTimes];
+    _pointAnnotation.title = result.address;
     //addressDetail:     层次化地址信息
     
     //address:    地址名称
@@ -170,17 +170,6 @@
     
     //  poiList:   地址周边POI信息，成员类型为BMKPoiInfo
     
-}
--(BMKAnnotationView *)mapView:(BMKMapView *)mapView viewForAnnotation:(id<BMKAnnotation>)annotation{
-    BMKPinAnnotationView *newAnnotationView = [[BMKPinAnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:@"myAnnotation"];
-    
-    newAnnotationView.pinColor = BMKPinAnnotationColorPurple;
-    
-    newAnnotationView.animatesDrop = YES;//设置该标点动画显示
-    
-    newAnnotationView.annotation = annotation;
-    return newAnnotationView;
-
 }
 /**
  *在地图View停止定位后，会调用此函数
