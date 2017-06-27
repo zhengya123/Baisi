@@ -23,6 +23,7 @@
 #import "HHAllMemberViewController.h"
 #import "SureCustomActionSheet.h"
 #import "EditSignVC.h"
+#import "ApproveListViewController.h"
 #define zytitle @"cities"
 #define zytitleName @"titleName"
 @interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,TXScrollLabelViewDelegate>
@@ -213,7 +214,13 @@
             
             }
                 break;
-                case 6:
+            case 6:{
+                ApproveListViewController * approveList = [ApproveListViewController new];
+                [self.navigationController pushViewController:approveList animated:YES];
+            
+            }
+                break;
+                case 7:
             {
                 HHAllMemberViewController * hhallMemberVC = [HHAllMemberViewController new];
                 [self.navigationController pushViewController:hhallMemberVC animated:YES];
@@ -416,6 +423,7 @@
                                @{zytitleName:@"泡泡首页"},
                                @{zytitleName:@"编辑标记点"},
                                @{zytitleName:@"唐永刚界面"},
+                               @{zytitleName:@"万昌界面"},
                                @{zytitleName:@"隐私设置"}
                                ]
                        },

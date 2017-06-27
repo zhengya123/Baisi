@@ -36,7 +36,7 @@ BMKMapManager * _mapManager;
     self.window.backgroundColor = [UIColor whiteColor];
     
     [self IsLogin];
-    [self createAD];
+    //[self createAD];
     [self creatMap];//初始化百度地图
     [self.window makeKeyAndVisible];
     return YES;

@@ -276,6 +276,15 @@
 		DF74B21B1EEA951000B266CC /* MY_MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF74B2171EEA951000B266CC /* MY_MapVC.m */; };
 		DF74B21C1EEA951000B266CC /* MY_MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF74B2181EEA951000B266CC /* MY_MapVC.xib */; };
 		DF74B21F1EEA954000B266CC /* BaiduMapBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF74B21E1EEA954000B266CC /* BaiduMapBottomView.m */; };
+		DF758B211F0204FD00DC245F /* ApproveListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B201F0204FD00DC245F /* ApproveListViewController.m */; };
+		DF758B241F02053D00DC245F /* ApproveDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B231F02053D00DC245F /* ApproveDetialViewController.m */; };
+		DF758B271F02087E00DC245F /* ApproveDetialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B261F02087E00DC245F /* ApproveDetialModel.m */; };
+		DF758B2A1F022AC400DC245F /* ApproveDetailLeaveTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B291F022AC400DC245F /* ApproveDetailLeaveTitle.m */; };
+		DF758B2D1F0236C100DC245F /* ApproveLeaveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B2C1F0236C100DC245F /* ApproveLeaveModel.m */; };
+		DF758B301F0248C000DC245F /* ApproveGoOutTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B2F1F0248C000DC245F /* ApproveGoOutTitle.m */; };
+		DF758B331F024C4B00DC245F /* ApproveGoOutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B321F024C4B00DC245F /* ApproveGoOutModel.m */; };
+		DF758B361F02552000DC245F /* ApproveReceiveTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B351F02552000DC245F /* ApproveReceiveTitle.m */; };
+		DF758B391F025EB300DC245F /* ApproveReceiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B381F025EB300DC245F /* ApproveReceiveModel.m */; };
 		DF868A081EA4920200378800 /* OcTopUs-Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF868A071EA4920200378800 /* OcTopUs-Loading.m */; };
 		DF868A0A1EA4950900378800 /* OcTopUs_Image.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF868A091EA4950900378800 /* OcTopUs_Image.gif */; };
 		DF868A0D1EA49B1F00378800 /* PeopleWorking-Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF868A0C1EA49B1E00378800 /* PeopleWorking-Loading.m */; };
@@ -742,6 +751,24 @@
 		DF74B2181EEA951000B266CC /* MY_MapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MY_MapVC.xib; sourceTree = "<group>"; };
 		DF74B21D1EEA954000B266CC /* BaiduMapBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduMapBottomView.h; sourceTree = "<group>"; };
 		DF74B21E1EEA954000B266CC /* BaiduMapBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduMapBottomView.m; sourceTree = "<group>"; };
+		DF758B1F1F0204FD00DC245F /* ApproveListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveListViewController.h; sourceTree = "<group>"; };
+		DF758B201F0204FD00DC245F /* ApproveListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveListViewController.m; sourceTree = "<group>"; };
+		DF758B221F02053D00DC245F /* ApproveDetialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveDetialViewController.h; sourceTree = "<group>"; };
+		DF758B231F02053D00DC245F /* ApproveDetialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveDetialViewController.m; sourceTree = "<group>"; };
+		DF758B251F02087E00DC245F /* ApproveDetialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveDetialModel.h; sourceTree = "<group>"; };
+		DF758B261F02087E00DC245F /* ApproveDetialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveDetialModel.m; sourceTree = "<group>"; };
+		DF758B281F022AC400DC245F /* ApproveDetailLeaveTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveDetailLeaveTitle.h; sourceTree = "<group>"; };
+		DF758B291F022AC400DC245F /* ApproveDetailLeaveTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveDetailLeaveTitle.m; sourceTree = "<group>"; };
+		DF758B2B1F0236C100DC245F /* ApproveLeaveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveLeaveModel.h; sourceTree = "<group>"; };
+		DF758B2C1F0236C100DC245F /* ApproveLeaveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveLeaveModel.m; sourceTree = "<group>"; };
+		DF758B2E1F0248C000DC245F /* ApproveGoOutTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveGoOutTitle.h; sourceTree = "<group>"; };
+		DF758B2F1F0248C000DC245F /* ApproveGoOutTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveGoOutTitle.m; sourceTree = "<group>"; };
+		DF758B311F024C4B00DC245F /* ApproveGoOutModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveGoOutModel.h; sourceTree = "<group>"; };
+		DF758B321F024C4B00DC245F /* ApproveGoOutModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveGoOutModel.m; sourceTree = "<group>"; };
+		DF758B341F02552000DC245F /* ApproveReceiveTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveReceiveTitle.h; sourceTree = "<group>"; };
+		DF758B351F02552000DC245F /* ApproveReceiveTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveReceiveTitle.m; sourceTree = "<group>"; };
+		DF758B371F025EB300DC245F /* ApproveReceiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveReceiveModel.h; sourceTree = "<group>"; };
+		DF758B381F025EB300DC245F /* ApproveReceiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveReceiveModel.m; sourceTree = "<group>"; };
 		DF868A061EA4920200378800 /* OcTopUs-Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OcTopUs-Loading.h"; sourceTree = "<group>"; };
 		DF868A071EA4920200378800 /* OcTopUs-Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OcTopUs-Loading.m"; sourceTree = "<group>"; };
 		DF868A091EA4950900378800 /* OcTopUs_Image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = OcTopUs_Image.gif; sourceTree = "<group>"; };
@@ -1682,6 +1709,7 @@
 			isa = PBXGroup;
 			children = (
 				DF5B403D1E8C98DC00E04C27 /* Main */,
+				DF758B1B1F02047D00DC245F /* WanchangVC */,
 				DF3326141EE8EC7E00450755 /* WSPVC */,
 				DF5B40211E8C98DC00E04C27 /* HanlonglongVC */,
 				DF5B402A1E8C98DC00E04C27 /* HTMLVC */,
@@ -2009,6 +2037,55 @@
 			children = (
 				DF74B21D1EEA954000B266CC /* BaiduMapBottomView.h */,
 				DF74B21E1EEA954000B266CC /* BaiduMapBottomView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF758B1B1F02047D00DC245F /* WanchangVC */ = {
+			isa = PBXGroup;
+			children = (
+				DF758B1C1F02047D00DC245F /* Controller */,
+				DF758B1D1F02047D00DC245F /* Model */,
+				DF758B1E1F02047D00DC245F /* View */,
+			);
+			path = WanchangVC;
+			sourceTree = "<group>";
+		};
+		DF758B1C1F02047D00DC245F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF758B1F1F0204FD00DC245F /* ApproveListViewController.h */,
+				DF758B201F0204FD00DC245F /* ApproveListViewController.m */,
+				DF758B221F02053D00DC245F /* ApproveDetialViewController.h */,
+				DF758B231F02053D00DC245F /* ApproveDetialViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DF758B1D1F02047D00DC245F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF758B251F02087E00DC245F /* ApproveDetialModel.h */,
+				DF758B261F02087E00DC245F /* ApproveDetialModel.m */,
+				DF758B2B1F0236C100DC245F /* ApproveLeaveModel.h */,
+				DF758B2C1F0236C100DC245F /* ApproveLeaveModel.m */,
+				DF758B311F024C4B00DC245F /* ApproveGoOutModel.h */,
+				DF758B321F024C4B00DC245F /* ApproveGoOutModel.m */,
+				DF758B371F025EB300DC245F /* ApproveReceiveModel.h */,
+				DF758B381F025EB300DC245F /* ApproveReceiveModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF758B1E1F02047D00DC245F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF758B281F022AC400DC245F /* ApproveDetailLeaveTitle.h */,
+				DF758B291F022AC400DC245F /* ApproveDetailLeaveTitle.m */,
+				DF758B2E1F0248C000DC245F /* ApproveGoOutTitle.h */,
+				DF758B2F1F0248C000DC245F /* ApproveGoOutTitle.m */,
+				DF758B341F02552000DC245F /* ApproveReceiveTitle.h */,
+				DF758B351F02552000DC245F /* ApproveReceiveTitle.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2342,6 +2419,7 @@
 				DF428A121E8DF69F003E2A79 /* HCGDatePicker.m in Sources */,
 				DF5B40981E8C98DC00E04C27 /* ZPDFPageController.m in Sources */,
 				DF5B3F031E8C98BC00E04C27 /* IQTitleBarButtonItem.m in Sources */,
+				DF758B331F024C4B00DC245F /* ApproveGoOutModel.m in Sources */,
 				DF5B3F341E8C98BC00E04C27 /* XWFilterAnimator+XWFlash.m in Sources */,
 				DF5B40B51E8C98E900E04C27 /* ZY_RootNavigationController.m in Sources */,
 				DF5B3F291E8C98BC00E04C27 /* XWCoolAnimator+XWFold.m in Sources */,
@@ -2353,6 +2431,8 @@
 				DF5B3EF91E8C98BC00E04C27 /* IQUIScrollView+Additions.m in Sources */,
 				DF39573D1EA7035300D796D1 /* GooeySlideMenu.m in Sources */,
 				DF5B40831E8C98DC00E04C27 /* ButtonView.m in Sources */,
+				DF758B2A1F022AC400DC245F /* ApproveDetailLeaveTitle.m in Sources */,
+				DF758B271F02087E00DC245F /* ApproveDetialModel.m in Sources */,
 				DF5B40841E8C98DC00E04C27 /* HeaderTableViewCell.m in Sources */,
 				DF5B3F391E8C98BC00E04C27 /* XWFilterAnimator+XWSwipe.m in Sources */,
 				DF5B409B1E8C98DC00E04C27 /* ZPDFView.m in Sources */,
@@ -2363,7 +2443,9 @@
 				DF5B3F331E8C98BC00E04C27 /* XWFilterAnimator+XWCopyMachine.m in Sources */,
 				DF5B3EFD1E8C98BC00E04C27 /* IQUIWindow+Hierarchy.m in Sources */,
 				DF5B3EF71E8C98BC00E04C27 /* HeartLive.m in Sources */,
+				DF758B301F0248C000DC245F /* ApproveGoOutTitle.m in Sources */,
 				DF33261F1EE8FBA500450755 /* DescribeView.m in Sources */,
+				DF758B361F02552000DC245F /* ApproveReceiveTitle.m in Sources */,
 				DF5B408F1E8C98DC00E04C27 /* KaidianCompanyInfoController.m in Sources */,
 				DF3326231EE9136900450755 /* describeTableViewCell.m in Sources */,
 				DF5B3F4F1E8C98BC00E04C27 /* ZY_verification_Button.m in Sources */,
@@ -2397,10 +2479,12 @@
 				DF5B40791E8C98DC00E04C27 /* ImageLookVC.m in Sources */,
 				DF5B3F161E8C98BC00E04C27 /* WXSTransitionManager+CoverAnimation.m in Sources */,
 				DF5B3F4D1E8C98BC00E04C27 /* ZY_TextField.m in Sources */,
+				DF758B2D1F0236C100DC245F /* ApproveLeaveModel.m in Sources */,
 				DF5B3F1D1E8C98BC00E04C27 /* WXSTransitionManager+ViewMoveAnimation.m in Sources */,
 				DF5B3F151E8C98BC00E04C27 /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				DF5B3EFA1E8C98BC00E04C27 /* IQUITextFieldView+Additions.m in Sources */,
 				DF49BCF61EA608C300806C80 /* UIColor+ImageGetColor.m in Sources */,
+				DF758B391F025EB300DC245F /* ApproveReceiveModel.m in Sources */,
 				DF39573E1EA7035300D796D1 /* SlideMenuButton.m in Sources */,
 				DF5B40C31E8CA5D300E04C27 /* ZY_BottonView.m in Sources */,
 				DF5B40931E8C98DC00E04C27 /* PersonalViewController.m in Sources */,
@@ -2429,6 +2513,7 @@
 				DF5B408D1E8C98DC00E04C27 /* CoreLocationVC.m in Sources */,
 				DF5B3F0D1E8C98BC00E04C27 /* NSArray+UnicodeReadable.m in Sources */,
 				DF5B3F1F1E8C98BC00E04C27 /* WXSTransitionProperty.m in Sources */,
+				DF758B241F02053D00DC245F /* ApproveDetialViewController.m in Sources */,
 				DF5B40BC1E8C990B00E04C27 /* ADViewController.m in Sources */,
 				DF49BCFF1EA60B2E00806C80 /* AddMainVC.m in Sources */,
 				DF5B3EFF1E8C98BC00E04C27 /* IQKeyboardReturnKeyHandler.m in Sources */,
@@ -2451,6 +2536,7 @@
 				DF5B409E1E8C98DC00E04C27 /* MyHeaderView.m in Sources */,
 				DF33261B1EE8ECBE00450755 /* EditSignVC.m in Sources */,
 				DF49BCFA1EA608EF00806C80 /* popMenvTopView.m in Sources */,
+				DF758B211F0204FD00DC245F /* ApproveListViewController.m in Sources */,
 				DF5B3F3D1E8C98BC00E04C27 /* UIButton+XHEnlarged.m in Sources */,
 				DF49BCF21EA608BB00806C80 /* PopMenuButton.m in Sources */,
 				DF5B3F371E8C98BC00E04C27 /* XWFilterAnimator+XWPageCurl.m in Sources */,
