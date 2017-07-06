@@ -12,12 +12,14 @@
 {
     CGFloat fontNum;
     NSString * reasonStr;
-
+    CGFloat width;
+    CGFloat height;
 }
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         fontNum = 16;
-        
+        width = 70;
+        height = 30;
         [self addSubview:self.departmentLeft];
         [self addSubview:self.approveTypeLeft];
         [self addSubview:self.beginTimeLeft];
@@ -37,8 +39,7 @@
 
 - (void)layoutSubviews{
     [super layoutSubviews];
-    CGFloat width = 70;
-    CGFloat height = 30;
+    
     self.departmentLeft.frame    = CGRectMake(10, 10, width, height);
     self.approveTypeLeft.frame   = CGRectMake(10, CGRectGetMaxY(self.departmentLeft.frame), width, height);
     self.beginTimeLeft.frame     = CGRectMake(10, CGRectGetMaxY(self.approveTypeLeft.frame), width, height);
@@ -66,9 +67,9 @@
     reasonStr = model.approveReason;
     
 }
-- (CGFloat)returnHeight{
-    NSLog(@"换行高度 == %f",[self heightWithString:reasonStr fontSize:fontNum width:self.frame.size.width - CGRectGetMaxX(self.approveReasonLeft.frame)]);
-    return [self heightWithString:reasonStr fontSize:fontNum width:self.frame.size.width - CGRectGetMaxX(self.approveReasonLeft.frame)];
+- (CGFloat)returnHeights{
+    NSLog(@"换行高度1 == %f",[self heightWithString:reasonStr fontSize:fontNum width:SCREEN_W - width] + 30 * 5 + 20);
+    return [self heightWithString:reasonStr fontSize:fontNum width:SCREEN_W - width] + 30 * 5 + 20;
 
 
 }

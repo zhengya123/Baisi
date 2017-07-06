@@ -12,6 +12,8 @@
 {
     CGFloat fontNum;
     NSString * reasonStr;
+    CGFloat width;
+    CGFloat height;
 
 }
 -(instancetype)initWithFrame:(CGRect)frame{
@@ -34,8 +36,8 @@
 }
 - (void)layoutSubviews{
     [super layoutSubviews];
-    CGFloat width = 70;
-    CGFloat height = 30;
+    width = 70;
+    height = 30;
     self.departmentLeft.frame    = CGRectMake(10, 10, width, height);
     self.beginTimeLeft.frame   = CGRectMake(10, CGRectGetMaxY(self.departmentLeft.frame), width, height);
     self.endTimeLeft.frame     = CGRectMake(10, CGRectGetMaxY(self.beginTimeLeft.frame), width, height);
@@ -53,7 +55,7 @@
 
 }
 
-- (CGFloat)heightWithString:(NSString*)string fontSize:(CGFloat)fontSize width:(CGFloat)width
+- (CGFloat)heightWithString:(NSString*)string fontSize:(CGFloat)fontSize width:(CGFloat)widths
 {
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineSpacing = 4;// 字体的行间距
@@ -61,7 +63,7 @@
     NSDictionary *attrs = @{NSFontAttributeName:[UIFont systemFontOfSize:fontSize], NSParagraphStyleAttributeName:paragraphStyle};
     CGSize newSize;
     if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_0) {
-        newSize = [string boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
+        newSize = [string boundingRectWithSize:CGSizeMake(widths, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:attrs context:nil].size;
     }
     return newSize.height;
     
@@ -77,7 +79,9 @@
 
 }
 - (CGFloat)returnHeight{
-    return [self heightWithString:reasonStr fontSize:fontNum width:self.frame.size.width - CGRectGetMaxX(self.GoOutReasonLeft.frame) + 10];
+    
+    NSLog(@"reason == %f",[self heightWithString:reasonStr fontSize:fontNum width:SCREEN_W - width]);
+    return [self heightWithString:reasonStr fontSize:fontNum width:SCREEN_W - width] + 40 + 4 * 30;
 
 }
 

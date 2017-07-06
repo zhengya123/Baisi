@@ -285,6 +285,11 @@
 		DF758B331F024C4B00DC245F /* ApproveGoOutModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B321F024C4B00DC245F /* ApproveGoOutModel.m */; };
 		DF758B361F02552000DC245F /* ApproveReceiveTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B351F02552000DC245F /* ApproveReceiveTitle.m */; };
 		DF758B391F025EB300DC245F /* ApproveReceiveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758B381F025EB300DC245F /* ApproveReceiveModel.m */; };
+		DF758D3E1F035A2F006A43C7 /* ApproveDetailStateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758D3C1F035A2F006A43C7 /* ApproveDetailStateCell.m */; };
+		DF758D3F1F035A2F006A43C7 /* ApproveDetailStateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF758D3D1F035A2F006A43C7 /* ApproveDetailStateCell.xib */; };
+		DF758D421F03750F006A43C7 /* ApproveDetailStateModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758D411F03750F006A43C7 /* ApproveDetailStateModel.m */; };
+		DF758D451F039966006A43C7 /* ApproveCommonTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758D441F039966006A43C7 /* ApproveCommonTitle.m */; };
+		DF758D481F03A168006A43C7 /* ApproveCommonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF758D471F03A168006A43C7 /* ApproveCommonModel.m */; };
 		DF868A081EA4920200378800 /* OcTopUs-Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF868A071EA4920200378800 /* OcTopUs-Loading.m */; };
 		DF868A0A1EA4950900378800 /* OcTopUs_Image.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF868A091EA4950900378800 /* OcTopUs_Image.gif */; };
 		DF868A0D1EA49B1F00378800 /* PeopleWorking-Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF868A0C1EA49B1E00378800 /* PeopleWorking-Loading.m */; };
@@ -769,6 +774,15 @@
 		DF758B351F02552000DC245F /* ApproveReceiveTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveReceiveTitle.m; sourceTree = "<group>"; };
 		DF758B371F025EB300DC245F /* ApproveReceiveModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveReceiveModel.h; sourceTree = "<group>"; };
 		DF758B381F025EB300DC245F /* ApproveReceiveModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveReceiveModel.m; sourceTree = "<group>"; };
+		DF758D3B1F035A2F006A43C7 /* ApproveDetailStateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveDetailStateCell.h; sourceTree = "<group>"; };
+		DF758D3C1F035A2F006A43C7 /* ApproveDetailStateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveDetailStateCell.m; sourceTree = "<group>"; };
+		DF758D3D1F035A2F006A43C7 /* ApproveDetailStateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ApproveDetailStateCell.xib; sourceTree = "<group>"; };
+		DF758D401F03750F006A43C7 /* ApproveDetailStateModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveDetailStateModel.h; sourceTree = "<group>"; };
+		DF758D411F03750F006A43C7 /* ApproveDetailStateModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveDetailStateModel.m; sourceTree = "<group>"; };
+		DF758D431F039966006A43C7 /* ApproveCommonTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveCommonTitle.h; sourceTree = "<group>"; };
+		DF758D441F039966006A43C7 /* ApproveCommonTitle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveCommonTitle.m; sourceTree = "<group>"; };
+		DF758D461F03A168006A43C7 /* ApproveCommonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApproveCommonModel.h; sourceTree = "<group>"; };
+		DF758D471F03A168006A43C7 /* ApproveCommonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApproveCommonModel.m; sourceTree = "<group>"; };
 		DF868A061EA4920200378800 /* OcTopUs-Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OcTopUs-Loading.h"; sourceTree = "<group>"; };
 		DF868A071EA4920200378800 /* OcTopUs-Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OcTopUs-Loading.m"; sourceTree = "<group>"; };
 		DF868A091EA4950900378800 /* OcTopUs_Image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = OcTopUs_Image.gif; sourceTree = "<group>"; };
@@ -2073,6 +2087,10 @@
 				DF758B321F024C4B00DC245F /* ApproveGoOutModel.m */,
 				DF758B371F025EB300DC245F /* ApproveReceiveModel.h */,
 				DF758B381F025EB300DC245F /* ApproveReceiveModel.m */,
+				DF758D401F03750F006A43C7 /* ApproveDetailStateModel.h */,
+				DF758D411F03750F006A43C7 /* ApproveDetailStateModel.m */,
+				DF758D461F03A168006A43C7 /* ApproveCommonModel.h */,
+				DF758D471F03A168006A43C7 /* ApproveCommonModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2080,12 +2098,17 @@
 		DF758B1E1F02047D00DC245F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DF758D431F039966006A43C7 /* ApproveCommonTitle.h */,
+				DF758D441F039966006A43C7 /* ApproveCommonTitle.m */,
 				DF758B281F022AC400DC245F /* ApproveDetailLeaveTitle.h */,
 				DF758B291F022AC400DC245F /* ApproveDetailLeaveTitle.m */,
 				DF758B2E1F0248C000DC245F /* ApproveGoOutTitle.h */,
 				DF758B2F1F0248C000DC245F /* ApproveGoOutTitle.m */,
 				DF758B341F02552000DC245F /* ApproveReceiveTitle.h */,
 				DF758B351F02552000DC245F /* ApproveReceiveTitle.m */,
+				DF758D3B1F035A2F006A43C7 /* ApproveDetailStateCell.h */,
+				DF758D3C1F035A2F006A43C7 /* ApproveDetailStateCell.m */,
+				DF758D3D1F035A2F006A43C7 /* ApproveDetailStateCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2304,6 +2327,7 @@
 				DF5B3FCA1E8C98D100E04C27 /* login_tecent_icon_click@2x.png in Resources */,
 				DF5B3DF31E8C963000E04C27 /* Main.storyboard in Resources */,
 				DF5B3FBB1E8C98D100E04C27 /* login_register_right_line@2x.png in Resources */,
+				DF758D3F1F035A2F006A43C7 /* ApproveDetailStateCell.xib in Resources */,
 				DF5B3FC91E8C98D100E04C27 /* login_tecent_icon_click.png in Resources */,
 				DF5B3FB71E8C98D100E04C27 /* login_register_left_line.png in Resources */,
 				DF5B3FD01E8C98D100E04C27 /* mine-icon-activity.png in Resources */,
@@ -2387,6 +2411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF758D481F03A168006A43C7 /* ApproveCommonModel.m in Sources */,
 				DF5B3F421E8C98BC00E04C27 /* XHWebImageDownload.m in Sources */,
 				DF5B3F221E8C98BC00E04C27 /* XWInteractiveTransition.m in Sources */,
 				DF5B407B1E8C98DC00E04C27 /* AllEssenceListCell.m in Sources */,
@@ -2508,6 +2533,7 @@
 				DF5B3EF31E8C98BC00E04C27 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				DF5B40991E8C98DC00E04C27 /* ZPDFReaderController.m in Sources */,
 				DF5B3F181E8C98BC00E04C27 /* WXSTransitionManager+InsideThenPushAnimation.m in Sources */,
+				DF758D421F03750F006A43C7 /* ApproveDetailStateModel.m in Sources */,
 				DF5B40B31E8C98E900E04C27 /* MainTabBarButton.m in Sources */,
 				DF5B407C1E8C98DC00E04C27 /* picTureVC.m in Sources */,
 				DF5B408D1E8C98DC00E04C27 /* CoreLocationVC.m in Sources */,
@@ -2525,6 +2551,7 @@
 				DF5B407A1E8C98DC00E04C27 /* ALLEssenceModel.m in Sources */,
 				DF5B3F2D1E8C98BC00E04C27 /* XWCoolAnimator+XWPortal.m in Sources */,
 				DF5B3EF41E8C98BC00E04C27 /* FTPrettyRulerView.m in Sources */,
+				DF758D3E1F035A2F006A43C7 /* ApproveDetailStateCell.m in Sources */,
 				DF5B3F4A1E8C98BC00E04C27 /* ZY_button.m in Sources */,
 				DF5B3F191E8C98BC00E04C27 /* WXSTransitionManager+PageAnimation.m in Sources */,
 				DF5B3F231E8C98BC00E04C27 /* XWTransitionAnimator.m in Sources */,
@@ -2532,6 +2559,7 @@
 				DF5B3F3A1E8C98BC00E04C27 /* XWFilterAnimator.m in Sources */,
 				DF5B3F071E8C98BC00E04C27 /* CAReplicatorLayerAnimal.m in Sources */,
 				DF5B40781E8C98DC00E04C27 /* AllEssenceViewController.m in Sources */,
+				DF758D451F039966006A43C7 /* ApproveCommonTitle.m in Sources */,
 				DF5B3F081E8C98BC00E04C27 /* UIView+Extension.m in Sources */,
 				DF5B409E1E8C98DC00E04C27 /* MyHeaderView.m in Sources */,
 				DF33261B1EE8ECBE00450755 /* EditSignVC.m in Sources */,

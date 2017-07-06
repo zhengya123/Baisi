@@ -52,6 +52,9 @@
     self.view.backgroundColor = [UIColor lightGrayColor];
     self.navigationItem.title = @"我的";
     [self createUI];
+//    self.navigationController.tabBarItem.badgeValue = @"1";
+//    self.navigationController.tabBarItem.badgeColor = [UIColor greenColor];
+    //self.tabBarController.tabBar
 }
 -(void)createUI{
     [self.view addSubview:self.tableView];

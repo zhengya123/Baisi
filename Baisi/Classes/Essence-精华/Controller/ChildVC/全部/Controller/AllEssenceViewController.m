@@ -28,6 +28,7 @@
     [self createUI];
     [self requestDataisFirst:YES];
     [self setUpRefresh];
+   // self.navigationController.tabBarItem.badgeValue = @"1";
 }
 -(void)requestDataisFirst:(BOOL)isfirst{
     

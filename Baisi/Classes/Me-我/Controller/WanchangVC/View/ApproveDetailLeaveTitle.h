@@ -43,5 +43,5 @@
 @property (nonatomic, strong) UILabel * approveReason;
 
 - (void)changeFrameWithReasonText:(ApproveLeaveModel *)model;
-- (CGFloat)returnHeight;
+- (CGFloat)returnHeights;
 @end
