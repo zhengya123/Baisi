@@ -296,6 +296,12 @@
 		DF868A0F1EA49BC300378800 /* peopleworking_Images.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF868A0E1EA49BC300378800 /* peopleworking_Images.gif */; };
 		DF868A121EA49D5F00378800 /* Waiting_Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF868A111EA49D5F00378800 /* Waiting_Loading.m */; };
 		DF868A141EA49E3C00378800 /* wait_Images.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF868A131EA49E3C00378800 /* wait_Images.gif */; };
+		DFAB3C9B1F13714100F44757 /* FBDB4CDC2B7D61D279AA080CEDAD41A3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFAB3C9A1F13714100F44757 /* FBDB4CDC2B7D61D279AA080CEDAD41A3.jpg */; };
+		DFAB3C9D1F137AAD00F44757 /* B99F125DB51A24A0A297B3ED06D0A8C5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFAB3C9C1F137AAD00F44757 /* B99F125DB51A24A0A297B3ED06D0A8C5.jpg */; };
+		DFAB3C9F1F137D5A00F44757 /* 534978C3D27387439729667DC7052C7F.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFAB3C9E1F137D5A00F44757 /* 534978C3D27387439729667DC7052C7F.jpg */; };
+		DFAB3CA11F137D6700F44757 /* 42C6E4301D894F7EAD29B77305AEDFD0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFAB3CA01F137D6700F44757 /* 42C6E4301D894F7EAD29B77305AEDFD0.jpg */; };
+		DFAB3CA31F137D7000F44757 /* AC119DC5A6A5082E41AEC159CFA75712.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFAB3CA21F137D7000F44757 /* AC119DC5A6A5082E41AEC159CFA75712.jpg */; };
+		DFAB3CA51F13805000F44757 /* 75C3148C2326A55526B496658665B1FB.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DFAB3CA41F13805000F44757 /* 75C3148C2326A55526B496658665B1FB.jpg */; };
 		DFB767B91E9B5DBE00D480F8 /* ZY_AlertNotesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB767B81E9B5DBE00D480F8 /* ZY_AlertNotesView.m */; };
 /* End PBXBuildFile section */
 
@@ -792,6 +798,12 @@
 		DF868A101EA49D5F00378800 /* Waiting_Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Waiting_Loading.h; sourceTree = "<group>"; };
 		DF868A111EA49D5F00378800 /* Waiting_Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Waiting_Loading.m; sourceTree = "<group>"; };
 		DF868A131EA49E3C00378800 /* wait_Images.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wait_Images.gif; sourceTree = "<group>"; };
+		DFAB3C9A1F13714100F44757 /* FBDB4CDC2B7D61D279AA080CEDAD41A3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FBDB4CDC2B7D61D279AA080CEDAD41A3.jpg; sourceTree = "<group>"; };
+		DFAB3C9C1F137AAD00F44757 /* B99F125DB51A24A0A297B3ED06D0A8C5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = B99F125DB51A24A0A297B3ED06D0A8C5.jpg; sourceTree = "<group>"; };
+		DFAB3C9E1F137D5A00F44757 /* 534978C3D27387439729667DC7052C7F.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 534978C3D27387439729667DC7052C7F.jpg; sourceTree = "<group>"; };
+		DFAB3CA01F137D6700F44757 /* 42C6E4301D894F7EAD29B77305AEDFD0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 42C6E4301D894F7EAD29B77305AEDFD0.jpg; sourceTree = "<group>"; };
+		DFAB3CA21F137D7000F44757 /* AC119DC5A6A5082E41AEC159CFA75712.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AC119DC5A6A5082E41AEC159CFA75712.jpg; sourceTree = "<group>"; };
+		DFAB3CA41F13805000F44757 /* 75C3148C2326A55526B496658665B1FB.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 75C3148C2326A55526B496658665B1FB.jpg; sourceTree = "<group>"; };
 		DFB767B71E9B5DBE00D480F8 /* ZY_AlertNotesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_AlertNotesView.h; sourceTree = "<group>"; };
 		DFB767B81E9B5DBE00D480F8 /* ZY_AlertNotesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_AlertNotesView.m; sourceTree = "<group>"; };
 		FA142A9CF5B427F8C8E697E3 /* Pods-Baisi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baisi/Pods-Baisi.release.xcconfig"; sourceTree = "<group>"; };
@@ -1429,6 +1441,12 @@
 		DF5B3F511E8C98D000E04C27 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DFAB3CA41F13805000F44757 /* 75C3148C2326A55526B496658665B1FB.jpg */,
+				DFAB3CA21F137D7000F44757 /* AC119DC5A6A5082E41AEC159CFA75712.jpg */,
+				DFAB3CA01F137D6700F44757 /* 42C6E4301D894F7EAD29B77305AEDFD0.jpg */,
+				DFAB3C9E1F137D5A00F44757 /* 534978C3D27387439729667DC7052C7F.jpg */,
+				DFAB3C9C1F137AAD00F44757 /* B99F125DB51A24A0A297B3ED06D0A8C5.jpg */,
+				DFAB3C9A1F13714100F44757 /* FBDB4CDC2B7D61D279AA080CEDAD41A3.jpg */,
 				DF5B3F521E8C98D000E04C27 /* backImage.png */,
 				DF5B3F531E8C98D000E04C27 /* LaunchImage-1.png */,
 				DF5B3F541E8C98D000E04C27 /* LoginRegister */,
@@ -2233,6 +2251,7 @@
 				DF5B3FF21E8C98D100E04C27 /* Running_Loading_5.png in Resources */,
 				DF5B3FA71E8C98D000E04C27 /* backImage.png in Resources */,
 				DF33261C1EE8ECBE00450755 /* EditSignVC.xib in Resources */,
+				DFAB3CA31F137D7000F44757 /* AC119DC5A6A5082E41AEC159CFA75712.jpg in Resources */,
 				DF868A0F1EA49BC300378800 /* peopleworking_Images.gif in Resources */,
 				DF5B3FE81E8C98D100E04C27 /* mine_icon_random@2x.png in Resources */,
 				DF5B40BE1E8C990B00E04C27 /* LoginViewController.xib in Resources */,
@@ -2254,6 +2273,7 @@
 				DF868A141EA49E3C00378800 /* wait_Images.gif in Resources */,
 				DF5B3FAD1E8C98D100E04C27 /* login_QQ_icon@2x.png in Resources */,
 				DF5B3FCF1E8C98D100E04C27 /* loginBtnBgClick@2x.png in Resources */,
+				DFAB3C9D1F137AAD00F44757 /* B99F125DB51A24A0A297B3ED06D0A8C5.jpg in Resources */,
 				DF5B3FC81E8C98D100E04C27 /* login_tecent_icon@3x.png in Resources */,
 				DF5B3FE71E8C98D100E04C27 /* mine_icon_random.png in Resources */,
 				DF3C47BD1EEE2EBE00512E88 /*  003.pdf in Resources */,
@@ -2300,6 +2320,8 @@
 				DF5B3F481E8C98BC00E04C27 /* redImage.png in Resources */,
 				DF5B3FDB1E8C98D100E04C27 /* mine-icon-preview@2x.png in Resources */,
 				DF5B3FDE1E8C98D100E04C27 /* mine-icon-search.png in Resources */,
+				DFAB3CA11F137D6700F44757 /* 42C6E4301D894F7EAD29B77305AEDFD0.jpg in Resources */,
+				DFAB3CA51F13805000F44757 /* 75C3148C2326A55526B496658665B1FB.jpg in Resources */,
 				DF5B3F431E8C98BC00E04C27 /* cancel.png in Resources */,
 				DF5B3FBA1E8C98D100E04C27 /* login_register_right_line.png in Resources */,
 				DF5B3FE11E8C98D100E04C27 /* mine-my-post@2x.png in Resources */,
@@ -2334,6 +2356,8 @@
 				DF5B3FC21E8C98D100E04C27 /* login_sina_icon@3x.png in Resources */,
 				DF5B3FC61E8C98D100E04C27 /* login_tecent_icon.png in Resources */,
 				DF5B3FF61E8C98D100E04C27 /* screenShotone.gif in Resources */,
+				DFAB3C9B1F13714100F44757 /* FBDB4CDC2B7D61D279AA080CEDAD41A3.jpg in Resources */,
+				DFAB3C9F1F137D5A00F44757 /* 534978C3D27387439729667DC7052C7F.jpg in Resources */,
 				DF5B3FC71E8C98D100E04C27 /* login_tecent_icon@2x.png in Resources */,
 				DF5B3FBD1E8C98D100E04C27 /* login_rgister_textfield_bg.png in Resources */,
 				DF19B6381E9DFDDD001B5E69 /* HHAllMemberViewController.xib in Resources */,

@@ -34,7 +34,10 @@
 @end
 
 @implementation MeViewController
+{
+    NSString * accessToken;
 
+}
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     //self.navigationController.navigationBar.hidden = YES;
@@ -200,12 +203,78 @@
             break;
             case 9:
         {
-            [[Waiting_Loading shareLoading] show];
-             [self performSelector:@selector(OcTopUs_Load) withObject:nil afterDelay:10];
+//            [[Waiting_Loading shareLoading] show];
+//             [self performSelector:@selector(OcTopUs_Load) withObject:nil afterDelay:10];
+            __weak typeof(self) weakSelf = self;
+            NSMutableDictionary * params = [NSMutableDictionary dictionary];
+            
+            params[@"grant_type"] = @"client_credentials";
+            params[@"client_id"] = @"h2eDo30k0Dah5NwdAAfOjGp0";
+            params[@"client_secret"] = @"NbGZtGUY35gnSqExTAnFxjKLziiwGoSs";
+            
+            [HYBNetworking getWithUrl:@"https://aip.baidubce.com/oauth/2.0/token" refreshCache:YES params:params success:^(id response) {
+                
+                [weakSelf dealWithData:response];
+                //有网的时候正常显示，父类图片隐藏
+                weakSelf.NoNetImage.hidden = YES;
+                
+            } fail:^(NSError *error) {
+                ZYLog(@"失败 == %@",error);
+                ZYLog(@"失败code = %ld",(long)error.code);
+                //没网界面显示没网
+                [weakSelf.view bringSubviewToFront:self.NoNetImage];
+                weakSelf.NoNetImage.hidden = NO;
+            }];
+
         }
             break;
             case 10:
         {
+        //上传图片
+        
+            NSMutableDictionary * params = [NSMutableDictionary dictionary];
+            params[@"access_token"] = accessToken;
+            params[@"uid"] = @"2";
+            params[@"user_info"] = @"FirstUser";
+            params[@"group_id"] = @"GirstGroup";
+            NSData * imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"42C6E4301D894F7EAD29B77305AEDFD0.jpg"], 0.5);
+            params[@"image"]= [NSString stringWithFormat:@"%@",[imageData base64EncodedStringWithOptions:(NSDataBase64Encoding64CharacterLineLength)]];
+            params[@"action_type"] = @"";
+            [HYBNetworking postWithUrl:@"https://aip.baidubce.com/rest/2.0/face/v2/faceset/user/add" refreshCache:YES params:params success:^(id response) {
+                ZYLog(@"上传图片成功 == %@",response);
+            } fail:^(NSError *error) {
+                ZYLog(@"err == %@",error);
+            }];
+
+        }
+            break;
+            case 11:
+        {
+        
+            NSMutableDictionary * params = [NSMutableDictionary dictionary];
+            params[@"access_token"] = accessToken;
+            params[@"uid"] = @"2";
+            [HYBNetworking postWithUrl:@"https://aip.baidubce.com/rest/2.0/face/v2/faceset/user/get" refreshCache:YES params:params success:^(id response) {
+                ZYLog(@"用户查询成功 == %@",response);
+                
+            } fail:^(NSError *error) {
+                ZYLog(@"查询失败 == %@",error);
+            }];
+        }
+            break;
+            case 12:
+        {
+            //对比
+            NSMutableDictionary * parameter = [NSMutableDictionary dictionary];
+            parameter[@"access_token"] = accessToken;
+            parameter[@"group_id"] = @"GirstGroup";
+            NSData * imageData = UIImageJPEGRepresentation([UIImage imageNamed:@"75C3148C2326A55526B496658665B1FB.jpg"], 0.5);
+            parameter[@"image"]= [NSString stringWithFormat:@"%@",[imageData base64EncodedStringWithOptions:(NSDataBase64Encoding64CharacterLineLength)]];
+            [HYBNetworking postWithUrl:@"https://aip.baidubce.com/rest/2.0/face/v2/identify" refreshCache:YES params:parameter success:^(id response) {
+                ZYLog(@"对比成功 == %@",response);
+            } fail:^(NSError *error) {
+                ZYLog(@"对比失败 == %@",error);
+            }];
         
         }
             break;
@@ -214,6 +283,13 @@
     }
 
 }
+- (void)dealWithData:(NSDictionary *)respon{
+    ZYLog(@"成功 == %@",respon);
+//获取token成功
+    accessToken = respon[@"access_token"];
+    
+}
+
 -(void)OcTopUs_Load{
     [[OcTopUs_Loading shareLoading] hides];
     [[PeopleWorking_Loading shareLoading] hides];
