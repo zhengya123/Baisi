@@ -41,6 +41,18 @@
 		DF49BCFB1EA608EF00806C80 /* popMenvTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF49BCF91EA608EF00806C80 /* popMenvTopView.xib */; };
 		DF49BCFF1EA60B2E00806C80 /* AddMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCFD1EA60B2E00806C80 /* AddMainVC.m */; };
 		DF49BD001EA60B2E00806C80 /* AddMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF49BCFE1EA60B2E00806C80 /* AddMainVC.xib */; };
+		DF4BA7D81F15C0DF00212B36 /* MyPhotoCameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BA7D61F15C0DF00212B36 /* MyPhotoCameraVC.m */; };
+		DF4BA7D91F15C0DF00212B36 /* MyPhotoCameraVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4BA7D71F15C0DF00212B36 /* MyPhotoCameraVC.xib */; };
+		DF4BA7DE1F15C16C00212B36 /* photograph_Select@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4BA7DA1F15C16C00212B36 /* photograph_Select@2x.png */; };
+		DF4BA7DF1F15C16C00212B36 /* photograph_Select@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4BA7DB1F15C16C00212B36 /* photograph_Select@3x.png */; };
+		DF4BA7E01F15C16C00212B36 /* photograph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4BA7DC1F15C16C00212B36 /* photograph@2x.png */; };
+		DF4BA7E11F15C16C00212B36 /* photograph@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4BA7DD1F15C16C00212B36 /* photograph@3x.png */; };
+		DF4BA7E81F15D02600212B36 /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4BA7E21F15D02600212B36 /* camera@2x.png */; };
+		DF4BA7E91F15D02600212B36 /* camera@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4BA7E31F15D02600212B36 /* camera@3x.png */; };
+		DF4BA7EA1F15D02600212B36 /* flash_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4BA7E41F15D02600212B36 /* flash_icon@2x.png */; };
+		DF4BA7EB1F15D02600212B36 /* flash_icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4BA7E51F15D02600212B36 /* flash_icon@3x.png */; };
+		DF4BA7EC1F15D02600212B36 /* flash_icon1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4BA7E61F15D02600212B36 /* flash_icon1@2x.png */; };
+		DF4BA7ED1F15D02600212B36 /* flash_icon1@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4BA7E71F15D02600212B36 /* flash_icon1@3x.png */; };
 		DF4EC5851EC05F9600B1681C /* SureCustomActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4EC5841EC05F9600B1681C /* SureCustomActionSheet.m */; };
 		DF5B3DEA1E8C963000E04C27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B3DE91E8C963000E04C27 /* main.m */; };
 		DF5B3DF31E8C963000E04C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5B3DF11E8C963000E04C27 /* Main.storyboard */; };
@@ -379,6 +391,19 @@
 		DF49BCFC1EA60B2E00806C80 /* AddMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMainVC.h; sourceTree = "<group>"; };
 		DF49BCFD1EA60B2E00806C80 /* AddMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMainVC.m; sourceTree = "<group>"; };
 		DF49BCFE1EA60B2E00806C80 /* AddMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMainVC.xib; sourceTree = "<group>"; };
+		DF4BA7D51F15C0DF00212B36 /* MyPhotoCameraVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPhotoCameraVC.h; sourceTree = "<group>"; };
+		DF4BA7D61F15C0DF00212B36 /* MyPhotoCameraVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPhotoCameraVC.m; sourceTree = "<group>"; };
+		DF4BA7D71F15C0DF00212B36 /* MyPhotoCameraVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyPhotoCameraVC.xib; sourceTree = "<group>"; };
+		DF4BA7DA1F15C16C00212B36 /* photograph_Select@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_Select@2x.png"; sourceTree = "<group>"; };
+		DF4BA7DB1F15C16C00212B36 /* photograph_Select@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph_Select@3x.png"; sourceTree = "<group>"; };
+		DF4BA7DC1F15C16C00212B36 /* photograph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph@2x.png"; sourceTree = "<group>"; };
+		DF4BA7DD1F15C16C00212B36 /* photograph@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photograph@3x.png"; sourceTree = "<group>"; };
+		DF4BA7E21F15D02600212B36 /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		DF4BA7E31F15D02600212B36 /* camera@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@3x.png"; sourceTree = "<group>"; };
+		DF4BA7E41F15D02600212B36 /* flash_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash_icon@2x.png"; sourceTree = "<group>"; };
+		DF4BA7E51F15D02600212B36 /* flash_icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash_icon@3x.png"; sourceTree = "<group>"; };
+		DF4BA7E61F15D02600212B36 /* flash_icon1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash_icon1@2x.png"; sourceTree = "<group>"; };
+		DF4BA7E71F15D02600212B36 /* flash_icon1@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flash_icon1@3x.png"; sourceTree = "<group>"; };
 		DF4EC5831EC05F9500B1681C /* SureCustomActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SureCustomActionSheet.h; sourceTree = "<group>"; };
 		DF4EC5841EC05F9600B1681C /* SureCustomActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SureCustomActionSheet.m; sourceTree = "<group>"; };
 		DF5B3DE51E8C963000E04C27 /* Baisi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baisi.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -878,6 +903,9 @@
 				DF2481211F14A9A8009D1F38 /* FaceComparisonVC.h */,
 				DF2481221F14A9A8009D1F38 /* FaceComparisonVC.m */,
 				DF2481231F14A9A8009D1F38 /* FaceComparisonVC.xib */,
+				DF4BA7D51F15C0DF00212B36 /* MyPhotoCameraVC.h */,
+				DF4BA7D61F15C0DF00212B36 /* MyPhotoCameraVC.m */,
+				DF4BA7D71F15C0DF00212B36 /* MyPhotoCameraVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1476,6 +1504,16 @@
 		DF5B3F511E8C98D000E04C27 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DF4BA7E21F15D02600212B36 /* camera@2x.png */,
+				DF4BA7E31F15D02600212B36 /* camera@3x.png */,
+				DF4BA7E41F15D02600212B36 /* flash_icon@2x.png */,
+				DF4BA7E51F15D02600212B36 /* flash_icon@3x.png */,
+				DF4BA7E61F15D02600212B36 /* flash_icon1@2x.png */,
+				DF4BA7E71F15D02600212B36 /* flash_icon1@3x.png */,
+				DF4BA7DA1F15C16C00212B36 /* photograph_Select@2x.png */,
+				DF4BA7DB1F15C16C00212B36 /* photograph_Select@3x.png */,
+				DF4BA7DC1F15C16C00212B36 /* photograph@2x.png */,
+				DF4BA7DD1F15C16C00212B36 /* photograph@3x.png */,
 				DF5B3F521E8C98D000E04C27 /* backImage.png */,
 				DF5B3F531E8C98D000E04C27 /* LaunchImage-1.png */,
 				DF5B3F541E8C98D000E04C27 /* LoginRegister */,
@@ -2285,10 +2323,12 @@
 				DF5B3FE81E8C98D100E04C27 /* mine_icon_random@2x.png in Resources */,
 				DF5B40BE1E8C990B00E04C27 /* LoginViewController.xib in Resources */,
 				DF5B409D1E8C98DC00E04C27 /* MyQr_CodeVC.xib in Resources */,
+				DF4BA7ED1F15D02600212B36 /* flash_icon1@3x.png in Resources */,
 				DF5B3F451E8C98BC00E04C27 /* tipBg.jpg in Resources */,
 				DF3326241EE9136900450755 /* describeTableViewCell.xib in Resources */,
 				DF5B3FF11E8C98D100E04C27 /* Running_Loading_4.png in Resources */,
 				DF5B3FCC1E8C98D100E04C27 /* loginBtnBg.png in Resources */,
+				DF4BA7D91F15C0DF00212B36 /* MyPhotoCameraVC.xib in Resources */,
 				DF5B3FDF1E8C98D100E04C27 /* mine-icon-search@2x.png in Resources */,
 				DF5B3FC11E8C98D100E04C27 /* login_sina_icon@2x.png in Resources */,
 				DF5B408B1E8C98DC00E04C27 /* Untitled-1.html in Resources */,
@@ -2299,6 +2339,7 @@
 				DF5B3FB51E8C98D100E04C27 /* login_register_button.png in Resources */,
 				DF5B40901E8C98DC00E04C27 /* KaidianCompanyInfoController.xib in Resources */,
 				DF5B3FD41E8C98D100E04C27 /* mine-icon-manhua.png in Resources */,
+				DF4BA7EB1F15D02600212B36 /* flash_icon@3x.png in Resources */,
 				DF868A141EA49E3C00378800 /* wait_Images.gif in Resources */,
 				DF5B3FAD1E8C98D100E04C27 /* login_QQ_icon@2x.png in Resources */,
 				DF5B3FCF1E8C98D100E04C27 /* loginBtnBgClick@2x.png in Resources */,
@@ -2319,6 +2360,7 @@
 				DF74B21C1EEA951000B266CC /* MY_MapVC.xib in Resources */,
 				DF5B3F261E8C98BC00E04C27 /* restrictedshine.tiff in Resources */,
 				DF5B3FD91E8C98D100E04C27 /* mine-icon-nearby@2x.png in Resources */,
+				DF4BA7E11F15C16C00212B36 /* photograph@3x.png in Resources */,
 				DF5B3FF41E8C98D100E04C27 /* Running_Loading_7.png in Resources */,
 				DF5B3FE31E8C98D100E04C27 /* mine-setting-iconN@2x.png in Resources */,
 				DF2481201F145C51009D1F38 /* FaceRecogintionVC.xib in Resources */,
@@ -2340,8 +2382,10 @@
 				DF5B3FDA1E8C98D100E04C27 /* mine-icon-preview.png in Resources */,
 				DF5B3FD81E8C98D100E04C27 /* mine-icon-nearby.png in Resources */,
 				DF5B3FEF1E8C98D100E04C27 /* Running_Loading_2.png in Resources */,
+				DF4BA7E81F15D02600212B36 /* camera@2x.png in Resources */,
 				DF5B3F441E8C98BC00E04C27 /* sure.png in Resources */,
 				DF5B3FAF1E8C98D100E04C27 /* login_QQ_icon_click.png in Resources */,
+				DF4BA7DE1F15C16C00212B36 /* photograph_Select@2x.png in Resources */,
 				DF5B3F251E8C98BC00E04C27 /* mask.jpg in Resources */,
 				DF5B3FC41E8C98D100E04C27 /* login_sina_icon_click@2x.png in Resources */,
 				DF5B3FC31E8C98D100E04C27 /* login_sina_icon_click.png in Resources */,
@@ -2353,10 +2397,12 @@
 				DF5B3F431E8C98BC00E04C27 /* cancel.png in Resources */,
 				DF5B3FBA1E8C98D100E04C27 /* login_register_right_line.png in Resources */,
 				DF5B3FE11E8C98D100E04C27 /* mine-my-post@2x.png in Resources */,
+				DF4BA7E01F15C16C00212B36 /* photograph@2x.png in Resources */,
 				DF002BB11EB050DD00CFDE42 /* HHjiujiuDetailViewController.xib in Resources */,
 				DF5B3FE91E8C98D100E04C27 /* mine_msg_icon.png in Resources */,
 				DF5B3F241E8C98BC00E04C27 /* line.png in Resources */,
 				DF5B3FAB1E8C98D000E04C27 /* login_close_icon@3x.png in Resources */,
+				DF4BA7E91F15D02600212B36 /* camera@3x.png in Resources */,
 				DF5B3DF51E8C963000E04C27 /* Assets.xcassets in Resources */,
 				DF49BCFB1EA608EF00806C80 /* popMenvTopView.xib in Resources */,
 				DF5B3FED1E8C98D100E04C27 /* setup-head-default@2x.png in Resources */,
@@ -2371,6 +2417,7 @@
 				DF5B3FD51E8C98D100E04C27 /* mine-icon-manhua@2x.png in Resources */,
 				DF5B3F061E8C98BC00E04C27 /* IQKeyboardManager.bundle in Resources */,
 				DF5B3FCE1E8C98D100E04C27 /* loginBtnBgClick.png in Resources */,
+				DF4BA7DF1F15C16C00212B36 /* photograph_Select@3x.png in Resources */,
 				DF5B3FD11E8C98D100E04C27 /* mine-icon-activity@2x.png in Resources */,
 				DF5B3FB81E8C98D100E04C27 /* login_register_left_line@2x.png in Resources */,
 				DF5B3FCB1E8C98D100E04C27 /* login_tecent_icon_click@3x.png in Resources */,
@@ -2382,6 +2429,8 @@
 				DF5B3FB71E8C98D100E04C27 /* login_register_left_line.png in Resources */,
 				DF5B3FD01E8C98D100E04C27 /* mine-icon-activity.png in Resources */,
 				DF5B3FC21E8C98D100E04C27 /* login_sina_icon@3x.png in Resources */,
+				DF4BA7EA1F15D02600212B36 /* flash_icon@2x.png in Resources */,
+				DF4BA7EC1F15D02600212B36 /* flash_icon1@2x.png in Resources */,
 				DF5B3FC61E8C98D100E04C27 /* login_tecent_icon.png in Resources */,
 				DF5B3FF61E8C98D100E04C27 /* screenShotone.gif in Resources */,
 				DF5B3FC71E8C98D100E04C27 /* login_tecent_icon@2x.png in Resources */,
@@ -2523,6 +2572,7 @@
 				DF758B361F02552000DC245F /* ApproveReceiveTitle.m in Sources */,
 				DF5B408F1E8C98DC00E04C27 /* KaidianCompanyInfoController.m in Sources */,
 				DF3326231EE9136900450755 /* describeTableViewCell.m in Sources */,
+				DF4BA7D81F15C0DF00212B36 /* MyPhotoCameraVC.m in Sources */,
 				DF2481241F14A9A8009D1F38 /* FaceComparisonVC.m in Sources */,
 				DF5B3F4F1E8C98BC00E04C27 /* ZY_verification_Button.m in Sources */,
 				DF5B3F0F1E8C98BC00E04C27 /* NSSet+UnicodeReadable.m in Sources */,

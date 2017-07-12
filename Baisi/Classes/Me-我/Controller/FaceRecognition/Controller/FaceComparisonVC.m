@@ -8,7 +8,8 @@
 
 #import "FaceComparisonVC.h"
 #import "SureCustomActionSheet.h"
-@interface FaceComparisonVC ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+#import "MyPhotoCameraVC.h"
+@interface FaceComparisonVC ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate,cameraDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *LeftImage;
 @property (weak, nonatomic) IBOutlet UIImageView *RightImage;
 @property (weak, nonatomic) IBOutlet UIButton *LeftAddBtn;
@@ -140,6 +141,16 @@
     
 }
 
+#pragma mark - 自定义camera代理
+- (void)getPicture:(UIImage *)img{
+    if ([_ImageType isEqualToNumber:@1]) {
+        self.LeftImage.image = img;
+    }else{
+    
+        self.RightImage.image = img;
+    }
+
+}
 #pragma mark - 添加图片方法
 - (void)addImageMethod{
 
@@ -159,8 +170,11 @@
             {
                 //相机
                 if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-                    _imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-                    [self presentViewController:_imagePickerController animated:YES completion:nil];
+                    MyPhotoCameraVC * mycamera = [MyPhotoCameraVC new];
+                    mycamera.delegate = self;
+                    [self presentViewController:mycamera animated:YES completion:nil];
+//                    _imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+//                    [self presentViewController:_imagePickerController animated:YES completion:nil];
                 }else{
                     [SVProgressHUD showErrorWithStatus:@"相机不可用"];
                     
