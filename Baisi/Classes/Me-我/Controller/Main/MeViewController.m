@@ -23,6 +23,7 @@
 #import "SureCustomActionSheet.h"
 #import "FaceRecogintionVC.h"
 #import "FaceComparisonVC.h"
+#import "TESTViewController.h"
 #define ImageName @"imageName"
 #define TitleName @"titleName"
 @interface MeViewController ()<
@@ -221,7 +222,8 @@
             break;
             case 11:
         {
-            
+            TESTViewController * test = [TESTViewController new];
+            [self.navigationController pushViewController:test animated:YES];
            
         }
             break;

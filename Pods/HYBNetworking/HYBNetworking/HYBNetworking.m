@@ -292,6 +292,7 @@ static inline NSString *cachePath() {
   }
 
   AFHTTPSessionManager *manager = [self manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
   NSString *absolute = [self absoluteUrlWithPath:url];
   
   if ([self baseUrl] == nil) {

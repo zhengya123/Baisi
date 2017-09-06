@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:1.000 green:0.158 blue:0.176 alpha:1.000];
-   
+   //[self.navigationBar setBackgroundImage:[UIImage imageNamed:@"NAV"] forBarMetrics:0];
     UIBarButtonItem *item = [UIBarButtonItem appearance];
     // 设置文字属性
     NSMutableDictionary *textAttrs            = [NSMutableDictionary dictionary];

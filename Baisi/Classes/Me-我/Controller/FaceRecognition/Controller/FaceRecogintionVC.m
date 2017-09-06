@@ -156,28 +156,49 @@
 #pragma mark - 上传图片
 - (void)uploadImag:(NSString *)token groupid:(NSString *)groupID img:(UIImage *)imag{
     [SVProgressHUD showWithStatus:@"正在上传"];
-    NSMutableDictionary * params = [NSMutableDictionary dictionary];
-    params[@"access_token"] = token;
-    params[@"uid"] = @"2";
-    params[@"user_info"] = @"FirstUser";
-    params[@"group_id"] = groupID;
-    NSData * imageData = UIImageJPEGRepresentation(imag, 0.5);
-    params[@"image"]= [NSString stringWithFormat:@"%@",[imageData base64EncodedStringWithOptions:(NSDataBase64Encoding64CharacterLineLength)]];
-    params[@"action_type"] = @"";
-    [HYBNetworking postWithUrl:@"https://aip.baidubce.com/rest/2.0/face/v2/faceset/user/add" refreshCache:YES params:params success:^(id response) {
-        ZYLog(@"上传图片成功 == %@",response);
-        if (response[@"error_code"] == nil) {
-            [SVProgressHUD showSuccessWithStatus:@"上传成功"];
-            self.similarLabel.text = @"上传成功10S之后再进行其他操作哦";
-        }else{
-            [SVProgressHUD showErrorWithStatus:@"上传失败"];
-        self.similarLabel.text = [NSString stringWithFormat:@"错误码%@ -- msg:%@",response[@"error_code"],response[@"error_msg"]];
-        
-        }
+//    NSMutableDictionary * params = [NSMutableDictionary dictionary];
+//    params[@"access_token"] = token;
+//    params[@"uid"] = @"2";
+//    params[@"user_info"] = @"FirstUser";
+//    params[@"group_id"] = groupID;
+//    NSData * imageData = UIImageJPEGRepresentation(imag, 0.5);
+//    params[@"image"]= [NSString stringWithFormat:@"%@",[imageData base64EncodedStringWithOptions:(NSDataBase64Encoding64CharacterLineLength)]];
+//    params[@"action_type"] = @"";
+//    [HYBNetworking postWithUrl:@"https://aip.baidubce.com/rest/2.0/face/v2/faceset/user/add" refreshCache:YES params:params success:^(id response) {
+//        ZYLog(@"上传图片成功 == %@",response);
+//        if (response[@"error_code"] == nil) {
+//            [SVProgressHUD showSuccessWithStatus:@"上传成功"];
+//            self.similarLabel.text = @"上传成功10S之后再进行其他操作哦";
+//        }else{
+//            [SVProgressHUD showErrorWithStatus:@"上传失败"];
+//        self.similarLabel.text = [NSString stringWithFormat:@"错误码%@ -- msg:%@",response[@"error_code"],response[@"error_msg"]];
+//        
+//        }
+//    } fail:^(NSError *error) {
+//        ZYLog(@"err == %@",error);
+//        [SVProgressHUD showErrorWithStatus:@"上传失败"];
+//    }];
+    
+    NSDictionary * studentId = @{
+                                 @"Id":@1374
+                                 };
+    NSData * imageData = UIImageJPEGRepresentation(imag, 0.3);
+    NSString * pathImg = [imageData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    //NSString * pathImg= [NSString stringWithFormat:@"%@",[imageData base64EncodedStringWithOptions:(NSDataBase64Encoding64CharacterLineLength)]];
+    ZYLog(@"imageLenth == %lu",(unsigned long)imageData.length/1000);
+    ZYLog(@"imageStrLentch == %lu",pathImg.length);
+    NSDictionary * parameter = @{
+                                 @"Id":@4,
+                                 @"Student":studentId,
+                                 @"PicturePath":pathImg,
+                                 @"Remark":@""
+                                 };
+    [HYBNetworking postWithUrl:@"http://192.168.17.117:7010/StudentFaceInfoWcfService.svc/UploadFaceImage" refreshCache:YES params:parameter success:^(id response) {
+        ZYLog(@"上传成功== %@",response);
     } fail:^(NSError *error) {
-        ZYLog(@"err == %@",error);
-        [SVProgressHUD showErrorWithStatus:@"上传失败"];
+        ZYLog(@"上传失败 == %@",error);
     }];
+    
 }
 #pragma mark - 比较
 - (void)compareImage:(NSString *)token GroupID:(NSString *)groupid img:(UIImage *)imag{

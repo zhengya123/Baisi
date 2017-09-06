@@ -7,7 +7,8 @@ def pods
     pod 'SVProgressHUD'
     pod 'YYKit'
     pod 'pop'
-    pod 'BaiduMapKit'	
+    pod 'BaiduMapKit'
+   	
 end 
 target 'Baisi' do
     pods

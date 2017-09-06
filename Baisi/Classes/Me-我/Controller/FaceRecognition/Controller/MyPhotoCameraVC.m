@@ -135,6 +135,7 @@
     self.previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     [self.view.layer addSublayer:self.previewLayer];
     
+    [self changeCamera];
     //开始启动
     [self.session startRunning];
     if ([_device lockForConfiguration:nil]) {
@@ -273,12 +274,53 @@
         [self.session stopRunning];
        // [self saveImageToPhotoAlbum:self.image];
         self.imageView = [[UIImageView alloc]initWithFrame:self.previewLayer.frame];
+        self.imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self.view insertSubview:_imageView belowSubview:_PhotoButton];
         self.imageView.layer.masksToBounds = YES;
         self.imageView.image = _image;
         NSLog(@"image size = %@",NSStringFromCGSize(self.image.size));
+        [self detectFaceWithImage:self.imageView.image];
+        
     }];
 }
+#pragma mark - 校验是否有人脸
+- (void)detectFaceWithImage:(UIImage *)imageInput{
+    NSDictionary *imageOptions =  [NSDictionary dictionaryWithObject:@(5) forKey:CIDetectorImageOrientation];
+    CIImage *personciImage = [CIImage imageWithCGImage:self.imageView.image.CGImage];
+    NSDictionary *opts = [NSDictionary dictionaryWithObject:
+                          CIDetectorAccuracyHigh forKey:CIDetectorAccuracy];
+    CIDetector *faceDetector=[CIDetector detectorOfType:CIDetectorTypeFace context:nil options:opts];
+    NSArray *features = [faceDetector featuresInImage:personciImage options:imageOptions];
+    
+    if (features.count > 0) {
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"检测到了人脸" preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil]];
+        [self presentViewController:alert animated:YES completion:nil];
+        
+    } else {
+        
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"未检测到人脸" preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil]];
+        [self presentViewController:alert animated:YES completion:nil];
+    
+    }
+
+}
+-(NSInteger)totalNumberOfFacesByFaceRecognitionWithImage:(UIImage *)image{
+    CIContext * context = [CIContext contextWithOptions:nil];
+    
+    CIImage * cImage = [CIImage imageWithCGImage:image.CGImage];
+    
+    NSDictionary * param = [NSDictionary dictionaryWithObject:CIDetectorAccuracyHigh forKey:CIDetectorAccuracy];
+    CIDetector * faceDetector = [CIDetector detectorOfType:CIDetectorTypeFace context:context options:param];
+    
+    
+    NSArray * detectResult = [faceDetector featuresInImage:cImage];
+    
+    return detectResult.count;
+}
+
 #pragma - 保存至相册
 - (void)saveImageToPhotoAlbum:(UIImage*)savedImage
 {
@@ -296,12 +338,6 @@
     }else{
         msg = @"保存图片成功" ;
     }
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"保存图片结果提示"
-                                                    message:msg
-                                                   delegate:self
-                                          cancelButtonTitle:@"确定"
-                                          otherButtonTitles:nil];
-    [alert show];
 }
 -(void)cancle{
     [self.imageView removeFromSuperview];
@@ -311,13 +347,10 @@
 
     if (self.imageView != nil) {
         [self.delegate getPicture:self.imageView.image];
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }else{
-        [self dismissViewControllerAnimated:YES completion:nil];
-    
+        
     }
+    [self dismissViewControllerAnimated:YES completion:nil];
    
-
 }
 #pragma mark - 检查相机权限
 - (BOOL)canUserCamear{

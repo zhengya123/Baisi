@@ -116,12 +116,12 @@
  */
 - (void)drawRacAndLine {
     // 圆弧
-    CAShapeLayer *shapeLayerArc = [CAShapeLayer layer];
-    shapeLayerArc.strokeColor   = [UIColor lightGrayColor].CGColor;
-    shapeLayerArc.fillColor     = [UIColor clearColor].CGColor;
-    shapeLayerArc.lineWidth     = 1.f;
-    shapeLayerArc.lineCap       = kCALineCapButt;
-    shapeLayerArc.frame         = self.bounds;
+//    CAShapeLayer *shapeLayerArc = [CAShapeLayer layer];
+//    shapeLayerArc.strokeColor   = [UIColor lightGrayColor].CGColor;
+//    shapeLayerArc.fillColor     = [UIColor clearColor].CGColor;
+//    shapeLayerArc.lineWidth     = 1.f;
+//    shapeLayerArc.lineCap       = kCALineCapButt;
+//    shapeLayerArc.frame         = self.bounds;
     // 渐变
     CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = self.bounds;
@@ -141,8 +141,8 @@
     CGPathMoveToPoint(pathArc, NULL, 0, DISTANCETOPANDBOTTOM);
     CGPathAddQuadCurveToPoint(pathArc, NULL, self.frame.size.width / 2, - 20, self.frame.size.width, DISTANCETOPANDBOTTOM);
     
-    shapeLayerArc.path = pathArc;
-    [self.layer addSublayer:shapeLayerArc];
+    //shapeLayerArc.path = pathArc;
+    //[self.layer addSublayer:shapeLayerArc];
     [self.layer addSublayer:gradient];
 
     // 红色指示器

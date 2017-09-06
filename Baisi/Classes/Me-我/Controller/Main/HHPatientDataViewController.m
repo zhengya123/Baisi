@@ -114,9 +114,9 @@
     self.patellaReplace.zy_textField.inputView = self.pickView;
     
     self.heightRulerView.frame = CGRectMake(0, CGRectGetMaxY(self.beginButton.frame) + 20, ScreenWidth, 50);
-    [self.heightRulerView showRulerScrollViewWithCount:200
+    [self.heightRulerView showRulerScrollViewWithCount:240
                                                 average:[NSNumber numberWithFloat:1]
-                                           currentValue:175
+                                           currentValue:80
                                               smallMode:YES];
     [self.scrollView addSubview:self.heightRulerView];
     
@@ -128,7 +128,7 @@
 #pragma mark - 尺子的代理
 -(void)ftRrettyRuler:(FTPrettyRulerView *)rulerView rulerValue:(CGFloat)rulerValue{
 
-    self.topInformationLabel.text = [NSString stringWithFormat:@"当前身高: %.1fCM",rulerValue];
+    self.topInformationLabel.text = [NSString stringWithFormat:@"秒数: %.1f",rulerValue * 60];
 
 }
 #pragma mark - 开始随访按钮
