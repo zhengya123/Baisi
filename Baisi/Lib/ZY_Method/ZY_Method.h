@@ -34,4 +34,8 @@
  *  获取当前时间
  */
 +(NSString*)getCurrentTimes;
+
++ (void)getDateInWeekWithDate:(NSString *)nowDate OutBegenTime:(NSString **)bTime OutendTime:(NSString **)eTime;
++ (NSString *)getBeforeDate:(NSString *)date days:(NSInteger)dayss;
++ (NSString *)getAfterDate:(NSString *)date days:(NSInteger)dayss;
 @end

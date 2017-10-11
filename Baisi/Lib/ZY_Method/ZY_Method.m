@@ -185,4 +185,74 @@
     return currentTimeString;
     
 }
++ (void)getDateInWeekWithDate:(NSString *)nowDate OutBegenTime:(NSString *__autoreleasing *)bTime OutendTime:(NSString *__autoreleasing *)eTime{
+
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat       = @"yyyy-MM-dd";
+    //dateFormatter.dateFormat       = @"yyyy-MM-dd HH:mm:ss";
+    NSDate * inputDate   = [dateFormatter dateFromString:nowDate];
+    NSArray * weekdays = [NSArray arrayWithObjects:[NSNull null],@"周日", @"周一", @"周二", @"周三", @"周四", @"周五", @"周六", nil];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    
+    NSTimeZone *timeZone = [[NSTimeZone alloc] initWithName:@"Asia/Shanghai"];
+    
+    [calendar setTimeZone: timeZone];
+    
+    NSCalendarUnit calendarUnit = NSWeekdayCalendarUnit;
+    
+    NSDateComponents *theComponents = [calendar components:calendarUnit fromDate:inputDate];
+    
+    NSString * weekStr = [weekdays objectAtIndex:theComponents.weekday];
+    NSString * beginT = nil;
+    NSString * endT   = nil;
+    if ([weekStr isEqualToString:@"周日"]) {
+        beginT = [self getBeforeDate:nowDate days:6];
+        endT   = nowDate;
+    }else if ([weekStr isEqualToString:@"周一"]){
+        beginT = [self getBeforeDate:nowDate days:7];
+        
+    }else if ([weekStr isEqualToString:@"周二"]){
+        beginT = [self getBeforeDate:nowDate days:8];
+        
+    }else if ([weekStr isEqualToString:@"周三"]){
+        beginT = [self getBeforeDate:nowDate days:9];
+        
+    }else if ([weekStr isEqualToString:@"周四"]){
+        beginT = [self getBeforeDate:nowDate days:10];
+        
+    }else if ([weekStr isEqualToString:@"周五"]){
+        beginT = [self getBeforeDate:nowDate days:11];
+        
+    }else if ([weekStr isEqualToString:@"周六"]){
+        beginT = [self getBeforeDate:nowDate days:12];
+        
+    }
+    endT   = [self getAfterDate:beginT days:6];
+    *bTime = [NSString stringWithString:beginT];
+    *eTime = [NSString stringWithString:endT];
+
+}
+
+
++ (NSString *)getBeforeDate:(NSString *)date days:(NSInteger)dayss{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSDate * getdate = [formatter dateFromString:date];
+    NSDate *lastDay = [NSDate dateWithTimeInterval:-24*60*60*dayss sinceDate:getdate];//前一天
+    NSDateFormatter * format = [[NSDateFormatter alloc]init];
+    format.dateFormat = @"yyyy-MM-dd";
+    NSString * LastDate = [format stringFromDate:lastDay];
+    return LastDate;
+}
++ (NSString *)getAfterDate:(NSString *)date days:(NSInteger)dayss{
+    NSDateFormatter * formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSDate * getDate = [formatter dateFromString:date];
+    NSDate *lastDay = [NSDate dateWithTimeInterval:24*60*60*dayss sinceDate:getDate];//前一天
+    NSDateFormatter * format = [[NSDateFormatter alloc]init];
+    format.dateFormat = @"yyyy-MM-dd";
+    NSString * LastDate = [format stringFromDate:lastDay];
+    return LastDate;
+}
+
 @end

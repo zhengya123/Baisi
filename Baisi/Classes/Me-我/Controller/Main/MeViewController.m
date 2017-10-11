@@ -24,12 +24,17 @@
 #import "FaceRecogintionVC.h"
 #import "FaceComparisonVC.h"
 #import "TESTViewController.h"
+#import "RelationSelectView.h"
+#import "GenderSelectView.h"
+#import "TestVC.h"
 #define ImageName @"imageName"
 #define TitleName @"titleName"
 @interface MeViewController ()<
      UITableViewDelegate,
      UITableViewDataSource,
-     collectionCellDelegate>
+     collectionCellDelegate,
+RelationShipDelegate,
+GenderSelectDelegate>
 
 @property (nonatomic, strong) UITableView * tableView;
 
@@ -39,6 +44,14 @@
 @implementation MeViewController
 {
     NSString * accessToken;
+
+}
+- (void)selectRelation:(NSString *)str{
+    ZYLog(@"%@",str);
+
+}
+- (void)genderSelect:(NSString *)gender{
+    ZYLog(@"性别选择回调 == %@",gender);
 
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -155,15 +168,19 @@
             break;
             case 1:
         {
-            [[ZY_BottonView shareView] show];
+            //[[ZY_BottonView shareView] show];
+            //[[RelationSelectView shareView] showWithView:self.view Delegate:self];
+            [[GenderSelectView shareView] shoeWithView:self.view Delegate:self];
         }
             break;
             case 2:
         {
-            [[ZY_ErrorView shareError] showWithStr:@"密码错误,请稍后重试"
-                                              Font:18
-                                              Time:4
-             ];
+//            [[ZY_ErrorView shareError] showWithStr:@"密码错误,请稍后重试"
+//                                              Font:18
+//                                              Time:4
+//             ];
+            TestVC * testVC = [TestVC new];
+            [self.navigationController pushViewController:testVC animated:YES];
             ZYLog(@"3");
         }
             break;

@@ -17,7 +17,7 @@
 #import "GooeySlideMenu.h"
 #import "PersonalViewController.h"
 static CGFloat const titleH = 44;
-static CGFloat const navBarH = 64;
+static CGFloat const navBarH = 84;
 static CGFloat const maxTitleScale = 1.5;
 #define LOAD_NEXT_ITEM self.childViewControllers.count
 #define YCKScreenW [UIScreen mainScreen].bounds.size.width

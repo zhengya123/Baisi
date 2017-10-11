@@ -292,6 +292,9 @@
 		DF5B40BD1E8C990B00E04C27 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40BA1E8C990B00E04C27 /* LoginViewController.m */; };
 		DF5B40BE1E8C990B00E04C27 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF5B40BB1E8C990B00E04C27 /* LoginViewController.xib */; };
 		DF5B40C31E8CA5D300E04C27 /* ZY_BottonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40C21E8CA5D300E04C27 /* ZY_BottonView.m */; };
+		DF6684401F73959F0037521B /* RelationSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF66843F1F73959F0037521B /* RelationSelectView.m */; };
+		DF6684431F73B1F80037521B /* RelationShipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6684421F73B1F80037521B /* RelationShipCell.m */; };
+		DF66844C1F73BF6E0037521B /* GenderSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF66844B1F73BF6E0037521B /* GenderSelectView.m */; };
 		DF74B21B1EEA951000B266CC /* MY_MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF74B2171EEA951000B266CC /* MY_MapVC.m */; };
 		DF74B21C1EEA951000B266CC /* MY_MapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF74B2181EEA951000B266CC /* MY_MapVC.xib */; };
 		DF74B21F1EEA954000B266CC /* BaiduMapBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF74B21E1EEA954000B266CC /* BaiduMapBottomView.m */; };
@@ -336,6 +339,9 @@
 		DF868A0F1EA49BC300378800 /* peopleworking_Images.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF868A0E1EA49BC300378800 /* peopleworking_Images.gif */; };
 		DF868A121EA49D5F00378800 /* Waiting_Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = DF868A111EA49D5F00378800 /* Waiting_Loading.m */; };
 		DF868A141EA49E3C00378800 /* wait_Images.gif in Resources */ = {isa = PBXBuildFile; fileRef = DF868A131EA49E3C00378800 /* wait_Images.gif */; };
+		DFB2B9101F78DCDF00EFE003 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB2B90E1F78DCDF00EFE003 /* TestVC.m */; };
+		DFB2B9111F78DCDF00EFE003 /* TestVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFB2B90F1F78DCDF00EFE003 /* TestVC.xib */; };
+		DFB2B9141F78FADD00EFE003 /* PhotoAlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB2B9131F78FADD00EFE003 /* PhotoAlbumModel.m */; };
 		DFB767B91E9B5DBE00D480F8 /* ZY_AlertNotesView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB767B81E9B5DBE00D480F8 /* ZY_AlertNotesView.m */; };
 /* End PBXBuildFile section */
 
@@ -814,6 +820,12 @@
 		DF5B40C01E8CA49200E04C27 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		DF5B40C11E8CA5D300E04C27 /* ZY_BottonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_BottonView.h; sourceTree = "<group>"; };
 		DF5B40C21E8CA5D300E04C27 /* ZY_BottonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_BottonView.m; sourceTree = "<group>"; };
+		DF66843E1F73959F0037521B /* RelationSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelationSelectView.h; sourceTree = "<group>"; };
+		DF66843F1F73959F0037521B /* RelationSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelationSelectView.m; sourceTree = "<group>"; };
+		DF6684411F73B1F80037521B /* RelationShipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelationShipCell.h; sourceTree = "<group>"; };
+		DF6684421F73B1F80037521B /* RelationShipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelationShipCell.m; sourceTree = "<group>"; };
+		DF66844A1F73BF6E0037521B /* GenderSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenderSelectView.h; sourceTree = "<group>"; };
+		DF66844B1F73BF6E0037521B /* GenderSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenderSelectView.m; sourceTree = "<group>"; };
 		DF74B2161EEA951000B266CC /* MY_MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MY_MapVC.h; sourceTree = "<group>"; };
 		DF74B2171EEA951000B266CC /* MY_MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MY_MapVC.m; sourceTree = "<group>"; };
 		DF74B2181EEA951000B266CC /* MY_MapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MY_MapVC.xib; sourceTree = "<group>"; };
@@ -895,6 +907,11 @@
 		DF868A101EA49D5F00378800 /* Waiting_Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Waiting_Loading.h; sourceTree = "<group>"; };
 		DF868A111EA49D5F00378800 /* Waiting_Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Waiting_Loading.m; sourceTree = "<group>"; };
 		DF868A131EA49E3C00378800 /* wait_Images.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wait_Images.gif; sourceTree = "<group>"; };
+		DFB2B90D1F78DCDF00EFE003 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		DFB2B90E1F78DCDF00EFE003 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		DFB2B90F1F78DCDF00EFE003 /* TestVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestVC.xib; sourceTree = "<group>"; };
+		DFB2B9121F78FADD00EFE003 /* PhotoAlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAlbumModel.h; sourceTree = "<group>"; };
+		DFB2B9131F78FADD00EFE003 /* PhotoAlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumModel.m; sourceTree = "<group>"; };
 		DFB767B71E9B5DBE00D480F8 /* ZY_AlertNotesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZY_AlertNotesView.h; sourceTree = "<group>"; };
 		DFB767B81E9B5DBE00D480F8 /* ZY_AlertNotesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZY_AlertNotesView.m; sourceTree = "<group>"; };
 		FA142A9CF5B427F8C8E697E3 /* Pods-Baisi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Baisi/Pods-Baisi.release.xcconfig"; sourceTree = "<group>"; };
@@ -1539,6 +1556,12 @@
 				DF5B3EE01E8C98BC00E04C27 /* ZY_AlertViews.m */,
 				DF4EC5831EC05F9500B1681C /* SureCustomActionSheet.h */,
 				DF4EC5841EC05F9600B1681C /* SureCustomActionSheet.m */,
+				DF66843E1F73959F0037521B /* RelationSelectView.h */,
+				DF66843F1F73959F0037521B /* RelationSelectView.m */,
+				DF6684411F73B1F80037521B /* RelationShipCell.h */,
+				DF6684421F73B1F80037521B /* RelationShipCell.m */,
+				DF66844A1F73BF6E0037521B /* GenderSelectView.h */,
+				DF66844B1F73BF6E0037521B /* GenderSelectView.m */,
 			);
 			path = ZY_Alert;
 			sourceTree = "<group>";
@@ -1952,6 +1975,9 @@
 				DF5B402E1E8C98DC00E04C27 /* SearchDetail */,
 				DF5B40351E8C98DC00E04C27 /* TeamSearchVC.h */,
 				DF5B40361E8C98DC00E04C27 /* TeamSearchVC.m */,
+				DFB2B90D1F78DCDF00EFE003 /* TestVC.h */,
+				DFB2B90E1F78DCDF00EFE003 /* TestVC.m */,
+				DFB2B90F1F78DCDF00EFE003 /* TestVC.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1983,6 +2009,8 @@
 			children = (
 				DF5B403B1E8C98DC00E04C27 /* TeamSearchModel.h */,
 				DF5B403C1E8C98DC00E04C27 /* TeamSearchModel.m */,
+				DFB2B9121F78FADD00EFE003 /* PhotoAlbumModel.h */,
+				DFB2B9131F78FADD00EFE003 /* PhotoAlbumModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2575,6 +2603,7 @@
 				DF5B3FF61E8C98D100E04C27 /* screenShotone.gif in Resources */,
 				DF5B3FC71E8C98D100E04C27 /* login_tecent_icon@2x.png in Resources */,
 				DF5B3FBD1E8C98D100E04C27 /* login_rgister_textfield_bg.png in Resources */,
+				DFB2B9111F78DCDF00EFE003 /* TestVC.xib in Resources */,
 				DF19B6381E9DFDDD001B5E69 /* HHAllMemberViewController.xib in Resources */,
 				DF5B3FAE1E8C98D100E04C27 /* login_QQ_icon@3x.png in Resources */,
 				DF5B3FB11E8C98D100E04C27 /* login_QQ_icon_click@3x.png in Resources */,
@@ -2653,6 +2682,7 @@
 				DF758D481F03A168006A43C7 /* ApproveCommonModel.m in Sources */,
 				DF5B3F421E8C98BC00E04C27 /* XHWebImageDownload.m in Sources */,
 				DF5B3F221E8C98BC00E04C27 /* XWInteractiveTransition.m in Sources */,
+				DF6684431F73B1F80037521B /* RelationShipCell.m in Sources */,
 				DF5B407B1E8C98DC00E04C27 /* AllEssenceListCell.m in Sources */,
 				DF5B3F471E8C98BC00E04C27 /* ZY_AlertViews.m in Sources */,
 				DF5B3F2A1E8C98BC00E04C27 /* XWCoolAnimator+XWLines.m in Sources */,
@@ -2774,6 +2804,8 @@
 				DF5B3EFE1E8C98BC00E04C27 /* IQKeyboardManager.m in Sources */,
 				DF5B3F101E8C98BC00E04C27 /* UINavigationController+WXSTransition.m in Sources */,
 				DF868A121EA49D5F00378800 /* Waiting_Loading.m in Sources */,
+				DF6684401F73959F0037521B /* RelationSelectView.m in Sources */,
+				DF66844C1F73BF6E0037521B /* GenderSelectView.m in Sources */,
 				DF5B40861E8C98DC00E04C27 /* NSString+pinyin.m in Sources */,
 				DF5B3F361E8C98BC00E04C27 /* XWFilterAnimator+XWMod.m in Sources */,
 				DF5B40911E8C98DC00E04C27 /* MeViewController.m in Sources */,
@@ -2781,6 +2813,7 @@
 				DF5B3F401E8C98BC00E04C27 /* XHImageCache.m in Sources */,
 				DF76CC441F3C300C006C9C81 /* UICountingLabel.m in Sources */,
 				DF5B3F1B1E8C98BC00E04C27 /* WXSTransitionManager+SystermAnimation.m in Sources */,
+				DFB2B9141F78FADD00EFE003 /* PhotoAlbumModel.m in Sources */,
 				DF5B3F2B1E8C98BC00E04C27 /* XWCoolAnimator+XWMiddlePageFlip.m in Sources */,
 				DF33262D1EE92AB700450755 /* SeconddescribeTableViewCell.m in Sources */,
 				DF76CC341F3C3000006C9C81 /* PNLineChartDataItem.m in Sources */,
@@ -2835,6 +2868,7 @@
 				DF5B3F3E1E8C98BC00E04C27 /* UIImage+XHGIF.m in Sources */,
 				DF5B3F351E8C98BC00E04C27 /* XWFilterAnimator+XWMask.m in Sources */,
 				DF5B40A41E8C98DC00E04C27 /* UIView+UIView_ZYExtension.m in Sources */,
+				DFB2B9101F78DCDF00EFE003 /* TestVC.m in Sources */,
 				DF5B40891E8C98DC00E04C27 /* TeamSearchVC.m in Sources */,
 				DF5B3F381E8C98BC00E04C27 /* XWFilterAnimator+XWRipple.m in Sources */,
 				DF5B3F121E8C98BC00E04C27 /* UIViewController+WXSTransitionProperty.m in Sources */,
