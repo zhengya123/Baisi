@@ -24,6 +24,7 @@
 #import "SureCustomActionSheet.h"
 #import "EditSignVC.h"
 #import "ApproveListViewController.h"
+#import "SegmentVC.h"
 #define zytitle @"cities"
 #define zytitleName @"titleName"
 @interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,TXScrollLabelViewDelegate>
@@ -236,6 +237,8 @@
             {
                 //MY_MapVC * mapVC = [MY_MapVC new];
                 //[self.navigationController pushViewController:mapVC animated:YES];
+                SegmentVC * segmentVC = [SegmentVC new];
+                [self.navigationController pushViewController:segmentVC animated:YES];
             }
                 break;
                 case 1:

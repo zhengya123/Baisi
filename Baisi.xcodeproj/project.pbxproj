@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		0401190C723F42EDEDC788BC /* libPods-Baisi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */; };
+		C73E6A231F94A13300500928 /* FJFirstShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A1D1F94A13300500928 /* FJFirstShopViewController.m */; };
+		C73E6A241F94A13300500928 /* FJSecondShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A1F1F94A13300500928 /* FJSecondShopViewController.m */; };
+		C73E6A251F94A13300500928 /* QNPersonalHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A211F94A13300500928 /* QNPersonalHeaderView.m */; };
+		C73E6A261F94A13300500928 /* QNPersonalHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73E6A221F94A13300500928 /* QNPersonalHeaderView.xib */; };
+		C73E6A2D1F94A33400500928 /* SegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A2C1F94A33400500928 /* SegmentVC.m */; };
+		C73E6A4A1F94A39C00500928 /* UIViewController+FJCurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A311F94A39C00500928 /* UIViewController+FJCurrentViewController.m */; };
+		C73E6A4B1F94A39C00500928 /* FJBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A341F94A39C00500928 /* FJBaseTableView.m */; };
+		C73E6A4C1F94A39C00500928 /* FJConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A361F94A39C00500928 /* FJConfigModel.m */; };
+		C73E6A4D1F94A39C00500928 /* FJSegementContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A381F94A39C00500928 /* FJSegementContentCell.m */; };
+		C73E6A4E1F94A39C00500928 /* FJSegementContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A3A1F94A39C00500928 /* FJSegementContentView.m */; };
+		C73E6A4F1F94A39C00500928 /* FJSegmentdPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A3C1F94A39C00500928 /* FJSegmentdPageViewController.m */; };
+		C73E6A501F94A39C00500928 /* FJSegmentedBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A3E1F94A39C00500928 /* FJSegmentedBaseViewController.m */; };
+		C73E6A511F94A39C00500928 /* FJPageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A421F94A39C00500928 /* FJPageCollectionViewCell.m */; };
+		C73E6A521F94A39C00500928 /* FJSegmentedPageContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A441F94A39C00500928 /* FJSegmentedPageContentView.m */; };
+		C73E6A531F94A39C00500928 /* FJSegmentedTagTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A471F94A39C00500928 /* FJSegmentedTagTitleCell.m */; };
+		C73E6A541F94A39C00500928 /* FJSegmentedTagTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A491F94A39C00500928 /* FJSegmentedTagTitleView.m */; };
+		C73E6A571F94A98200500928 /* PersonalHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A561F94A98200500928 /* PersonalHeaderView.m */; };
 		DF002BB01EB050DD00CFDE42 /* HHjiujiuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF002BAE1EB050DD00CFDE42 /* HHjiujiuDetailViewController.m */; };
 		DF002BB11EB050DD00CFDE42 /* HHjiujiuDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF002BAF1EB050DD00CFDE42 /* HHjiujiuDetailViewController.xib */; };
 		DF002BB41EB0518D00CFDE42 /* CountDownView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF002BB31EB0518D00CFDE42 /* CountDownView.m */; };
@@ -365,6 +382,40 @@
 /* Begin PBXFileReference section */
 		36D9D7AC75B5EC04B0B5B839 /* Pods-Baisi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baisi/Pods-Baisi.debug.xcconfig"; sourceTree = "<group>"; };
 		84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baisi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C73E6A1C1F94A13300500928 /* FJFirstShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJFirstShopViewController.h; sourceTree = "<group>"; };
+		C73E6A1D1F94A13300500928 /* FJFirstShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJFirstShopViewController.m; sourceTree = "<group>"; };
+		C73E6A1E1F94A13300500928 /* FJSecondShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSecondShopViewController.h; sourceTree = "<group>"; };
+		C73E6A1F1F94A13300500928 /* FJSecondShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSecondShopViewController.m; sourceTree = "<group>"; };
+		C73E6A201F94A13300500928 /* QNPersonalHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QNPersonalHeaderView.h; sourceTree = "<group>"; };
+		C73E6A211F94A13300500928 /* QNPersonalHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QNPersonalHeaderView.m; sourceTree = "<group>"; };
+		C73E6A221F94A13300500928 /* QNPersonalHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QNPersonalHeaderView.xib; sourceTree = "<group>"; };
+		C73E6A2B1F94A33400500928 /* SegmentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentVC.h; sourceTree = "<group>"; };
+		C73E6A2C1F94A33400500928 /* SegmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentVC.m; sourceTree = "<group>"; };
+		C73E6A301F94A39C00500928 /* UIViewController+FJCurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+FJCurrentViewController.h"; sourceTree = "<group>"; };
+		C73E6A311F94A39C00500928 /* UIViewController+FJCurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+FJCurrentViewController.m"; sourceTree = "<group>"; };
+		C73E6A331F94A39C00500928 /* FJBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJBaseTableView.h; sourceTree = "<group>"; };
+		C73E6A341F94A39C00500928 /* FJBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJBaseTableView.m; sourceTree = "<group>"; };
+		C73E6A351F94A39C00500928 /* FJConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJConfigModel.h; sourceTree = "<group>"; };
+		C73E6A361F94A39C00500928 /* FJConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJConfigModel.m; sourceTree = "<group>"; };
+		C73E6A371F94A39C00500928 /* FJSegementContentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSegementContentCell.h; sourceTree = "<group>"; };
+		C73E6A381F94A39C00500928 /* FJSegementContentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSegementContentCell.m; sourceTree = "<group>"; };
+		C73E6A391F94A39C00500928 /* FJSegementContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSegementContentView.h; sourceTree = "<group>"; };
+		C73E6A3A1F94A39C00500928 /* FJSegementContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSegementContentView.m; sourceTree = "<group>"; };
+		C73E6A3B1F94A39C00500928 /* FJSegmentdPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSegmentdPageViewController.h; sourceTree = "<group>"; };
+		C73E6A3C1F94A39C00500928 /* FJSegmentdPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSegmentdPageViewController.m; sourceTree = "<group>"; };
+		C73E6A3D1F94A39C00500928 /* FJSegmentedBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSegmentedBaseViewController.h; sourceTree = "<group>"; };
+		C73E6A3E1F94A39C00500928 /* FJSegmentedBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSegmentedBaseViewController.m; sourceTree = "<group>"; };
+		C73E6A3F1F94A39C00500928 /* FJSegmentedPageDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSegmentedPageDefine.h; sourceTree = "<group>"; };
+		C73E6A411F94A39C00500928 /* FJPageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJPageCollectionViewCell.h; sourceTree = "<group>"; };
+		C73E6A421F94A39C00500928 /* FJPageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJPageCollectionViewCell.m; sourceTree = "<group>"; };
+		C73E6A431F94A39C00500928 /* FJSegmentedPageContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSegmentedPageContentView.h; sourceTree = "<group>"; };
+		C73E6A441F94A39C00500928 /* FJSegmentedPageContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSegmentedPageContentView.m; sourceTree = "<group>"; };
+		C73E6A461F94A39C00500928 /* FJSegmentedTagTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSegmentedTagTitleCell.h; sourceTree = "<group>"; };
+		C73E6A471F94A39C00500928 /* FJSegmentedTagTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSegmentedTagTitleCell.m; sourceTree = "<group>"; };
+		C73E6A481F94A39C00500928 /* FJSegmentedTagTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSegmentedTagTitleView.h; sourceTree = "<group>"; };
+		C73E6A491F94A39C00500928 /* FJSegmentedTagTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSegmentedTagTitleView.m; sourceTree = "<group>"; };
+		C73E6A551F94A98200500928 /* PersonalHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalHeaderView.h; sourceTree = "<group>"; };
+		C73E6A561F94A98200500928 /* PersonalHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalHeaderView.m; sourceTree = "<group>"; };
 		DF002BAD1EB050DD00CFDE42 /* HHjiujiuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHjiujiuDetailViewController.h; sourceTree = "<group>"; };
 		DF002BAE1EB050DD00CFDE42 /* HHjiujiuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHjiujiuDetailViewController.m; sourceTree = "<group>"; };
 		DF002BAF1EB050DD00CFDE42 /* HHjiujiuDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHjiujiuDetailViewController.xib; sourceTree = "<group>"; };
@@ -960,6 +1011,94 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C73E6A151F949FFD00500928 /* MySegment */ = {
+			isa = PBXGroup;
+			children = (
+				C73E6A1B1F94A09000500928 /* ChileVC */,
+				C73E6A2B1F94A33400500928 /* SegmentVC.h */,
+				C73E6A2C1F94A33400500928 /* SegmentVC.m */,
+			);
+			path = MySegment;
+			sourceTree = "<group>";
+		};
+		C73E6A1B1F94A09000500928 /* ChileVC */ = {
+			isa = PBXGroup;
+			children = (
+				C73E6A1C1F94A13300500928 /* FJFirstShopViewController.h */,
+				C73E6A1D1F94A13300500928 /* FJFirstShopViewController.m */,
+				C73E6A1E1F94A13300500928 /* FJSecondShopViewController.h */,
+				C73E6A1F1F94A13300500928 /* FJSecondShopViewController.m */,
+				C73E6A551F94A98200500928 /* PersonalHeaderView.h */,
+				C73E6A561F94A98200500928 /* PersonalHeaderView.m */,
+				C73E6A201F94A13300500928 /* QNPersonalHeaderView.h */,
+				C73E6A211F94A13300500928 /* QNPersonalHeaderView.m */,
+				C73E6A221F94A13300500928 /* QNPersonalHeaderView.xib */,
+			);
+			path = ChileVC;
+			sourceTree = "<group>";
+		};
+		C73E6A2E1F94A39C00500928 /* FJSegmentedPager */ = {
+			isa = PBXGroup;
+			children = (
+				C73E6A2F1F94A39C00500928 /* FJCategory */,
+				C73E6A321F94A39C00500928 /* FJSegmentedBase */,
+				C73E6A401F94A39C00500928 /* FJSegmentedPageView */,
+				C73E6A451F94A39C00500928 /* FJSegmentedTitleView */,
+			);
+			path = FJSegmentedPager;
+			sourceTree = "<group>";
+		};
+		C73E6A2F1F94A39C00500928 /* FJCategory */ = {
+			isa = PBXGroup;
+			children = (
+				C73E6A301F94A39C00500928 /* UIViewController+FJCurrentViewController.h */,
+				C73E6A311F94A39C00500928 /* UIViewController+FJCurrentViewController.m */,
+			);
+			path = FJCategory;
+			sourceTree = "<group>";
+		};
+		C73E6A321F94A39C00500928 /* FJSegmentedBase */ = {
+			isa = PBXGroup;
+			children = (
+				C73E6A331F94A39C00500928 /* FJBaseTableView.h */,
+				C73E6A341F94A39C00500928 /* FJBaseTableView.m */,
+				C73E6A351F94A39C00500928 /* FJConfigModel.h */,
+				C73E6A361F94A39C00500928 /* FJConfigModel.m */,
+				C73E6A371F94A39C00500928 /* FJSegementContentCell.h */,
+				C73E6A381F94A39C00500928 /* FJSegementContentCell.m */,
+				C73E6A391F94A39C00500928 /* FJSegementContentView.h */,
+				C73E6A3A1F94A39C00500928 /* FJSegementContentView.m */,
+				C73E6A3B1F94A39C00500928 /* FJSegmentdPageViewController.h */,
+				C73E6A3C1F94A39C00500928 /* FJSegmentdPageViewController.m */,
+				C73E6A3D1F94A39C00500928 /* FJSegmentedBaseViewController.h */,
+				C73E6A3E1F94A39C00500928 /* FJSegmentedBaseViewController.m */,
+				C73E6A3F1F94A39C00500928 /* FJSegmentedPageDefine.h */,
+			);
+			path = FJSegmentedBase;
+			sourceTree = "<group>";
+		};
+		C73E6A401F94A39C00500928 /* FJSegmentedPageView */ = {
+			isa = PBXGroup;
+			children = (
+				C73E6A411F94A39C00500928 /* FJPageCollectionViewCell.h */,
+				C73E6A421F94A39C00500928 /* FJPageCollectionViewCell.m */,
+				C73E6A431F94A39C00500928 /* FJSegmentedPageContentView.h */,
+				C73E6A441F94A39C00500928 /* FJSegmentedPageContentView.m */,
+			);
+			path = FJSegmentedPageView;
+			sourceTree = "<group>";
+		};
+		C73E6A451F94A39C00500928 /* FJSegmentedTitleView */ = {
+			isa = PBXGroup;
+			children = (
+				C73E6A461F94A39C00500928 /* FJSegmentedTagTitleCell.h */,
+				C73E6A471F94A39C00500928 /* FJSegmentedTagTitleCell.m */,
+				C73E6A481F94A39C00500928 /* FJSegmentedTagTitleView.h */,
+				C73E6A491F94A39C00500928 /* FJSegmentedTagTitleView.m */,
+			);
+			path = FJSegmentedTitleView;
+			sourceTree = "<group>";
+		};
 		DF19B63E1E9E0391001B5E69 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1175,6 +1314,7 @@
 		DF5B3E201E8C98BC00E04C27 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				C73E6A2E1F94A39C00500928 /* FJSegmentedPager */,
 				DF76CC3D1F3C300C006C9C81 /* UICountingLabel */,
 				DF76CC051F3C3000006C9C81 /* PNChart */,
 				DF3957381EA7033A00D796D1 /* LeftSliderMenuVC */,
@@ -1901,6 +2041,7 @@
 		DF5B40201E8C98DC00E04C27 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C73E6A151F949FFD00500928 /* MySegment */,
 				DF5B403D1E8C98DC00E04C27 /* Main */,
 				DF758B1B1F02047D00DC245F /* WanchangVC */,
 				DF3326141EE8EC7E00450755 /* WSPVC */,
@@ -2481,6 +2622,7 @@
 				DF49BD001EA60B2E00806C80 /* AddMainVC.xib in Resources */,
 				DF5B3FC01E8C98D100E04C27 /* login_sina_icon.png in Resources */,
 				DF5B3FF01E8C98D100E04C27 /* Running_Loading_3.png in Resources */,
+				C73E6A261F94A13300500928 /* QNPersonalHeaderView.xib in Resources */,
 				DF5B3FF21E8C98D100E04C27 /* Running_Loading_5.png in Resources */,
 				DF36F1A01F298BE4003F4C0A /* TESTViewController.xib in Resources */,
 				DF5B3FA71E8C98D000E04C27 /* backImage.png in Resources */,
@@ -2648,13 +2790,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Baisi-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F819AEA19059A19FD3440815 /* [CP] Copy Pods Resources */ = {
@@ -2663,9 +2808,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Baisi/Pods-Baisi-resources.sh",
+				"${PODS_ROOT}/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2680,6 +2830,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF758D481F03A168006A43C7 /* ApproveCommonModel.m in Sources */,
+				C73E6A4C1F94A39C00500928 /* FJConfigModel.m in Sources */,
 				DF5B3F421E8C98BC00E04C27 /* XHWebImageDownload.m in Sources */,
 				DF5B3F221E8C98BC00E04C27 /* XWInteractiveTransition.m in Sources */,
 				DF6684431F73B1F80037521B /* RelationShipCell.m in Sources */,
@@ -2694,6 +2845,7 @@
 				DF5B40851E8C98DC00E04C27 /* FirstHTMLVC.m in Sources */,
 				DF76CC3C1F3C3000006C9C81 /* README.md in Sources */,
 				DF5B3F131E8C98BC00E04C27 /* WXSPercentDrivenInteractiveTransition.m in Sources */,
+				C73E6A251F94A13300500928 /* QNPersonalHeaderView.m in Sources */,
 				DF002BB01EB050DD00CFDE42 /* HHjiujiuDetailViewController.m in Sources */,
 				DF5B40B61E8C98E900E04C27 /* ZY_RootTabBarController.m in Sources */,
 				DF19B63C1E9E0242001B5E69 /* HHAllMemberViewCell.m in Sources */,
@@ -2707,6 +2859,7 @@
 				DF5B408C1E8C98DC00E04C27 /* TeamSearchModel.m in Sources */,
 				DF5B3F201E8C98BC00E04C27 /* UINavigationController+XWTransition.m in Sources */,
 				DF5B3EF81E8C98BC00E04C27 /* IQNSArray+Sort.m in Sources */,
+				C73E6A521F94A39C00500928 /* FJSegmentedPageContentView.m in Sources */,
 				DF5B40A11E8C98DC00E04C27 /* Me_tableFootViewCollectionViewCell.m in Sources */,
 				DF5B3F2C1E8C98BC00E04C27 /* XWCoolAnimator+XWPageFlip.m in Sources */,
 				DF5B3F301E8C98BC00E04C27 /* XWDrawerAnimator.m in Sources */,
@@ -2740,7 +2893,10 @@
 				DF5B40881E8C98DC00E04C27 /* Utils.m in Sources */,
 				DF5B3F171E8C98BC00E04C27 /* WXSTransitionManager+FragmentAnimation.m in Sources */,
 				DF5B3F331E8C98BC00E04C27 /* XWFilterAnimator+XWCopyMachine.m in Sources */,
+				C73E6A2D1F94A33400500928 /* SegmentVC.m in Sources */,
+				C73E6A4D1F94A39C00500928 /* FJSegementContentCell.m in Sources */,
 				DF5B3EFD1E8C98BC00E04C27 /* IQUIWindow+Hierarchy.m in Sources */,
+				C73E6A511F94A39C00500928 /* FJPageCollectionViewCell.m in Sources */,
 				DF5B3EF71E8C98BC00E04C27 /* HeartLive.m in Sources */,
 				DF758B301F0248C000DC245F /* ApproveGoOutTitle.m in Sources */,
 				DF33261F1EE8FBA500450755 /* DescribeView.m in Sources */,
@@ -2754,6 +2910,7 @@
 				DF5B3EFB1E8C98BC00E04C27 /* IQUIView+Hierarchy.m in Sources */,
 				DF24811F1F145C51009D1F38 /* FaceRecogintionVC.m in Sources */,
 				DF5B40BD1E8C990B00E04C27 /* LoginViewController.m in Sources */,
+				C73E6A4A1F94A39C00500928 /* UIViewController+FJCurrentViewController.m in Sources */,
 				DF5B40801E8C98DC00E04C27 /* EssenceViewController.m in Sources */,
 				DF5B408E1E8C98DC00E04C27 /* HHPatientDataViewController.m in Sources */,
 				DF76CC2F1F3C3000006C9C81 /* PNCircleChart.m in Sources */,
@@ -2769,6 +2926,7 @@
 				DF5B3F281E8C98BC00E04C27 /* XWCoolAnimator+XWExplode.m in Sources */,
 				DF5B407D1E8C98DC00E04C27 /* SeniorityVC.m in Sources */,
 				DF5B3F021E8C98BC00E04C27 /* IQPreviousNextView.m in Sources */,
+				C73E6A541F94A39C00500928 /* FJSegmentedTagTitleView.m in Sources */,
 				DF5B409F1E8C98DC00E04C27 /* CollectionTableViewCell.m in Sources */,
 				DF5B3F0C1E8C98BC00E04C27 /* UIView+TXFrame.m in Sources */,
 				DF5B40921E8C98DC00E04C27 /* MyInformationController.m in Sources */,
@@ -2805,6 +2963,7 @@
 				DF5B3F101E8C98BC00E04C27 /* UINavigationController+WXSTransition.m in Sources */,
 				DF868A121EA49D5F00378800 /* Waiting_Loading.m in Sources */,
 				DF6684401F73959F0037521B /* RelationSelectView.m in Sources */,
+				C73E6A4B1F94A39C00500928 /* FJBaseTableView.m in Sources */,
 				DF66844C1F73BF6E0037521B /* GenderSelectView.m in Sources */,
 				DF5B40861E8C98DC00E04C27 /* NSString+pinyin.m in Sources */,
 				DF5B3F361E8C98BC00E04C27 /* XWFilterAnimator+XWMod.m in Sources */,
@@ -2820,17 +2979,20 @@
 				DF5B3EF31E8C98BC00E04C27 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				DF5B40991E8C98DC00E04C27 /* ZPDFReaderController.m in Sources */,
 				DF5B3F181E8C98BC00E04C27 /* WXSTransitionManager+InsideThenPushAnimation.m in Sources */,
+				C73E6A231F94A13300500928 /* FJFirstShopViewController.m in Sources */,
 				DF758D421F03750F006A43C7 /* ApproveDetailStateModel.m in Sources */,
 				DF5B40B31E8C98E900E04C27 /* MainTabBarButton.m in Sources */,
 				DF5B407C1E8C98DC00E04C27 /* picTureVC.m in Sources */,
 				DF5B408D1E8C98DC00E04C27 /* CoreLocationVC.m in Sources */,
 				DF5B3F0D1E8C98BC00E04C27 /* NSArray+UnicodeReadable.m in Sources */,
 				DF5B3F1F1E8C98BC00E04C27 /* WXSTransitionProperty.m in Sources */,
+				C73E6A571F94A98200500928 /* PersonalHeaderView.m in Sources */,
 				DF758B241F02053D00DC245F /* ApproveDetialViewController.m in Sources */,
 				DF5B40BC1E8C990B00E04C27 /* ADViewController.m in Sources */,
 				DF49BCFF1EA60B2E00806C80 /* AddMainVC.m in Sources */,
 				DF5B3EFF1E8C98BC00E04C27 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				DF5B3F041E8C98BC00E04C27 /* IQToolbar.m in Sources */,
+				C73E6A4F1F94A39C00500928 /* FJSegmentdPageViewController.m in Sources */,
 				DF76CC431F3C300C006C9C81 /* README.md in Sources */,
 				DF49BCF31EA608BB00806C80 /* PopMenuModel.m in Sources */,
 				DF5B3F3F1E8C98BC00E04C27 /* UIImageView+XHWebCache.m in Sources */,
@@ -2838,6 +3000,7 @@
 				DF5B3F2E1E8C98BC00E04C27 /* XWCoolAnimator+XWScanning.m in Sources */,
 				DF5B407A1E8C98DC00E04C27 /* ALLEssenceModel.m in Sources */,
 				DF5B3F2D1E8C98BC00E04C27 /* XWCoolAnimator+XWPortal.m in Sources */,
+				C73E6A241F94A13300500928 /* FJSecondShopViewController.m in Sources */,
 				DF5B3EF41E8C98BC00E04C27 /* FTPrettyRulerView.m in Sources */,
 				DF758D3E1F035A2F006A43C7 /* ApproveDetailStateCell.m in Sources */,
 				DF76CC2C1F3C3000006C9C81 /* PNBar.m in Sources */,
@@ -2845,6 +3008,7 @@
 				DF76CC301F3C3000006C9C81 /* PNColor.m in Sources */,
 				DF5B3F4A1E8C98BC00E04C27 /* ZY_button.m in Sources */,
 				DF76CC311F3C3000006C9C81 /* PNGenericChart.m in Sources */,
+				C73E6A531F94A39C00500928 /* FJSegmentedTagTitleCell.m in Sources */,
 				DF5B3F191E8C98BC00E04C27 /* WXSTransitionManager+PageAnimation.m in Sources */,
 				DF5B3F231E8C98BC00E04C27 /* XWTransitionAnimator.m in Sources */,
 				DF5B3F3C1E8C98BC00E04C27 /* XWMagicMoveAnimator.m in Sources */,
@@ -2862,6 +3026,7 @@
 				DF49BCF21EA608BB00806C80 /* PopMenuButton.m in Sources */,
 				DF5B3F371E8C98BC00E04C27 /* XWFilterAnimator+XWPageCurl.m in Sources */,
 				DF5B40B41E8C98E900E04C27 /* ZY_RootHomeViewController.m in Sources */,
+				C73E6A501F94A39C00500928 /* FJSegmentedBaseViewController.m in Sources */,
 				DF5B3F501E8C98BC00E04C27 /* ZYTextField.m in Sources */,
 				DF76CC2E1F3C3000006C9C81 /* PNChartLabel.m in Sources */,
 				DF5B3F461E8C98BC00E04C27 /* UIView+Toast.m in Sources */,
@@ -2873,6 +3038,7 @@
 				DF5B3F381E8C98BC00E04C27 /* XWFilterAnimator+XWRipple.m in Sources */,
 				DF5B3F121E8C98BC00E04C27 /* UIViewController+WXSTransitionProperty.m in Sources */,
 				DF5B3E1E1E8C984700E04C27 /* AppDelegate.mm in Sources */,
+				C73E6A4E1F94A39C00500928 /* FJSegementContentView.m in Sources */,
 				DF428A131E8DF69F003E2A79 /* HCGDatePickerAppearance.m in Sources */,
 				DF5B3EFC1E8C98BC00E04C27 /* IQUIViewController+Additions.m in Sources */,
 				DF5B3F211E8C98BC00E04C27 /* UIViewController+XWTransition.m in Sources */,

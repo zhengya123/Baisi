@@ -8,7 +8,6 @@ def pods
     pod 'YYKit'
     pod 'pop'
     pod 'BaiduMapKit'
-   	
 end 
 target 'Baisi' do
     pods
