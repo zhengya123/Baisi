@@ -25,6 +25,7 @@
 #import "EditSignVC.h"
 #import "ApproveListViewController.h"
 #import "SegmentVC.h"
+#import "FTIntellectMenuVC.h"
 #define zytitle @"cities"
 #define zytitleName @"titleName"
 @interface PersonalViewController ()<UITableViewDelegate,UITableViewDataSource,TXScrollLabelViewDelegate>
@@ -227,6 +228,13 @@
                 [self.navigationController pushViewController:hhallMemberVC animated:YES];
             }
                 break;
+                case 8:
+            {
+                FTIntellectMenuVC * FTMenu = [FTIntellectMenuVC new];
+                ZY_RootNavigationController * nav = [[ZY_RootNavigationController alloc]initWithRootViewController:FTMenu];
+                [self presentViewController:nav animated:YES completion:nil];
+            }
+                break;
             default:
                 break;
         }
@@ -238,6 +246,7 @@
                 //MY_MapVC * mapVC = [MY_MapVC new];
                 //[self.navigationController pushViewController:mapVC animated:YES];
                 SegmentVC * segmentVC = [SegmentVC new];
+                
                 [self.navigationController pushViewController:segmentVC animated:YES];
             }
                 break;
@@ -427,7 +436,8 @@
                                @{zytitleName:@"编辑标记点"},
                                @{zytitleName:@"唐永刚界面"},
                                @{zytitleName:@"万昌界面"},
-                               @{zytitleName:@"隐私设置"}
+                               @{zytitleName:@"隐私设置"},
+                               @{zytitleName:@"智能菜谱"}
                                ]
                        },
                     @{zytitle:@[

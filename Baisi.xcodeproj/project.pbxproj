@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0401190C723F42EDEDC788BC /* libPods-Baisi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */; };
+		C731ED5D1F9D8BA500B12941 /* FTIntellectMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C731ED5B1F9D8BA500B12941 /* FTIntellectMenuVC.m */; };
+		C731ED5E1F9D8BA500B12941 /* FTIntellectMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C731ED5C1F9D8BA500B12941 /* FTIntellectMenuVC.xib */; };
+		C731ED611F9D981A00B12941 /* FTIntellecMenuTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C731ED601F9D981A00B12941 /* FTIntellecMenuTitleView.m */; };
+		C731ED6A1F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C731ED681F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.m */; };
+		C731ED6B1F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C731ED691F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.xib */; };
+		C731ED6E1F9DCABB00B12941 /* FTIntellecMenuSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C731ED6D1F9DCABB00B12941 /* FTIntellecMenuSelectModel.m */; };
 		C73E6A231F94A13300500928 /* FJFirstShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A1D1F94A13300500928 /* FJFirstShopViewController.m */; };
 		C73E6A241F94A13300500928 /* FJSecondShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A1F1F94A13300500928 /* FJSecondShopViewController.m */; };
 		C73E6A251F94A13300500928 /* QNPersonalHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A211F94A13300500928 /* QNPersonalHeaderView.m */; };
@@ -382,6 +388,16 @@
 /* Begin PBXFileReference section */
 		36D9D7AC75B5EC04B0B5B839 /* Pods-Baisi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baisi/Pods-Baisi.debug.xcconfig"; sourceTree = "<group>"; };
 		84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baisi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C731ED5A1F9D8BA500B12941 /* FTIntellectMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellectMenuVC.h; sourceTree = "<group>"; };
+		C731ED5B1F9D8BA500B12941 /* FTIntellectMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellectMenuVC.m; sourceTree = "<group>"; };
+		C731ED5C1F9D8BA500B12941 /* FTIntellectMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTIntellectMenuVC.xib; sourceTree = "<group>"; };
+		C731ED5F1F9D981A00B12941 /* FTIntellecMenuTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuTitleView.h; sourceTree = "<group>"; };
+		C731ED601F9D981A00B12941 /* FTIntellecMenuTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuTitleView.m; sourceTree = "<group>"; };
+		C731ED671F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuTwoSelectCell.h; sourceTree = "<group>"; };
+		C731ED681F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuTwoSelectCell.m; sourceTree = "<group>"; };
+		C731ED691F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTIntellecMenuTwoSelectCell.xib; sourceTree = "<group>"; };
+		C731ED6C1F9DCABB00B12941 /* FTIntellecMenuSelectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuSelectModel.h; sourceTree = "<group>"; };
+		C731ED6D1F9DCABB00B12941 /* FTIntellecMenuSelectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuSelectModel.m; sourceTree = "<group>"; };
 		C73E6A1C1F94A13300500928 /* FJFirstShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJFirstShopViewController.h; sourceTree = "<group>"; };
 		C73E6A1D1F94A13300500928 /* FJFirstShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJFirstShopViewController.m; sourceTree = "<group>"; };
 		C73E6A1E1F94A13300500928 /* FJSecondShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSecondShopViewController.h; sourceTree = "<group>"; };
@@ -1011,6 +1027,47 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C731ED561F9D8B2E00B12941 /* IntellectMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C731ED571F9D8B5500B12941 /* Controller */,
+				C731ED581F9D8B5500B12941 /* Model */,
+				C731ED591F9D8B5500B12941 /* View */,
+			);
+			path = IntellectMenu;
+			sourceTree = "<group>";
+		};
+		C731ED571F9D8B5500B12941 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C731ED5A1F9D8BA500B12941 /* FTIntellectMenuVC.h */,
+				C731ED5B1F9D8BA500B12941 /* FTIntellectMenuVC.m */,
+				C731ED5C1F9D8BA500B12941 /* FTIntellectMenuVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C731ED581F9D8B5500B12941 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C731ED6C1F9DCABB00B12941 /* FTIntellecMenuSelectModel.h */,
+				C731ED6D1F9DCABB00B12941 /* FTIntellecMenuSelectModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C731ED591F9D8B5500B12941 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C731ED5F1F9D981A00B12941 /* FTIntellecMenuTitleView.h */,
+				C731ED601F9D981A00B12941 /* FTIntellecMenuTitleView.m */,
+				C731ED671F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.h */,
+				C731ED681F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.m */,
+				C731ED691F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		C73E6A151F949FFD00500928 /* MySegment */ = {
 			isa = PBXGroup;
 			children = (
@@ -1151,6 +1208,7 @@
 		DF3326141EE8EC7E00450755 /* WSPVC */ = {
 			isa = PBXGroup;
 			children = (
+				C731ED561F9D8B2E00B12941 /* IntellectMenu */,
 				DF3326151EE8EC7E00450755 /* Controller */,
 				DF3326161EE8EC7E00450755 /* Model */,
 				DF3326171EE8EC7E00450755 /* View */,
@@ -2708,6 +2766,7 @@
 				DF5B3FBA1E8C98D100E04C27 /* login_register_right_line.png in Resources */,
 				DF5B3FE11E8C98D100E04C27 /* mine-my-post@2x.png in Resources */,
 				DF4BA7E01F15C16C00212B36 /* photograph@2x.png in Resources */,
+				C731ED5E1F9D8BA500B12941 /* FTIntellectMenuVC.xib in Resources */,
 				DF002BB11EB050DD00CFDE42 /* HHjiujiuDetailViewController.xib in Resources */,
 				DF5B3FE91E8C98D100E04C27 /* mine_msg_icon.png in Resources */,
 				DF5B3F241E8C98BC00E04C27 /* line.png in Resources */,
@@ -2727,6 +2786,7 @@
 				DF5B3FD51E8C98D100E04C27 /* mine-icon-manhua@2x.png in Resources */,
 				DF5B3F061E8C98BC00E04C27 /* IQKeyboardManager.bundle in Resources */,
 				DF5B3FCE1E8C98D100E04C27 /* loginBtnBgClick.png in Resources */,
+				C731ED6B1F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.xib in Resources */,
 				DF4BA7DF1F15C16C00212B36 /* photograph_Select@3x.png in Resources */,
 				DF5B3FD11E8C98D100E04C27 /* mine-icon-activity@2x.png in Resources */,
 				DF5B3FB81E8C98D100E04C27 /* login_register_left_line@2x.png in Resources */,
@@ -2901,6 +2961,7 @@
 				DF758B301F0248C000DC245F /* ApproveGoOutTitle.m in Sources */,
 				DF33261F1EE8FBA500450755 /* DescribeView.m in Sources */,
 				DF758B361F02552000DC245F /* ApproveReceiveTitle.m in Sources */,
+				C731ED6E1F9DCABB00B12941 /* FTIntellecMenuSelectModel.m in Sources */,
 				DF5B408F1E8C98DC00E04C27 /* KaidianCompanyInfoController.m in Sources */,
 				DF3326231EE9136900450755 /* describeTableViewCell.m in Sources */,
 				DF4BA7D81F15C0DF00212B36 /* MyPhotoCameraVC.m in Sources */,
@@ -2993,6 +3054,8 @@
 				DF5B3EFF1E8C98BC00E04C27 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				DF5B3F041E8C98BC00E04C27 /* IQToolbar.m in Sources */,
 				C73E6A4F1F94A39C00500928 /* FJSegmentdPageViewController.m in Sources */,
+				C731ED5D1F9D8BA500B12941 /* FTIntellectMenuVC.m in Sources */,
+				C731ED6A1F9DC31C00B12941 /* FTIntellecMenuTwoSelectCell.m in Sources */,
 				DF76CC431F3C300C006C9C81 /* README.md in Sources */,
 				DF49BCF31EA608BB00806C80 /* PopMenuModel.m in Sources */,
 				DF5B3F3F1E8C98BC00E04C27 /* UIImageView+XHWebCache.m in Sources */,
@@ -3010,6 +3073,7 @@
 				DF76CC311F3C3000006C9C81 /* PNGenericChart.m in Sources */,
 				C73E6A531F94A39C00500928 /* FJSegmentedTagTitleCell.m in Sources */,
 				DF5B3F191E8C98BC00E04C27 /* WXSTransitionManager+PageAnimation.m in Sources */,
+				C731ED611F9D981A00B12941 /* FTIntellecMenuTitleView.m in Sources */,
 				DF5B3F231E8C98BC00E04C27 /* XWTransitionAnimator.m in Sources */,
 				DF5B3F3C1E8C98BC00E04C27 /* XWMagicMoveAnimator.m in Sources */,
 				DF5B3F3A1E8C98BC00E04C27 /* XWFilterAnimator.m in Sources */,
