@@ -11,6 +11,8 @@
 #import "ZY_Method.h"
 #import "FTIntellecMenuTwoSelectCell.h"
 #import "FTIntellecMenuSelectModel.h"
+#import "FTIntellecMenuAddFoodMaterialCell.h"
+
 #define SCREEN_W [UIScreen mainScreen].bounds.size.width
 #define SCREEN_H [UIScreen mainScreen].bounds.size.height
 #define BGColor [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:0.8];
@@ -61,6 +63,9 @@
         if ([dic[@"type"] isEqualToString:@"1"]) {
          FTIntellecMenuSelectModel * model = [FTIntellecMenuSelectModel setParameter:dic];
          [self.dataArry addObject:model];
+        }else if ([dic[@"type"] isEqualToString:@"2"]){
+            NSArray * ar = [dic objectForKey:@"addMeterial"];
+            [self.dataArry addObject:ar];
         }
         
     }
@@ -69,32 +74,44 @@
 }
 #pragma mark - tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return self.mutArray.count;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.dataArry.count;
+    return 1;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if ([[self.mutArray[indexPath.row] objectForKey:@"type"]isEqualToString:@"1"]) {
-        FTIntellecMenuTwoSelectCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AddMaterialCell"];
-        FTIntellecMenuSelectModel * model = self.dataArry[indexPath.row];
+    if ([[self.mutArray[indexPath.section] objectForKey:@"type"]isEqualToString:@"1"]) {
+        FTIntellecMenuTwoSelectCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AddMaterialBtnCell"];
+        FTIntellecMenuSelectModel * model = self.dataArry[indexPath.section];
         cell.delegate = self;
         cell.models = model;
         return cell;
-    }else{
+    }else if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"2"]){
+        FTIntellecMenuAddFoodMaterialCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AddMaterialCell"];
+        cell.dataArr = self.dataArry[indexPath.section];
+        return cell;
+    }
+    else{
         UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
         return cell;
     }
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 44;
+    if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"2"]) {
+        NSMutableArray * ar = [NSMutableArray new];
+        
+        return 44 * 7 + 120;
+    }else{
+        return 44;
+    }
+    
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    return 5;
+    return 1;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    return 2;
+    return 0;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -115,7 +132,7 @@
 
     CGFloat yoffset = scrollView.contentOffset.y;
     if (yoffset < 0) {
-        ZYLog(@"%f",yoffset);
+        //ZYLog(@"%f",yoffset);
     }
 
 }
@@ -136,11 +153,14 @@
 #pragma mark - lan
 - (UITableView *)tableView{
     if (_tableView == nil) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.backgroundColor = [UIColor clearColor];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
-        [_tableView registerClass:[FTIntellecMenuTwoSelectCell class] forCellReuseIdentifier:@"AddMaterialCell"];
+        [_tableView registerClass:[FTIntellecMenuTwoSelectCell class] forCellReuseIdentifier:@"AddMaterialBtnCell"];
+        [_tableView registerClass:[FTIntellecMenuAddFoodMaterialCell class] forCellReuseIdentifier:@"AddMaterialCell"];
     }
     return _tableView;
 }
@@ -177,22 +197,22 @@
                                             @"right":@"难度选择"
                                         },
                                         @{
+                                            @"type":@"2",
+                                            @"addMeterial":@[
+                                                    @{@"foodName":@"西红柿",@"foodSize":@"250克"},
+                                                    @{@"foodName":@"土豆",@"foodSize":@"适量"},
+                                                    @{@"foodName":@"番茄",@"foodSize":@"适量"},
+                                                    @{@"foodName":@"洋葱",@"foodSize":@"适量"},
+                                                    @{@"foodName":@"鸡蛋",@"foodSize":@"适量"},
+                                                    @{@"foodName":@"管他什么东西",@"foodSize":@"适量"},
+                                                    @{@"foodName":@"盐",@"foodSize":@"适量"}
+                                                    ]
+                                            },
+                                        @{
                                             @"type":@"1",
                                             @"left":@"添加一步",
                                             @"right":@"调整步骤"
-                                            },
-                                        @{
-                                            @"type":@"2",
-                                            @"left":@"耗时选择",
-                                            @"right":@"难度选择"
-                                            },
-                                        @{
-                                            @"type":@"2",
-                                            @"left":@"耗时选择",
-                                            @"right":@"难度选择"
                                             }
-                                        
-                                        
                                         ]];
     }
     return _mutArray;

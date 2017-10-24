@@ -17,6 +17,7 @@
         [self addSubview:self.MemuName];
         [self addSubview:self.lineV];
         [self addSubview:self.describeLabel];
+        [self addSubview:self.bottomlineV];
     }
     return self;
 }
@@ -26,6 +27,7 @@
     self.MemuName.frame  = CGRectMake(0, CGRectGetMaxY(self.coverImgV.frame) + 5, self.frame.size.width, 50);
     self.lineV.frame     = CGRectMake(20, CGRectGetMaxY(self.MemuName.frame), self.frame.size.width - 40, 1);
     self.describeLabel.frame = CGRectMake(20, CGRectGetMaxY(self.lineV.frame) + 10, self.frame.size.width - 40, [self heightWithString:self.describe fontSize:13 width:self.frame.size.width - 40]);
+    self.bottomlineV.frame = CGRectMake(0, CGRectGetMaxY(self.describeLabel.frame) + 10, self.frame.size.width, 10);
     self.MemuName.text = [NSString stringWithFormat:@"%@",self.titleName];
     self.describeLabel.text = [NSString stringWithFormat:@"%@",self.describe];
     self.coverImgV.image = self.img;
@@ -68,6 +70,13 @@
         
     }
     return _describeLabel;
+}
+- (UIView *)bottomlineV{
+    if (_bottomlineV == nil) {
+        _bottomlineV = [UIView new];
+        _bottomlineV.backgroundColor = BGColor;
+    }
+    return _bottomlineV;
 }
 #pragma mark - commonMethod
 -(CGFloat)heightWithString:(NSString*)string fontSize:(CGFloat)fontSize width:(CGFloat)width

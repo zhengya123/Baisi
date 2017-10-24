@@ -18,5 +18,6 @@
 @property (nonatomic, strong) UILabel     * MemuName;
 @property (nonatomic, strong) UIView      * lineV;
 @property (nonatomic, strong) UILabel     * describeLabel;
+@property (nonatomic, strong) UIView      * bottomlineV;
 
 @end
