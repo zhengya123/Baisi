@@ -9,6 +9,7 @@
 #import "FTIntellecMenuAddFoodMaterialCell.h"
 #import "FTMaterialCell.h"
 #import "FTIntellecMenuMaterialModel.h"
+#import "FTMaterialTextFieldCell.h"
 #define BGColor [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:0.8];
 @interface FTIntellecMenuAddFoodMaterialCell ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray * dataArray;
@@ -40,6 +41,37 @@
     [self.contentView addSubview:self.tableView];
 
 }
+- (void)detailData{
+
+    [self.dataArray removeAllObjects];
+    ZYLog(@"dataArr == %@",self.dataArr);
+    if (self.dataArr.count > 0) {
+        
+        for (NSDictionary * dic in self.dataArr) {
+            //if ([[dic objectForKey:@"type"]isEqualToString:@"recommend"]) {
+                //推荐的食材
+                NSArray * ar = [dic objectForKey:@"data"];
+                for (NSDictionary * d in ar) {
+                    FTIntellecMenuMaterialModel * model = [FTIntellecMenuMaterialModel setParameter:d];
+                    [self.dataArray addObject:model];
+                }
+                
+//            }else if ([[dic objectForKey:@"type"] isEqualToString:@"addfood"]){
+//                NSArray * ar = [dic objectForKey:@"data"];
+//                for (NSDictionary * d in ar) {
+//                    FTIntellecMenuMaterialModel * model = [FTIntellecMenuMaterialModel setParameter:d];
+//                    [self.dataArray addObject:model];
+//                }
+//                
+//            }
+            
+            
+        }
+    }
+    
+    
+    [self.tableView reloadData];
+}
 - (void)layoutSubviews{
     [super layoutSubviews];
     self.contentView.backgroundColor = BGColor;
@@ -50,16 +82,30 @@
     self.tableView.tableFooterView = self.footView;
     [self addTitleView];
     [self addFootView];
-    [self.dataArray removeAllObjects];
-    for (NSDictionary * dic in self.dataArr) {
-        FTIntellecMenuMaterialModel * model = [FTIntellecMenuMaterialModel setParameter:dic];
-        [self.dataArray addObject:model];
-    }
-
-       [self.tableView reloadData];
+    [self detailData];
+    
 }
 - (void)addTitleView{
 
+    UILabel * label1 = [UILabel new];
+    label1.frame = CGRectMake(0, 10, self.titleView.frame.size.width, 20);
+    label1.textAlignment = NSTextAlignmentCenter;
+    label1.text = @"-添加食材-";
+    label1.font = [UIFont systemFontOfSize:18];
+    [self.titleView addSubview:label1];
+    
+    UILabel * label2 = [UILabel new];
+    label2.frame = CGRectMake(0, CGRectGetMaxY(label1.frame), self.titleView.frame.size.width, 20);
+    label2.textAlignment = NSTextAlignmentCenter;
+    label2.font = [UIFont systemFontOfSize:13];
+    label2.textColor = [UIColor grayColor];
+    label2.text = @"大部分用户用了以下食材";
+    if (self.dataArr.count <= 0) {
+        label2.hidden = YES;
+    }else{
+        label2.hidden = NO;
+    }
+    [self.titleView addSubview:label2];
 
 }
 - (void)addFootView{
@@ -78,20 +124,41 @@
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataArray.count;
+    
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    FTMaterialCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    FTIntellecMenuMaterialModel * model = self.dataArray[indexPath.row];
-    cell.model = model;
-    return cell;
-
+    //if ([[self.dataArray[indexPath.row] objectForKey:@"type"]isEqualToString:@"recommend"]) {
+        FTMaterialCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+        FTIntellecMenuMaterialModel * model = self.dataArray[indexPath.row];
+        cell.model = model;
+        return cell;
+//    }else{
+//        
+//        FTMaterialTextFieldCell * cell = [tableView dequeueReusableCellWithIdentifier:@"textFieldCell"];
+//        FTIntellecMenuMaterialModel * model = self.dataArray[indexPath.row];
+//        cell.model = model;
+//        return cell;
+//    }
+    
 }
 #pragma mark - 添加食材按钮
 - (void)addMaterialClick:(UIButton *)btn{
-    ZYLog(@"添加食材按钮点击");
+    
+    //ZYLog(@"添加食材按钮点击");
+    //NSDictionary * dic = @{@"foodName":@"",@"foodSize":@""};
+    //[self.dataArr addObject:dic];
+    ZYLog(@"addArr = %@",self.dataArray);
+    UITableView *tableview = (UITableView *)[[self superview] superview];
+    NSIndexPath *indexPath = [tableview indexPathForCell:self];
+    [self.delegate addFoodMaterical:@"add" index:indexPath arr:self.dataArray];
+    [self detailData];
+    
 }
 - (void)clearClick:(UIButton *)btn{
-    ZYLog(@"点击清空按钮");
+    //ZYLog(@"点击清空按钮");
+    UITableView *tableview = (UITableView *)[[self superview] superview];
+    NSIndexPath *indexPath = [tableview indexPathForCell:self];
+    [self.delegate addFoodMaterical:@"clear" index:indexPath arr:self.dataArray];
 }
 #pragma mark - tableView
 - (UITableView *)tableView{
@@ -103,6 +170,7 @@
         _tableView.backgroundColor = [UIColor clearColor];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableView registerClass:[FTMaterialCell class] forCellReuseIdentifier:@"Cell"];
+        [_tableView registerClass:[FTMaterialTextFieldCell class] forCellReuseIdentifier:@"textFieldCell"];
     }
     return _tableView;
 }
@@ -118,10 +186,16 @@
     }
     return _dataArray;
 }
+- (NSMutableArray *)addArr{
+    if (_addArr == nil) {
+        _addArr = [NSMutableArray new];
+    }
+    return _addArr;
+}
 - (UIView *)titleView{
     if (_titleView == nil) {
         _titleView = [UIView new];
-        _titleView.backgroundColor = [UIColor yellowColor];
+        _titleView.backgroundColor = [UIColor whiteColor];
     }
     return _titleView;
 }

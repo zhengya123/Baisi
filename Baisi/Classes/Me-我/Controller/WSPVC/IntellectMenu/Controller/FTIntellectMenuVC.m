@@ -16,7 +16,11 @@
 #define SCREEN_W [UIScreen mainScreen].bounds.size.width
 #define SCREEN_H [UIScreen mainScreen].bounds.size.height
 #define BGColor [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:0.8];
-@interface FTIntellectMenuVC ()<UITableViewDelegate,UITableViewDataSource,FTIntellecMenuTwoSelectCellDelegate>
+@interface FTIntellectMenuVC ()<
+UITableViewDelegate,
+UITableViewDataSource,
+FTIntellecMenuTwoSelectCellDelegate,
+FTAddFoodMaterialDelegate>
 
 @property (nonatomic, strong) UITableView * tableView;
 @property (nonatomic, strong) NSMutableArray * mutArray;
@@ -35,6 +39,7 @@
     self.titleView.img = [ZY_Method imageWithColor:[UIColor grayColor]];
     self.titleView.describe = desStr;
     self.titleView.frame = CGRectMake(0, 0, SCREEN_W, SCREEN_W * 9/16 + 65 + 20+ [self heightWithString:desStr fontSize:13 width:SCREEN_W - 20]);
+    self.tableView.tableHeaderView = self.titleView;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -55,7 +60,7 @@
 }
 - (void)createUI{
     [self.view addSubview:self.tableView];
-    self.tableView.tableHeaderView = self.titleView;
+    
 
 }
 - (void)detailData{
@@ -64,8 +69,10 @@
          FTIntellecMenuSelectModel * model = [FTIntellecMenuSelectModel setParameter:dic];
          [self.dataArry addObject:model];
         }else if ([dic[@"type"] isEqualToString:@"2"]){
-            NSArray * ar = [dic objectForKey:@"addMeterial"];
-            [self.dataArry addObject:ar];
+            
+            NSDictionary * d = @{@"addMeterial":[dic objectForKey:@"addMeterial"]};
+            
+            [self.dataArry addObject:d];
         }
         
     }
@@ -74,7 +81,7 @@
 }
 #pragma mark - tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return self.mutArray.count;
+    return self.dataArry.count;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 1;
@@ -88,7 +95,8 @@
         return cell;
     }else if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"2"]){
         FTIntellecMenuAddFoodMaterialCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AddMaterialCell"];
-        cell.dataArr = self.dataArry[indexPath.section];
+        cell.delegate = self;
+        cell.dataArr = [self.dataArry[indexPath.section] objectForKey:@"addMeterial"];
         return cell;
     }
     else{
@@ -99,9 +107,9 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"2"]) {
-        NSMutableArray * ar = [NSMutableArray new];
-        
-        return 44 * 7 + 120;
+        NSArray * ar1 = [[self.dataArry[indexPath.section] objectForKey:@"addMeterial"][0] objectForKey:@"data"];
+        NSArray * ar2 = [[self.dataArry[indexPath.section] objectForKey:@"addMeterial"][1] objectForKey:@"data"];
+        return 44 * ar1.count + ar2.count+ 120;
     }else{
         return 44;
     }
@@ -117,8 +125,6 @@
     [super didReceiveMemoryWarning];
     
 }
-
-
 #pragma mark - delegate
 - (void)ClickdelegateMethod:(NSIndexPath *)index str:(NSString *)Str{
     if ([Str isEqualToString:@"left"]) {
@@ -127,6 +133,34 @@
         ZYLog(@"右边 == %ld",(long)index.row);
     }
 
+}
+- (void)addFoodMaterical:(NSString *)type index:(NSIndexPath *)dex arr:(NSMutableArray *)muarr{
+    ZYLog(@"返回的arr == %@",muarr);
+    if ([type isEqualToString:@"add"]) {
+        ZYLog(@"添加食材");
+        
+        //NSDictionary * dic = @{@"foodName":@"",@"foodSize":@""};
+        
+        //[[[self.dataArry[dex.section] objectForKey:@"addMeterial"] objectForKey:@"data"] insertObject:@[@{@"add":@""}] atIndex:1];
+        ///ZYLog(@"place== %@",self.dataArry);
+    
+    }else if ([type isEqualToString:@"clear"]){
+        ZYLog(@"清除");
+        [self.dataArry removeObjectAtIndex:dex.section];
+        NSDictionary * dic = @{@"addMeterial":@[
+                                       @{
+                                       @"type":@"recommend",
+                                       @"data":@[]
+                                       },
+                                       @{
+                                           @"type":@"addfood",
+                                           @"data":@[]
+                                           }]};
+        [self.dataArry insertObject:dic atIndex:dex.section];
+        [self.tableView reloadData];
+        
+    }
+    
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
 
@@ -199,14 +233,26 @@
                                         @{
                                             @"type":@"2",
                                             @"addMeterial":@[
-                                                    @{@"foodName":@"西红柿",@"foodSize":@"250克"},
-                                                    @{@"foodName":@"土豆",@"foodSize":@"适量"},
-                                                    @{@"foodName":@"番茄",@"foodSize":@"适量"},
-                                                    @{@"foodName":@"洋葱",@"foodSize":@"适量"},
-                                                    @{@"foodName":@"鸡蛋",@"foodSize":@"适量"},
-                                                    @{@"foodName":@"管他什么东西",@"foodSize":@"适量"},
-                                                    @{@"foodName":@"盐",@"foodSize":@"适量"}
+                                                            @{
+                                                                @"type":@"recommend",
+                                                                @"data":@[
+                                                                           @{@"foodName":@"西红柿",@"foodSize":@"250克"},
+                                                                           @{@"foodName":@"土豆",@"foodSize":@"适量"},
+                                                                           @{@"foodName":@"番茄",@"foodSize":@"适量"},
+                                                                           @{@"foodName":@"洋葱",@"foodSize":@"适量"},
+                                                                           @{@"foodName":@"鸡蛋",@"foodSize":@"适量"},
+                                                                           @{@"foodName":@"管他什么东西",@"foodSize":@"适量"},
+                                                                           @{@"foodName":@"盐",@"foodSize":@"适量"}
+                                                                               ]
+                                                                
+                                                        },
+                                                            @{
+                                                                @"type":@"addfood",
+                                                                @"data":@[]
+                                                                }
+                                                    
                                                     ]
+                                            
                                             },
                                         @{
                                             @"type":@"1",
