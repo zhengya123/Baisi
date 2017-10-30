@@ -57,7 +57,8 @@
 - (UIButton *)Leftbtn{
     if (_Leftbtn == nil) {
         _Leftbtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_Leftbtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_Leftbtn setTitleColor:[UIColor colorWithRed:175/255.0 green:175/255.0 blue:175/255.0 alpha:1.0] forState:UIControlStateNormal];
+        _Leftbtn.titleLabel.font = [UIFont systemFontOfSize:13];
         [_Leftbtn addTarget:self action:@selector(leftClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _Leftbtn;
@@ -65,7 +66,8 @@
 - (UIButton *)rightBtn{
     if (_rightBtn == nil) {
         _rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_rightBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_rightBtn setTitleColor:[UIColor colorWithRed:175/255.0 green:175/255.0 blue:175/255.0 alpha:1.0] forState:UIControlStateNormal];
+        _rightBtn.titleLabel.font = [UIFont systemFontOfSize:13];
         [_rightBtn addTarget:self action:@selector(rightClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _rightBtn;

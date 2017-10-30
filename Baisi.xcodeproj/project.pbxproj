@@ -36,6 +36,8 @@
 		C73E6A531F94A39C00500928 /* FJSegmentedTagTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A471F94A39C00500928 /* FJSegmentedTagTitleCell.m */; };
 		C73E6A541F94A39C00500928 /* FJSegmentedTagTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A491F94A39C00500928 /* FJSegmentedTagTitleView.m */; };
 		C73E6A571F94A98200500928 /* PersonalHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A561F94A98200500928 /* PersonalHeaderView.m */; };
+		C749A4EE1FA712B400B03C0C /* FTMaterialStepCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C749A4EC1FA712B400B03C0C /* FTMaterialStepCell.m */; };
+		C749A4EF1FA712B400B03C0C /* FTMaterialStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C749A4ED1FA712B400B03C0C /* FTMaterialStepCell.xib */; };
 		C7AF7EC61FA188F100D5D37D /* FTMaterialTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AF7EC41FA188F100D5D37D /* FTMaterialTextFieldCell.m */; };
 		C7AF7EC71FA188F100D5D37D /* FTMaterialTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7AF7EC51FA188F100D5D37D /* FTMaterialTextFieldCell.xib */; };
 		C7AF7ECA1FA1A39300D5D37D /* FTIntellecMenuMaterialAddfoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7AF7EC91FA1A39300D5D37D /* FTIntellecMenuMaterialAddfoodModel.m */; };
@@ -448,6 +450,9 @@
 		C73E6A491F94A39C00500928 /* FJSegmentedTagTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSegmentedTagTitleView.m; sourceTree = "<group>"; };
 		C73E6A551F94A98200500928 /* PersonalHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalHeaderView.h; sourceTree = "<group>"; };
 		C73E6A561F94A98200500928 /* PersonalHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalHeaderView.m; sourceTree = "<group>"; };
+		C749A4EB1FA712B400B03C0C /* FTMaterialStepCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMaterialStepCell.h; sourceTree = "<group>"; };
+		C749A4EC1FA712B400B03C0C /* FTMaterialStepCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMaterialStepCell.m; sourceTree = "<group>"; };
+		C749A4ED1FA712B400B03C0C /* FTMaterialStepCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTMaterialStepCell.xib; sourceTree = "<group>"; };
 		C7AF7EC31FA188F100D5D37D /* FTMaterialTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMaterialTextFieldCell.h; sourceTree = "<group>"; };
 		C7AF7EC41FA188F100D5D37D /* FTMaterialTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMaterialTextFieldCell.m; sourceTree = "<group>"; };
 		C7AF7EC51FA188F100D5D37D /* FTMaterialTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTMaterialTextFieldCell.xib; sourceTree = "<group>"; };
@@ -1098,6 +1103,9 @@
 				C7AF7EC31FA188F100D5D37D /* FTMaterialTextFieldCell.h */,
 				C7AF7EC41FA188F100D5D37D /* FTMaterialTextFieldCell.m */,
 				C7AF7EC51FA188F100D5D37D /* FTMaterialTextFieldCell.xib */,
+				C749A4EB1FA712B400B03C0C /* FTMaterialStepCell.h */,
+				C749A4EC1FA712B400B03C0C /* FTMaterialStepCell.m */,
+				C749A4ED1FA712B400B03C0C /* FTMaterialStepCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2775,6 +2783,7 @@
 				DF5B3FD61E8C98D100E04C27 /* mine-icon-more.png in Resources */,
 				DF5B3FE41E8C98D100E04C27 /* mine-setting-iconN@3x.png in Resources */,
 				DF5B408A1E8C98DC00E04C27 /* firstHTML.html in Resources */,
+				C749A4EF1FA712B400B03C0C /* FTMaterialStepCell.xib in Resources */,
 				DF5B3FDD1E8C98D100E04C27 /* mine-icon-recentHot@2x.png in Resources */,
 				DF5B3FC51E8C98D100E04C27 /* login_sina_icon_click@3x.png in Resources */,
 				DF5B3FA81E8C98D000E04C27 /* LaunchImage-1.png in Resources */,
@@ -3068,6 +3077,7 @@
 				DF5B40861E8C98DC00E04C27 /* NSString+pinyin.m in Sources */,
 				DF5B3F361E8C98BC00E04C27 /* XWFilterAnimator+XWMod.m in Sources */,
 				DF5B40911E8C98DC00E04C27 /* MeViewController.m in Sources */,
+				C749A4EE1FA712B400B03C0C /* FTMaterialStepCell.m in Sources */,
 				DF5B407E1E8C98DC00E04C27 /* CrossVC.m in Sources */,
 				DF5B3F401E8C98BC00E04C27 /* XHImageCache.m in Sources */,
 				DF76CC441F3C300C006C9C81 /* UICountingLabel.m in Sources */,

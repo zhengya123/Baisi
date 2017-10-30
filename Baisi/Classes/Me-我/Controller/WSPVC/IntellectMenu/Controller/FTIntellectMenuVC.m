@@ -12,7 +12,7 @@
 #import "FTIntellecMenuTwoSelectCell.h"
 #import "FTIntellecMenuSelectModel.h"
 #import "FTIntellecMenuAddFoodMaterialCell.h"
-
+#import "FTMaterialStepCell.h"
 #define SCREEN_W [UIScreen mainScreen].bounds.size.width
 #define SCREEN_H [UIScreen mainScreen].bounds.size.height
 #define BGColor [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:0.8];
@@ -73,6 +73,10 @@ FTAddFoodMaterialDelegate>
             NSDictionary * d = @{@"addMeterial":[dic objectForKey:@"addMeterial"]};
             
             [self.dataArry addObject:d];
+        }else if ([dic[@"type"] isEqualToString:@"3"]){
+            NSDictionary * d = @{@"StepMethod":@""};
+            [self.dataArry addObject:d];
+        
         }
         
     }
@@ -98,8 +102,11 @@ FTAddFoodMaterialDelegate>
         cell.delegate = self;
         cell.dataArr = [self.dataArry[indexPath.section] objectForKey:@"addMeterial"];
         return cell;
-    }
-    else{
+    }else if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"3"]){
+        FTMaterialStepCell * cell = [tableView dequeueReusableCellWithIdentifier:@"stepCell"];
+        return cell;
+    
+    }else{
         UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
         return cell;
     }
@@ -110,6 +117,9 @@ FTAddFoodMaterialDelegate>
         NSArray * ar1 = [[self.dataArry[indexPath.section] objectForKey:@"addMeterial"][0] objectForKey:@"data"];
         NSArray * ar2 = [[self.dataArry[indexPath.section] objectForKey:@"addMeterial"][1] objectForKey:@"data"];
         return 44 * ar1.count + ar2.count+ 120;
+    }else if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"3"]){
+        return 154 + (SCREEN_W - 20) * 9/16;
+    
     }else{
         return 44;
     }
@@ -195,6 +205,7 @@ FTAddFoodMaterialDelegate>
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
         [_tableView registerClass:[FTIntellecMenuTwoSelectCell class] forCellReuseIdentifier:@"AddMaterialBtnCell"];
         [_tableView registerClass:[FTIntellecMenuAddFoodMaterialCell class] forCellReuseIdentifier:@"AddMaterialCell"];
+        [_tableView registerClass:[FTMaterialStepCell class] forCellReuseIdentifier:@"stepCell"];
     }
     return _tableView;
 }
@@ -253,6 +264,9 @@ FTAddFoodMaterialDelegate>
                                                     
                                                     ]
                                             
+                                            },
+                                        @{
+                                            @"type":@"3"
                                             },
                                         @{
                                             @"type":@"1",
