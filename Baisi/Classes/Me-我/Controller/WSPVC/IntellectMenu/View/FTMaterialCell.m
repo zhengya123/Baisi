@@ -23,8 +23,7 @@
 - (void)setModel:(FTIntellecMenuMaterialModel *)model{
     _model = model;
     //self.middle.frame = CGRectMake(30, 0, self.frame.size.width - 60, self.frame.size.height);
-    self.foodName.frame = CGRectMake(30, 0, [self stringWithSize:_model.foodName fontOfSize:17], 44);
-    self.Size.frame = CGRectMake(self.frame.size.width - [self stringWithSize:_model.sizes fontOfSize:17] - 30, 0, [self stringWithSize:_model.sizes fontOfSize:17], 44);
+    
     self.foodName.text = _model.foodName;
     self.Size.text = _model.sizes;
 
@@ -42,7 +41,8 @@
 }
 - (void)layoutSubviews{
     [super layoutSubviews];
-    
+    self.foodName.frame = CGRectMake(30, 0, [self stringWithSize:_model.foodName fontOfSize:17], 44);
+    self.Size.frame = CGRectMake(self.frame.size.width - [self stringWithSize:_model.sizes fontOfSize:17] - 30, 0, [self stringWithSize:_model.sizes fontOfSize:17], 44);
 }
 #pragma mark - lan
 - (UILabel *)foodName{

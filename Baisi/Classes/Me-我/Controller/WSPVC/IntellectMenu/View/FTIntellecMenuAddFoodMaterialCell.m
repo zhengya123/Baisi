@@ -45,7 +45,7 @@
 
     [self.dataArray removeAllObjects];
     ZYLog(@"dataArr == %@",self.dataArr);
-    if (self.dataArr.count > 0) {
+    //if (self.dataArr.count > 0) {
         
         for (NSDictionary * dic in self.dataArr) {
             //if ([[dic objectForKey:@"type"]isEqualToString:@"recommend"]) {
@@ -66,7 +66,7 @@
 //            }
             
             
-        }
+     //   }
     }
     
     

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0401190C723F42EDEDC788BC /* libPods-Baisi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */; };
+		C724595C1FA86E6500C42CC7 /* FTMaterialTipsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C724595A1FA86E6500C42CC7 /* FTMaterialTipsCell.m */; };
+		C724595D1FA86E6500C42CC7 /* FTMaterialTipsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C724595B1FA86E6500C42CC7 /* FTMaterialTipsCell.xib */; };
 		C72D1F2D1F9ED51F0012BDCE /* FTIntellecMenuAddFoodMaterialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C72D1F2B1F9ED51F0012BDCE /* FTIntellecMenuAddFoodMaterialCell.m */; };
 		C72D1F2E1F9ED51F0012BDCE /* FTIntellecMenuAddFoodMaterialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72D1F2C1F9ED51F0012BDCE /* FTIntellecMenuAddFoodMaterialCell.xib */; };
 		C72D1F321F9EE0D90012BDCE /* FTMaterialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C72D1F301F9EE0D90012BDCE /* FTMaterialCell.m */; };
@@ -398,6 +400,9 @@
 /* Begin PBXFileReference section */
 		36D9D7AC75B5EC04B0B5B839 /* Pods-Baisi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baisi/Pods-Baisi.debug.xcconfig"; sourceTree = "<group>"; };
 		84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baisi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C72459591FA86E6500C42CC7 /* FTMaterialTipsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMaterialTipsCell.h; sourceTree = "<group>"; };
+		C724595A1FA86E6500C42CC7 /* FTMaterialTipsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMaterialTipsCell.m; sourceTree = "<group>"; };
+		C724595B1FA86E6500C42CC7 /* FTMaterialTipsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTMaterialTipsCell.xib; sourceTree = "<group>"; };
 		C72D1F2A1F9ED51F0012BDCE /* FTIntellecMenuAddFoodMaterialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuAddFoodMaterialCell.h; sourceTree = "<group>"; };
 		C72D1F2B1F9ED51F0012BDCE /* FTIntellecMenuAddFoodMaterialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuAddFoodMaterialCell.m; sourceTree = "<group>"; };
 		C72D1F2C1F9ED51F0012BDCE /* FTIntellecMenuAddFoodMaterialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTIntellecMenuAddFoodMaterialCell.xib; sourceTree = "<group>"; };
@@ -1106,6 +1111,9 @@
 				C749A4EB1FA712B400B03C0C /* FTMaterialStepCell.h */,
 				C749A4EC1FA712B400B03C0C /* FTMaterialStepCell.m */,
 				C749A4ED1FA712B400B03C0C /* FTMaterialStepCell.xib */,
+				C72459591FA86E6500C42CC7 /* FTMaterialTipsCell.h */,
+				C724595A1FA86E6500C42CC7 /* FTMaterialTipsCell.m */,
+				C724595B1FA86E6500C42CC7 /* FTMaterialTipsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -2752,6 +2760,7 @@
 				DF868A141EA49E3C00378800 /* wait_Images.gif in Resources */,
 				DF5B3FAD1E8C98D100E04C27 /* login_QQ_icon@2x.png in Resources */,
 				DF5B3FCF1E8C98D100E04C27 /* loginBtnBgClick@2x.png in Resources */,
+				C724595D1FA86E6500C42CC7 /* FTMaterialTipsCell.xib in Resources */,
 				DF5B3FC81E8C98D100E04C27 /* login_tecent_icon@3x.png in Resources */,
 				DF5B3FE71E8C98D100E04C27 /* mine_icon_random.png in Resources */,
 				DF3C47BD1EEE2EBE00512E88 /*  003.pdf in Resources */,
@@ -2951,6 +2960,7 @@
 				DF5B40851E8C98DC00E04C27 /* FirstHTMLVC.m in Sources */,
 				DF76CC3C1F3C3000006C9C81 /* README.md in Sources */,
 				DF5B3F131E8C98BC00E04C27 /* WXSPercentDrivenInteractiveTransition.m in Sources */,
+				C724595C1FA86E6500C42CC7 /* FTMaterialTipsCell.m in Sources */,
 				C73E6A251F94A13300500928 /* QNPersonalHeaderView.m in Sources */,
 				DF002BB01EB050DD00CFDE42 /* HHjiujiuDetailViewController.m in Sources */,
 				DF5B40B61E8C98E900E04C27 /* ZY_RootTabBarController.m in Sources */,

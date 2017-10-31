@@ -43,10 +43,21 @@
     self.titleLabel.frame = CGRectMake(0, 10, self.frame.size.width, 20);
     self.titleBottomLabel.frame = CGRectMake(0, CGRectGetMaxY(self.titleLabel.frame) + 10, self.frame.size.width, 20);
     self.StepimageView.frame = CGRectMake(10, CGRectGetMaxY(self.titleBottomLabel.frame) + 10, self.frame.size.width - 20, (self.frame.size.width - 20) * 9/16);
-    self.inputStepTextField.frame = CGRectMake(10, CGRectGetMaxY(self.StepimageView.frame) + 10, self.frame.size.width - 20, 30);
+    self.inputStepTextField.frame = CGRectMake(20, CGRectGetMaxY(self.StepimageView.frame) + 10, self.frame.size.width - 40, 30);
     self.lineV.frame = CGRectMake(20, CGRectGetMaxY(self.inputStepTextField.frame), self.frame.size.width - 40, 1);
     self.recordcurve.frame = CGRectMake(0, CGRectGetMaxY(self.lineV.frame), self.frame.size.width/2, 44);
     self.addTips.frame = CGRectMake(CGRectGetMaxX(self.recordcurve.frame), CGRectGetMaxY(self.lineV.frame), self.frame.size.width/2, 44);
+}
+- (void)addTipClick:(UIButton *)btn{
+    UITableView *tableview = (UITableView *)[[self superview] superview];
+    NSIndexPath *indexPath = [tableview indexPathForCell:self];
+    [self.delegate addTipsMethod:indexPath];
+}
+- (void)recordCurveClick:(UIButton *)btn{
+    UITableView *tableview = (UITableView *)[[self superview] superview];
+    NSIndexPath *indexPath = [tableview indexPathForCell:self];
+    [self.delegate recordcurveMethod:indexPath];
+
 }
 #pragma mark - lan
 - (UILabel *)titleLabel{
@@ -97,6 +108,7 @@
         [_recordcurve setTitleColor:[UIColor colorWithRed:175/255.0 green:175/255.0 blue:175/255.0 alpha:1.0] forState:UIControlStateNormal];
         _recordcurve.titleLabel.textAlignment = NSTextAlignmentLeft;
         _recordcurve.titleLabel.font = [UIFont systemFontOfSize:13];
+        [_recordcurve addTarget:self action:@selector(recordCurveClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _recordcurve;
 }
@@ -107,6 +119,7 @@
         [_addTips setTitleColor:[UIColor colorWithRed:175/255.0 green:175/255.0 blue:175/255.0 alpha:1.0] forState:UIControlStateNormal];
         _addTips.titleLabel.textAlignment = NSTextAlignmentRight;
         _addTips.titleLabel.font = [UIFont systemFontOfSize:13];
+        [_addTips addTarget:self action:@selector(addTipClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _addTips;
 }

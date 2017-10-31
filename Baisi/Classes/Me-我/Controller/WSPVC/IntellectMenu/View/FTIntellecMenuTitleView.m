@@ -30,7 +30,6 @@
     self.bottomlineV.frame = CGRectMake(0, CGRectGetMaxY(self.describeLabel.frame) + 10, self.frame.size.width, 10);
     self.MemuName.text = [NSString stringWithFormat:@"%@",self.titleName];
     self.describeLabel.text = [NSString stringWithFormat:@"%@",self.describe];
-    self.coverImgV.image = self.img;
     NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:self.describeLabel.text];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     [paragraphStyle setLineSpacing:10];//调整行间距
@@ -41,7 +40,7 @@
 - (UIImageView *)coverImgV{
     if (_coverImgV == nil) {
         _coverImgV = [UIImageView new];
-        _coverImgV.backgroundColor = BGColor;
+        _coverImgV.backgroundColor = [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:1.0];
     }
     return _coverImgV;
 }

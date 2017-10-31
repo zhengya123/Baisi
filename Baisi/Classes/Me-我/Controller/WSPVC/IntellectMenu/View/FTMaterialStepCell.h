@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol FTMaterialStepDelegate <NSObject>
+
+//添加小贴士
+- (void)addTipsMethod:(NSIndexPath *)index;
+//录制烹饪曲线
+- (void)recordcurveMethod:(NSIndexPath *)index;
+
+@end
+
 @interface FTMaterialStepCell : UITableViewCell
 
 @property (nonatomic, strong) UILabel * titleLabel;
@@ -17,4 +26,5 @@
 @property (nonatomic, strong) UIView * lineV;
 @property (nonatomic, strong) UIButton * recordcurve;
 @property (nonatomic, strong) UIButton * addTips;
+@property (nonatomic, assign) id<FTMaterialStepDelegate>delegate;
 @end

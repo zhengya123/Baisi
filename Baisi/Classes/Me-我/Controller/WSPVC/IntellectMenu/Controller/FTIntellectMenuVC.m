@@ -13,6 +13,7 @@
 #import "FTIntellecMenuSelectModel.h"
 #import "FTIntellecMenuAddFoodMaterialCell.h"
 #import "FTMaterialStepCell.h"
+#import "FTMaterialTipsCell.h"
 #define SCREEN_W [UIScreen mainScreen].bounds.size.width
 #define SCREEN_H [UIScreen mainScreen].bounds.size.height
 #define BGColor [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:0.8];
@@ -20,7 +21,8 @@
 UITableViewDelegate,
 UITableViewDataSource,
 FTIntellecMenuTwoSelectCellDelegate,
-FTAddFoodMaterialDelegate>
+FTAddFoodMaterialDelegate,
+FTMaterialStepDelegate>
 
 @property (nonatomic, strong) UITableView * tableView;
 @property (nonatomic, strong) NSMutableArray * mutArray;
@@ -45,7 +47,7 @@ FTAddFoodMaterialDelegate>
     [super viewDidLoad];
     [self createNav];
     [self createUI];
-    [self detailData];
+    [self detailDataisreload:YES];
     
 }
 - (void)createNav{
@@ -63,7 +65,7 @@ FTAddFoodMaterialDelegate>
     
 
 }
-- (void)detailData{
+- (void)detailDataisreload:(BOOL)isL{
     for (NSDictionary * dic in self.mutArray) {
         if ([dic[@"type"] isEqualToString:@"1"]) {
          FTIntellecMenuSelectModel * model = [FTIntellecMenuSelectModel setParameter:dic];
@@ -77,11 +79,17 @@ FTAddFoodMaterialDelegate>
             NSDictionary * d = @{@"StepMethod":@""};
             [self.dataArry addObject:d];
         
+        }else if ([dic[@"type"] isEqualToString:@"4"]){
+            NSDictionary * d = @{@"tips":@""};
+            [self.dataArry addObject:d];
         }
         
     }
 
-    [self.tableView reloadData];
+    if (isL == YES) {
+       [self.tableView reloadData];
+    }
+    
 }
 #pragma mark - tableViewDelegate
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -104,13 +112,16 @@ FTAddFoodMaterialDelegate>
         return cell;
     }else if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"3"]){
         FTMaterialStepCell * cell = [tableView dequeueReusableCellWithIdentifier:@"stepCell"];
+        cell.delegate = self;
         return cell;
     
+    }else if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"4"]){
+        FTMaterialTipsCell * cell = [tableView dequeueReusableCellWithIdentifier:@"TipsCell"];
+        return cell;
     }else{
         UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
         return cell;
     }
-    
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"2"]) {
@@ -120,6 +131,8 @@ FTAddFoodMaterialDelegate>
     }else if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"3"]){
         return 154 + (SCREEN_W - 20) * 9/16;
     
+    }else if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"4"]){
+        return 150;
     }else{
         return 44;
     }
@@ -137,11 +150,34 @@ FTAddFoodMaterialDelegate>
 }
 #pragma mark - delegate
 - (void)ClickdelegateMethod:(NSIndexPath *)index str:(NSString *)Str{
-    if ([Str isEqualToString:@"left"]) {
-        ZYLog(@"左边 == %ld",(long)index.row);
+    if (index.section > 1) {
+        if ([Str isEqualToString:@"left"]) {
+            ZYLog(@"添加一步");
+        }else{
+            ZYLog(@"调整步骤");
+        
+        }
     }else{
-        ZYLog(@"右边 == %ld",(long)index.row);
+    
+        if ([Str isEqualToString:@"left"]) {
+            ZYLog(@"耗时选择 == %ld",(long)index.row);
+        }else{
+            ZYLog(@"难度选择 == %ld",(long)index.row);
+        }
     }
+
+}
+- (void)addTipsMethod:(NSIndexPath *)index{
+    ZYLog(@"添加小贴士");
+    [self.dataArry removeAllObjects];
+    [self.mutArray insertObject:@{@"type":@"4"} atIndex:index.section + 1];
+    
+    //[self.mutArray addObjectsFromArray:@[@{@"type":@"4"}]];
+    [self detailDataisreload:NO];
+    [self.tableView reloadData];
+}
+- (void)recordcurveMethod:(NSIndexPath *)index{
+    ZYLog(@"录制烹饪曲线");
 
 }
 - (void)addFoodMaterical:(NSString *)type index:(NSIndexPath *)dex arr:(NSMutableArray *)muarr{
@@ -156,8 +192,10 @@ FTAddFoodMaterialDelegate>
     
     }else if ([type isEqualToString:@"clear"]){
         ZYLog(@"清除");
-        [self.dataArry removeObjectAtIndex:dex.section];
-        NSDictionary * dic = @{@"addMeterial":@[
+        [self.dataArry removeAllObjects];
+        [self.mutArray removeObjectAtIndex:dex.section];
+        NSDictionary * dic = @{@"type":@"2",
+                               @"addMeterial":@[
                                        @{
                                        @"type":@"recommend",
                                        @"data":@[]
@@ -166,8 +204,9 @@ FTAddFoodMaterialDelegate>
                                            @"type":@"addfood",
                                            @"data":@[]
                                            }]};
-        [self.dataArry insertObject:dic atIndex:dex.section];
-        [self.tableView reloadData];
+        [self.mutArray insertObject:dic atIndex:dex.section];
+        [self detailDataisreload:YES];
+        
         
     }
     
@@ -206,6 +245,7 @@ FTAddFoodMaterialDelegate>
         [_tableView registerClass:[FTIntellecMenuTwoSelectCell class] forCellReuseIdentifier:@"AddMaterialBtnCell"];
         [_tableView registerClass:[FTIntellecMenuAddFoodMaterialCell class] forCellReuseIdentifier:@"AddMaterialCell"];
         [_tableView registerClass:[FTMaterialStepCell class] forCellReuseIdentifier:@"stepCell"];
+        [_tableView registerClass:[FTMaterialTipsCell class] forCellReuseIdentifier:@"TipsCell"];
     }
     return _tableView;
 }
