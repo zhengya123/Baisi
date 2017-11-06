@@ -14,6 +14,8 @@
 #import "FTIntellecMenuAddFoodMaterialCell.h"
 #import "FTMaterialStepCell.h"
 #import "FTMaterialTipsCell.h"
+#import "SureCustomActionSheet.h"
+#import "PrefixHeader.pch"
 #define SCREEN_W [UIScreen mainScreen].bounds.size.width
 #define SCREEN_H [UIScreen mainScreen].bounds.size.height
 #define BGColor [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:0.8];
@@ -108,7 +110,7 @@ FTMaterialStepDelegate>
     }else if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"2"]){
         FTIntellecMenuAddFoodMaterialCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AddMaterialCell"];
         cell.delegate = self;
-        cell.dataArr = [self.dataArry[indexPath.section] objectForKey:@"addMeterial"];
+        cell.getDataArr = [self.dataArry[indexPath.section] objectForKey:@"addMeterial"];
         return cell;
     }else if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"3"]){
         FTMaterialStepCell * cell = [tableView dequeueReusableCellWithIdentifier:@"stepCell"];
@@ -125,9 +127,16 @@ FTMaterialStepDelegate>
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"2"]) {
+        ZYLog(@"=== %@",self.dataArry);
+        NSArray * ar = [self.dataArry[indexPath.section] objectForKey:@"addMeterial"];
+        if (ar.count > 1) {
+            NSArray * ar1 = [[self.dataArry[indexPath.section] objectForKey:@"addMeterial"][0] objectForKey:@"data"];
+            //NSArray * ar2 = [[self.dataArry[indexPath.section] objectForKey:@"addMeterial"][1] objectForKey:@"data"];
+            return 44 * (ar1.count + ar.count - 1)+ 120;
+        }else{
         NSArray * ar1 = [[self.dataArry[indexPath.section] objectForKey:@"addMeterial"][0] objectForKey:@"data"];
-        NSArray * ar2 = [[self.dataArry[indexPath.section] objectForKey:@"addMeterial"][1] objectForKey:@"data"];
-        return 44 * ar1.count + ar2.count+ 120;
+            return 44 * ar1.count + 120;
+        }
     }else if ([[self.mutArray[indexPath.section] objectForKey:@"type"] isEqualToString:@"3"]){
         return 154 + (SCREEN_W - 20) * 9/16;
     
@@ -153,6 +162,13 @@ FTMaterialStepDelegate>
     if (index.section > 1) {
         if ([Str isEqualToString:@"left"]) {
             ZYLog(@"添加一步");
+            [self.dataArry removeAllObjects];
+            [self.mutArray insertObject:@{@"type":@"3"} atIndex:index.section];
+            
+            //[self.mutArray addObjectsFromArray:@[@{@"type":@"4"}]];
+            [self detailDataisreload:NO];
+            [self.tableView reloadData];
+            
         }else{
             ZYLog(@"调整步骤");
         
@@ -161,8 +177,26 @@ FTMaterialStepDelegate>
     
         if ([Str isEqualToString:@"left"]) {
             ZYLog(@"耗时选择 == %ld",(long)index.row);
+            NSArray * selectArr = @[@"10分钟左右",@"10-30分钟",@"30-60分钟",@"1小时以上"];
+            SureCustomActionSheet * optionView = [[SureCustomActionSheet alloc]initWithTitleView:nil optionsArr:selectArr cancelTitle:@"取消" selectedBlock:^(NSInteger index) {
+                ZYLog(@"%@",selectArr[index]);
+                
+            } cancelBlock:^{
+                ZYLog(@"耗时选择取消了");
+            }];
+            
+            [self.view addSubview:optionView];
+        
         }else{
             ZYLog(@"难度选择 == %ld",(long)index.row);
+            NSArray * selectArr = @[@"新手",@"初级",@"中级",@"高级"];
+            SureCustomActionSheet * optionView = [[SureCustomActionSheet alloc]initWithTitleView:nil optionsArr:selectArr cancelTitle:@"取消" selectedBlock:^(NSInteger index) {
+                ZYLog(@"%@",selectArr[index]);
+                
+            } cancelBlock:^{
+                ZYLog(@"难度选择取消了");
+            }];
+            [self.view addSubview:optionView];
         }
     }
 
@@ -184,11 +218,16 @@ FTMaterialStepDelegate>
     ZYLog(@"返回的arr == %@",muarr);
     if ([type isEqualToString:@"add"]) {
         ZYLog(@"添加食材");
-        
-        //NSDictionary * dic = @{@"foodName":@"",@"foodSize":@""};
-        
-        //[[[self.dataArry[dex.section] objectForKey:@"addMeterial"] objectForKey:@"data"] insertObject:@[@{@"add":@""}] atIndex:1];
-        ///ZYLog(@"place== %@",self.dataArry);
+        NSMutableArray * arr = [NSMutableArray new];
+        [arr addObjectsFromArray:muarr];
+        [arr insertObject:@{@"type":@"addfood",@"data":@[@{@"foodName":@"西红柿",@"foodSize":@"250克"}]} atIndex:1];
+        NSDictionary * dic = @{
+                               @"type":@"2",
+                               @"addMeterial":arr
+                               };
+        [self.dataArry removeAllObjects];
+        [self.mutArray replaceObjectAtIndex:dex.section withObject:dic];
+        [self detailDataisreload:YES];
     
     }else if ([type isEqualToString:@"clear"]){
         ZYLog(@"清除");
@@ -199,11 +238,13 @@ FTMaterialStepDelegate>
                                        @{
                                        @"type":@"recommend",
                                        @"data":@[]
-                                       },
-                                       @{
-                                           @"type":@"addfood",
-                                           @"data":@[]
-                                           }]};
+                                       }
+//                                       ,
+//                                       @{
+//                                           @"type":@"addfood",
+//                                           @"data":@[]
+//                                           }
+                                       ]};
         [self.mutArray insertObject:dic atIndex:dex.section];
         [self detailDataisreload:YES];
         
@@ -296,11 +337,7 @@ FTMaterialStepDelegate>
                                                                            @{@"foodName":@"盐",@"foodSize":@"适量"}
                                                                                ]
                                                                 
-                                                        },
-                                                            @{
-                                                                @"type":@"addfood",
-                                                                @"data":@[]
-                                                                }
+                                                        }
                                                     
                                                     ]
                                             

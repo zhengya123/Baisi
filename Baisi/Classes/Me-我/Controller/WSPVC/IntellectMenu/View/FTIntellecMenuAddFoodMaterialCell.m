@@ -10,6 +10,7 @@
 #import "FTMaterialCell.h"
 #import "FTIntellecMenuMaterialModel.h"
 #import "FTMaterialTextFieldCell.h"
+#import "PrefixHeader.pch"
 #define BGColor [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:0.8];
 @interface FTIntellecMenuAddFoodMaterialCell ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSMutableArray * dataArray;
@@ -44,29 +45,32 @@
 - (void)detailData{
 
     [self.dataArray removeAllObjects];
+    [self.dataArr removeAllObjects];
+    [self.dataArr addObjectsFromArray:self.getDataArr];
     ZYLog(@"dataArr == %@",self.dataArr);
-    //if (self.dataArr.count > 0) {
+    if (self.dataArr.count > 0) {
         
         for (NSDictionary * dic in self.dataArr) {
-            //if ([[dic objectForKey:@"type"]isEqualToString:@"recommend"]) {
+            if ([[dic objectForKey:@"type"]isEqualToString:@"recommend"]) {
                 //推荐的食材
                 NSArray * ar = [dic objectForKey:@"data"];
                 for (NSDictionary * d in ar) {
                     FTIntellecMenuMaterialModel * model = [FTIntellecMenuMaterialModel setParameter:d];
+                    model.type = dic[@"type"];
                     [self.dataArray addObject:model];
                 }
                 
-//            }else if ([[dic objectForKey:@"type"] isEqualToString:@"addfood"]){
-//                NSArray * ar = [dic objectForKey:@"data"];
-//                for (NSDictionary * d in ar) {
-//                    FTIntellecMenuMaterialModel * model = [FTIntellecMenuMaterialModel setParameter:d];
-//                    [self.dataArray addObject:model];
-//                }
-//                
-//            }
+            }else if ([[dic objectForKey:@"type"] isEqualToString:@"addfood"]){
+                NSArray * ar = [dic objectForKey:@"data"];
+                for (NSDictionary * d in ar) {
+                    FTIntellecMenuMaterialModel * model = [FTIntellecMenuMaterialModel setParameter:d];
+                    model.type = dic[@"type"];
+                    [self.dataArray addObject:model];
+                }
+                
+            }
             
-            
-     //   }
+        }
     }
     
     
@@ -127,11 +131,24 @@
     
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    //if ([[self.dataArray[indexPath.row] objectForKey:@"type"]isEqualToString:@"recommend"]) {
+    FTIntellecMenuMaterialModel * model = self.dataArray[indexPath.row];
+    ZYLog(@"type == %@",model.type);
+    if ([model.type isEqualToString:@"recommend"]) {
         FTMaterialCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-        FTIntellecMenuMaterialModel * model = self.dataArray[indexPath.row];
         cell.model = model;
         return cell;
+    }else{
+        FTMaterialTextFieldCell * cell = [tableView dequeueReusableCellWithIdentifier:@"textFieldCell"];
+        cell.model = model;
+        return cell;
+
+    }
+    //if ([[self.dataArr[indexPath.row] objectForKey:@"type"] isEqualToString:@"recommend"]) {
+//        FTMaterialCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+//        FTIntellecMenuMaterialModel * model = self.dataArray[indexPath.row];
+//        cell.model = model;
+//        return cell;
+    
 //    }else{
 //        
 //        FTMaterialTextFieldCell * cell = [tableView dequeueReusableCellWithIdentifier:@"textFieldCell"];
@@ -139,19 +156,22 @@
 //        cell.model = model;
 //        return cell;
 //    }
-    
+
 }
 #pragma mark - 添加食材按钮
 - (void)addMaterialClick:(UIButton *)btn{
     
     //ZYLog(@"添加食材按钮点击");
-    //NSDictionary * dic = @{@"foodName":@"",@"foodSize":@""};
-    //[self.dataArr addObject:dic];
-    ZYLog(@"addArr = %@",self.dataArray);
+    ZYLog(@"addArr = %@",self.dataArr);
     UITableView *tableview = (UITableView *)[[self superview] superview];
     NSIndexPath *indexPath = [tableview indexPathForCell:self];
-    [self.delegate addFoodMaterical:@"add" index:indexPath arr:self.dataArray];
-    [self detailData];
+    [self.delegate addFoodMaterical:@"add" index:indexPath arr:self.dataArr];
+    //[self detailData];
+    //[self.dataArr insertObject:@{@"type":@"addfood"} atIndex:1];
+    
+   // [self.dataArray removeAllObjects];
+    //[self detailData];
+    
     
 }
 - (void)clearClick:(UIButton *)btn{
@@ -186,11 +206,11 @@
     }
     return _dataArray;
 }
-- (NSMutableArray *)addArr{
-    if (_addArr == nil) {
-        _addArr = [NSMutableArray new];
+- (NSMutableArray *)getDataArr{
+    if (_getDataArr == nil) {
+        _getDataArr = [NSMutableArray new];
     }
-    return _addArr;
+    return _getDataArr;
 }
 - (UIView *)titleView{
     if (_titleView == nil) {

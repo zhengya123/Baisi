@@ -18,8 +18,8 @@
 @interface FTIntellecMenuAddFoodMaterialCell : UITableViewCell
 
 @property (nonatomic, strong) UITableView * tableView;
+@property (nonatomic, strong) NSMutableArray * getDataArr;//传递过来的arr
 @property (nonatomic, strong) NSMutableArray * dataArr;
-@property (nonatomic, strong) NSMutableArray * addArr;
 @property (nonatomic, strong) UIView * titleView;
 @property (nonatomic, strong) UIView * footView;
 @property (nonatomic, assign) id<FTAddFoodMaterialDelegate>delegate;

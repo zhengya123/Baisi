@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface FTIntellecMenuMaterialModel : NSObject
-
+@property (nonatomic, strong) NSString * type;
 @property (nonatomic, strong) NSString * foodName;
 @property (nonatomic, strong) NSString * sizes;
 

@@ -7,7 +7,7 @@
 //
 
 #import "FTMaterialTextFieldCell.h"
-
+#import "PrefixHeader.pch"
 @interface FTMaterialTextFieldCell ()<UITextFieldDelegate>
 
 @end
@@ -37,8 +37,8 @@
 }
 - (void)layoutSubviews{
     [super layoutSubviews];
-    self.foodNametextField.frame = CGRectMake(0, 0, self.frame.size.width/4 * 3, self.frame.size.height);
-    self.foodSizetextField.frame = CGRectMake(CGRectGetMaxX(self.foodNametextField.frame), 0, self.frame.size.width - CGRectGetMaxX(self.foodNametextField.frame), self.frame.size.height);
+    self.foodNametextField.frame = CGRectMake(10, 0, self.frame.size.width/4 * 3 - 10, self.frame.size.height);
+    self.foodSizetextField.frame = CGRectMake(CGRectGetMaxX(self.foodNametextField.frame), 0, self.frame.size.width - CGRectGetMaxX(self.foodNametextField.frame) - 10, self.frame.size.height);
 
 }
 - (void)textFieldDidEndEditing:(UITextField *)textField{
