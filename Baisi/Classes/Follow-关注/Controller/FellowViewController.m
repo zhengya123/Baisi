@@ -8,7 +8,7 @@
 
 #import "FellowViewController.h"
 #import "PrefixHeader.pch"
-#import "HHPatientDataViewController.h"
+#import "TableViewRefreshMethod.h"
 @interface FellowViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView * tableView;
@@ -26,8 +26,28 @@
 
 -(void)createUI{
     [self.view addSubview:self.tableView];
+    __weak typeof(self) weakSelf = self;
+    [TableViewRefreshMethod tableViewRefresh:self.tableView success:^(refreshType refresh) {
+    if (refresh == TableViewHeaderRefresh) {
+        [weakSelf headerFreshs];
+    }else{
+        [weakSelf fooderFreshs];
+    }
+    }];
 
+}
 
+- (void)headerFreshs{
+    ZYLog(@"刷新");
+    [self performSelector:@selector(delays) withObject:nil afterDelay:3];
+}
+- (void)delays{
+    [TableViewRefreshMethod endFresh:self.tableView];
+
+}
+- (void)fooderFreshs{
+    ZYLog(@"加载");
+    [self performSelector:@selector(delays) withObject:nil afterDelay:3];
 }
 -(void)getData{
     
@@ -35,6 +55,11 @@
 }
 -(void)dealWithData:(id)response{
 
+
+}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat yy = scrollView.contentOffset.y;
+    ZYLog(@"%f",yy);
 
 }
 #pragma mark - tableViewDelegate
@@ -54,7 +79,7 @@
 #pragma mark - 懒
 -(UITableView *)tableView{
     if (_tableView == nil) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_W, SCREEN_H) style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, -34, SCREEN_W, SCREEN_H + 70) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];

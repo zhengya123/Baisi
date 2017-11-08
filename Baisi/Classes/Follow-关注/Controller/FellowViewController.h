@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "PrefixHeader.pch"
-@interface FellowViewController : ZY_RootHomeViewController
+@interface FellowViewController : UIViewController
 
 @end

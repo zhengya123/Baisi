@@ -12,6 +12,7 @@
 #import "ALLEssenceListCell.h"
 #import "ImageLookVC.h"
 #import "MJRefresh.h"
+#import "TableViewRefreshMethod.h"
 @interface AllEssenceViewController ()<UITableViewDelegate,UITableViewDataSource,ALLEssenceClickDelegate>
 
 @property (nonatomic, strong) UITableView    * tableView;
@@ -138,11 +139,21 @@
 }
 #pragma mark - 刷新
 - (void)setUpRefresh{
-    MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerFresh)];
-    self.tableView.mj_header = header;
     
-    MJRefreshBackNormalFooter * footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerFresh)];
-    self.tableView.mj_footer = footer;
+    __weak typeof(self) weakSelf = self;
+    [TableViewRefreshMethod tableViewRefresh:self.tableView success:^(refreshType refresh) {
+        if (refresh == TableViewHeaderRefresh) {
+            [weakSelf headerFresh];
+        }else{
+            [weakSelf footerFresh];
+        }
+    }];
+    
+//    MJRefreshNormalHeader * header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerFresh)];
+//    self.tableView.mj_header = header;
+//    
+//    MJRefreshBackNormalFooter * footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerFresh)];
+//    self.tableView.mj_footer = footer;
 
 
 }
