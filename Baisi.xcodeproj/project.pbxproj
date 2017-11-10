@@ -39,6 +39,19 @@
 		C71C80EF1FB2A6C0004B0932 /* ifree_load_07@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C71C80E31FB2A6C0004B0932 /* ifree_load_07@2x.png */; };
 		C71C80F01FB2A6C0004B0932 /* ifree_load_08@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C71C80E41FB2A6C0004B0932 /* ifree_load_08@2x.png */; };
 		C71C80F11FB2A6C0004B0932 /* ifree_load_09@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C71C80E51FB2A6C0004B0932 /* ifree_load_09@2x.png */; };
+		C72F43711FB587C7006F4349 /* BHBBottomBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43581FB587C7006F4349 /* BHBBottomBar.m */; };
+		C72F43721FB587C7006F4349 /* BHBCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F435A1FB587C7006F4349 /* BHBCenterView.m */; };
+		C72F43731FB587C7006F4349 /* BHBCustomBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F435C1FB587C7006F4349 /* BHBCustomBtn.m */; };
+		C72F43741FB587C7006F4349 /* BHBGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F435E1FB587C7006F4349 /* BHBGroup.m */; };
+		C72F43751FB587C7006F4349 /* BHBItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43601FB587C7006F4349 /* BHBItem.m */; };
+		C72F43761FB587C7006F4349 /* BHBPlaySoundTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43621FB587C7006F4349 /* BHBPlaySoundTool.m */; };
+		C72F43771FB587C7006F4349 /* BHBPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43641FB587C7006F4349 /* BHBPopView.m */; };
+		C72F43781FB587C7006F4349 /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C72F43671FB587C7006F4349 /* images.bundle */; };
+		C72F43791FB587C7006F4349 /* music.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C72F43681FB587C7006F4349 /* music.bundle */; };
+		C72F437A1FB587C7006F4349 /* UIButton+BHBSetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F436A1FB587C7006F4349 /* UIButton+BHBSetImage.m */; };
+		C72F437B1FB587C7006F4349 /* UIImage+BHBEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F436C1FB587C7006F4349 /* UIImage+BHBEffects.m */; };
+		C72F437C1FB587C7006F4349 /* UIImageView+BHBSetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F436E1FB587C7006F4349 /* UIImageView+BHBSetImage.m */; };
+		C72F437D1FB587C7006F4349 /* UIView+BHBAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43701FB587C7006F4349 /* UIView+BHBAnimation.m */; };
 		C73E6A231F94A13300500928 /* FJFirstShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A1D1F94A13300500928 /* FJFirstShopViewController.m */; };
 		C73E6A241F94A13300500928 /* FJSecondShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A1F1F94A13300500928 /* FJSecondShopViewController.m */; };
 		C73E6A251F94A13300500928 /* QNPersonalHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A211F94A13300500928 /* QNPersonalHeaderView.m */; };
@@ -84,12 +97,6 @@
 		DF3C47BD1EEE2EBE00512E88 /*  003.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DF3C47BC1EEE2EBE00512E88 /*  003.pdf */; };
 		DF428A121E8DF69F003E2A79 /* HCGDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */; };
 		DF428A131E8DF69F003E2A79 /* HCGDatePickerAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = DF428A111E8DF69F003E2A79 /* HCGDatePickerAppearance.m */; };
-		DF49BCEC1EA608A100806C80 /* HyPopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCEB1EA608A100806C80 /* HyPopMenuView.m */; };
-		DF49BCF21EA608BB00806C80 /* PopMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCEF1EA608BB00806C80 /* PopMenuButton.m */; };
-		DF49BCF31EA608BB00806C80 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCF11EA608BB00806C80 /* PopMenuModel.m */; };
-		DF49BCF61EA608C300806C80 /* UIColor+ImageGetColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCF51EA608C300806C80 /* UIColor+ImageGetColor.m */; };
-		DF49BCFA1EA608EF00806C80 /* popMenvTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCF81EA608EF00806C80 /* popMenvTopView.m */; };
-		DF49BCFB1EA608EF00806C80 /* popMenvTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF49BCF91EA608EF00806C80 /* popMenvTopView.xib */; };
 		DF49BCFF1EA60B2E00806C80 /* AddMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF49BCFD1EA60B2E00806C80 /* AddMainVC.m */; };
 		DF49BD001EA60B2E00806C80 /* AddMainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF49BCFE1EA60B2E00806C80 /* AddMainVC.xib */; };
 		DF4BA7D81F15C0DF00212B36 /* MyPhotoCameraVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4BA7D61F15C0DF00212B36 /* MyPhotoCameraVC.m */; };
@@ -456,6 +463,31 @@
 		C71C80E31FB2A6C0004B0932 /* ifree_load_07@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ifree_load_07@2x.png"; sourceTree = "<group>"; };
 		C71C80E41FB2A6C0004B0932 /* ifree_load_08@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ifree_load_08@2x.png"; sourceTree = "<group>"; };
 		C71C80E51FB2A6C0004B0932 /* ifree_load_09@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ifree_load_09@2x.png"; sourceTree = "<group>"; };
+		C72F43571FB587C7006F4349 /* BHBBottomBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHBBottomBar.h; sourceTree = "<group>"; };
+		C72F43581FB587C7006F4349 /* BHBBottomBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHBBottomBar.m; sourceTree = "<group>"; };
+		C72F43591FB587C7006F4349 /* BHBCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHBCenterView.h; sourceTree = "<group>"; };
+		C72F435A1FB587C7006F4349 /* BHBCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHBCenterView.m; sourceTree = "<group>"; };
+		C72F435B1FB587C7006F4349 /* BHBCustomBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHBCustomBtn.h; sourceTree = "<group>"; };
+		C72F435C1FB587C7006F4349 /* BHBCustomBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHBCustomBtn.m; sourceTree = "<group>"; };
+		C72F435D1FB587C7006F4349 /* BHBGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHBGroup.h; sourceTree = "<group>"; };
+		C72F435E1FB587C7006F4349 /* BHBGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHBGroup.m; sourceTree = "<group>"; };
+		C72F435F1FB587C7006F4349 /* BHBItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHBItem.h; sourceTree = "<group>"; };
+		C72F43601FB587C7006F4349 /* BHBItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHBItem.m; sourceTree = "<group>"; };
+		C72F43611FB587C7006F4349 /* BHBPlaySoundTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHBPlaySoundTool.h; sourceTree = "<group>"; };
+		C72F43621FB587C7006F4349 /* BHBPlaySoundTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHBPlaySoundTool.m; sourceTree = "<group>"; };
+		C72F43631FB587C7006F4349 /* BHBPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHBPopView.h; sourceTree = "<group>"; };
+		C72F43641FB587C7006F4349 /* BHBPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHBPopView.m; sourceTree = "<group>"; };
+		C72F43651FB587C7006F4349 /* BHBSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHBSingleton.h; sourceTree = "<group>"; };
+		C72F43671FB587C7006F4349 /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
+		C72F43681FB587C7006F4349 /* music.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = music.bundle; sourceTree = "<group>"; };
+		C72F43691FB587C7006F4349 /* UIButton+BHBSetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+BHBSetImage.h"; sourceTree = "<group>"; };
+		C72F436A1FB587C7006F4349 /* UIButton+BHBSetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BHBSetImage.m"; sourceTree = "<group>"; };
+		C72F436B1FB587C7006F4349 /* UIImage+BHBEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BHBEffects.h"; sourceTree = "<group>"; };
+		C72F436C1FB587C7006F4349 /* UIImage+BHBEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BHBEffects.m"; sourceTree = "<group>"; };
+		C72F436D1FB587C7006F4349 /* UIImageView+BHBSetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+BHBSetImage.h"; sourceTree = "<group>"; };
+		C72F436E1FB587C7006F4349 /* UIImageView+BHBSetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BHBSetImage.m"; sourceTree = "<group>"; };
+		C72F436F1FB587C7006F4349 /* UIView+BHBAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BHBAnimation.h"; sourceTree = "<group>"; };
+		C72F43701FB587C7006F4349 /* UIView+BHBAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BHBAnimation.m"; sourceTree = "<group>"; };
 		C73E6A1C1F94A13300500928 /* FJFirstShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJFirstShopViewController.h; sourceTree = "<group>"; };
 		C73E6A1D1F94A13300500928 /* FJFirstShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJFirstShopViewController.m; sourceTree = "<group>"; };
 		C73E6A1E1F94A13300500928 /* FJSecondShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSecondShopViewController.h; sourceTree = "<group>"; };
@@ -535,18 +567,6 @@
 		DF428A0F1E8DF69F003E2A79 /* HCGDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCGDatePicker.m; sourceTree = "<group>"; };
 		DF428A101E8DF69F003E2A79 /* HCGDatePickerAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCGDatePickerAppearance.h; sourceTree = "<group>"; };
 		DF428A111E8DF69F003E2A79 /* HCGDatePickerAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCGDatePickerAppearance.m; sourceTree = "<group>"; };
-		DF49BCEA1EA608A100806C80 /* HyPopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HyPopMenuView.h; sourceTree = "<group>"; };
-		DF49BCEB1EA608A100806C80 /* HyPopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HyPopMenuView.m; sourceTree = "<group>"; };
-		DF49BCED1EA608AF00806C80 /* HyPopMenuViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HyPopMenuViewDelegate.h; sourceTree = "<group>"; };
-		DF49BCEE1EA608BB00806C80 /* PopMenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuButton.h; sourceTree = "<group>"; };
-		DF49BCEF1EA608BB00806C80 /* PopMenuButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuButton.m; sourceTree = "<group>"; };
-		DF49BCF01EA608BB00806C80 /* PopMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuModel.h; sourceTree = "<group>"; };
-		DF49BCF11EA608BB00806C80 /* PopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuModel.m; sourceTree = "<group>"; };
-		DF49BCF41EA608C300806C80 /* UIColor+ImageGetColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ImageGetColor.h"; sourceTree = "<group>"; };
-		DF49BCF51EA608C300806C80 /* UIColor+ImageGetColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ImageGetColor.m"; sourceTree = "<group>"; };
-		DF49BCF71EA608EF00806C80 /* popMenvTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = popMenvTopView.h; sourceTree = "<group>"; };
-		DF49BCF81EA608EF00806C80 /* popMenvTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = popMenvTopView.m; sourceTree = "<group>"; };
-		DF49BCF91EA608EF00806C80 /* popMenvTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popMenvTopView.xib; sourceTree = "<group>"; };
 		DF49BCFC1EA60B2E00806C80 /* AddMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMainVC.h; sourceTree = "<group>"; };
 		DF49BCFD1EA60B2E00806C80 /* AddMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMainVC.m; sourceTree = "<group>"; };
 		DF49BCFE1EA60B2E00806C80 /* AddMainVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddMainVC.xib; sourceTree = "<group>"; };
@@ -1164,6 +1184,46 @@
 			path = "小汽车动画";
 			sourceTree = "<group>";
 		};
+		C72F43561FB587C7006F4349 /* BHBPopView */ = {
+			isa = PBXGroup;
+			children = (
+				C72F43571FB587C7006F4349 /* BHBBottomBar.h */,
+				C72F43581FB587C7006F4349 /* BHBBottomBar.m */,
+				C72F43591FB587C7006F4349 /* BHBCenterView.h */,
+				C72F435A1FB587C7006F4349 /* BHBCenterView.m */,
+				C72F435B1FB587C7006F4349 /* BHBCustomBtn.h */,
+				C72F435C1FB587C7006F4349 /* BHBCustomBtn.m */,
+				C72F435D1FB587C7006F4349 /* BHBGroup.h */,
+				C72F435E1FB587C7006F4349 /* BHBGroup.m */,
+				C72F435F1FB587C7006F4349 /* BHBItem.h */,
+				C72F43601FB587C7006F4349 /* BHBItem.m */,
+				C72F43611FB587C7006F4349 /* BHBPlaySoundTool.h */,
+				C72F43621FB587C7006F4349 /* BHBPlaySoundTool.m */,
+				C72F43631FB587C7006F4349 /* BHBPopView.h */,
+				C72F43641FB587C7006F4349 /* BHBPopView.m */,
+				C72F43651FB587C7006F4349 /* BHBSingleton.h */,
+				C72F43661FB587C7006F4349 /* Resource */,
+				C72F43691FB587C7006F4349 /* UIButton+BHBSetImage.h */,
+				C72F436A1FB587C7006F4349 /* UIButton+BHBSetImage.m */,
+				C72F436B1FB587C7006F4349 /* UIImage+BHBEffects.h */,
+				C72F436C1FB587C7006F4349 /* UIImage+BHBEffects.m */,
+				C72F436D1FB587C7006F4349 /* UIImageView+BHBSetImage.h */,
+				C72F436E1FB587C7006F4349 /* UIImageView+BHBSetImage.m */,
+				C72F436F1FB587C7006F4349 /* UIView+BHBAnimation.h */,
+				C72F43701FB587C7006F4349 /* UIView+BHBAnimation.m */,
+			);
+			path = BHBPopView;
+			sourceTree = "<group>";
+		};
+		C72F43661FB587C7006F4349 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C72F43671FB587C7006F4349 /* images.bundle */,
+				C72F43681FB587C7006F4349 /* music.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		C73E6A151F949FFD00500928 /* MySegment */ = {
 			isa = PBXGroup;
 			children = (
@@ -1366,25 +1426,6 @@
 			path = HcgDatePicker;
 			sourceTree = "<group>";
 		};
-		DF49BCE91EA6086D00806C80 /* PopMenuVC */ = {
-			isa = PBXGroup;
-			children = (
-				DF49BCED1EA608AF00806C80 /* HyPopMenuViewDelegate.h */,
-				DF49BCEA1EA608A100806C80 /* HyPopMenuView.h */,
-				DF49BCEB1EA608A100806C80 /* HyPopMenuView.m */,
-				DF49BCEE1EA608BB00806C80 /* PopMenuButton.h */,
-				DF49BCEF1EA608BB00806C80 /* PopMenuButton.m */,
-				DF49BCF01EA608BB00806C80 /* PopMenuModel.h */,
-				DF49BCF11EA608BB00806C80 /* PopMenuModel.m */,
-				DF49BCF41EA608C300806C80 /* UIColor+ImageGetColor.h */,
-				DF49BCF51EA608C300806C80 /* UIColor+ImageGetColor.m */,
-				DF49BCF71EA608EF00806C80 /* popMenvTopView.h */,
-				DF49BCF81EA608EF00806C80 /* popMenvTopView.m */,
-				DF49BCF91EA608EF00806C80 /* popMenvTopView.xib */,
-			);
-			path = PopMenuVC;
-			sourceTree = "<group>";
-		};
 		DF5B3DDC1E8C963000E04C27 = {
 			isa = PBXGroup;
 			children = (
@@ -1468,11 +1509,11 @@
 		DF5B3E201E8C98BC00E04C27 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				C72F43561FB587C7006F4349 /* BHBPopView */,
 				C73E6A2E1F94A39C00500928 /* FJSegmentedPager */,
 				DF76CC3D1F3C300C006C9C81 /* UICountingLabel */,
 				DF76CC051F3C3000006C9C81 /* PNChart */,
 				DF3957381EA7033A00D796D1 /* LeftSliderMenuVC */,
-				DF49BCE91EA6086D00806C80 /* PopMenuVC */,
 				DF428A0D1E8DF69F003E2A79 /* HcgDatePicker */,
 				DF5B3E211E8C98BC00E04C27 /* FDFullscreenPopGesture */,
 				DF5B3E241E8C98BC00E04C27 /* FTPrettyRulerView */,
@@ -2884,7 +2925,6 @@
 				DF5B3FAB1E8C98D000E04C27 /* login_close_icon@3x.png in Resources */,
 				DF4BA7E91F15D02600212B36 /* camera@3x.png in Resources */,
 				DF5B3DF51E8C963000E04C27 /* Assets.xcassets in Resources */,
-				DF49BCFB1EA608EF00806C80 /* popMenvTopView.xib in Resources */,
 				C71C80F01FB2A6C0004B0932 /* ifree_load_08@2x.png in Resources */,
 				DF5B3FED1E8C98D100E04C27 /* setup-head-default@2x.png in Resources */,
 				DF19B63D1E9E0242001B5E69 /* HHAllMemberViewCell.xib in Resources */,
@@ -2902,6 +2942,7 @@
 				DF4BA7DF1F15C16C00212B36 /* photograph_Select@3x.png in Resources */,
 				DF5B3FD11E8C98D100E04C27 /* mine-icon-activity@2x.png in Resources */,
 				C7199B8C1FB00E0D00D44CBC /* FTMaterialTextFieldCell.xib in Resources */,
+				C72F43791FB587C7006F4349 /* music.bundle in Resources */,
 				DF5B3FB81E8C98D100E04C27 /* login_register_left_line@2x.png in Resources */,
 				DF5B3FCB1E8C98D100E04C27 /* login_tecent_icon_click@3x.png in Resources */,
 				DF5B3FCA1E8C98D100E04C27 /* login_tecent_icon_click@2x.png in Resources */,
@@ -2921,6 +2962,7 @@
 				DF5B3FBD1E8C98D100E04C27 /* login_rgister_textfield_bg.png in Resources */,
 				DFB2B9111F78DCDF00EFE003 /* TestVC.xib in Resources */,
 				DF19B6381E9DFDDD001B5E69 /* HHAllMemberViewController.xib in Resources */,
+				C72F43781FB587C7006F4349 /* images.bundle in Resources */,
 				C7199B881FB00E0D00D44CBC /* FTMaterialCell.xib in Resources */,
 				DF5B3FAE1E8C98D100E04C27 /* login_QQ_icon@3x.png in Resources */,
 				DF5B3FB11E8C98D100E04C27 /* login_QQ_icon_click@3x.png in Resources */,
@@ -3005,6 +3047,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72F437D1FB587C7006F4349 /* UIView+BHBAnimation.m in Sources */,
 				DF758D481F03A168006A43C7 /* ApproveCommonModel.m in Sources */,
 				C73E6A4C1F94A39C00500928 /* FJConfigModel.m in Sources */,
 				DF5B3F421E8C98BC00E04C27 /* XHWebImageDownload.m in Sources */,
@@ -3016,7 +3059,6 @@
 				DF5B3F411E8C98BC00E04C27 /* XHLaunchAd.m in Sources */,
 				DF5B409A1E8C98DC00E04C27 /* ZPDFPageModel.m in Sources */,
 				DF5B3F141E8C98BC00E04C27 /* WXSTransitionManager+BoomAnimation.m in Sources */,
-				DF49BCEC1EA608A100806C80 /* HyPopMenuView.m in Sources */,
 				DF5B3F321E8C98BC00E04C27 /* XWFilterAnimator+XWBoxBlur.m in Sources */,
 				DF5B40851E8C98DC00E04C27 /* FirstHTMLVC.m in Sources */,
 				DF76CC3C1F3C3000006C9C81 /* README.md in Sources */,
@@ -3031,6 +3073,7 @@
 				DF5B40A31E8C98DC00E04C27 /* NewViewController.m in Sources */,
 				DF5B40871E8C98DC00E04C27 /* UserDTO.m in Sources */,
 				DF5B409C1E8C98DC00E04C27 /* MyQr_CodeVC.m in Sources */,
+				C72F437C1FB587C7006F4349 /* UIImageView+BHBSetImage.m in Sources */,
 				DF5B40811E8C98DC00E04C27 /* FellowViewController.m in Sources */,
 				DF5B3F311E8C98BC00E04C27 /* XWFilterAnimator+XWBarSwipe.m in Sources */,
 				DF5B3F111E8C98BC00E04C27 /* UIViewController+WXSTransition.m in Sources */,
@@ -3077,6 +3120,7 @@
 				C7199B801FB00E0D00D44CBC /* FTIntellecMenuMaterialModel.m in Sources */,
 				C73E6A511F94A39C00500928 /* FJPageCollectionViewCell.m in Sources */,
 				C7199B871FB00E0D00D44CBC /* FTMaterialCell.m in Sources */,
+				C72F43741FB587C7006F4349 /* BHBGroup.m in Sources */,
 				DF5B3EF71E8C98BC00E04C27 /* HeartLive.m in Sources */,
 				DF758B301F0248C000DC245F /* ApproveGoOutTitle.m in Sources */,
 				DF33261F1EE8FBA500450755 /* DescribeView.m in Sources */,
@@ -3099,6 +3143,7 @@
 				DF5B40941E8C98DC00E04C27 /* MY_HeartNumVCViewController.m in Sources */,
 				DF5B3F3B1E8C98BC00E04C27 /* XWFilterTransitionView.m in Sources */,
 				DF868A081EA4920200378800 /* OcTopUs-Loading.m in Sources */,
+				C72F437B1FB587C7006F4349 /* UIImage+BHBEffects.m in Sources */,
 				DF76CC3B1F3C3000006C9C81 /* PNScatterChartDataItem.m in Sources */,
 				DF76CC3A1F3C3000006C9C81 /* PNScatterChartData.m in Sources */,
 				DF5B3EF61E8C98BC00E04C27 /* HeartBeat.m in Sources */,
@@ -3117,6 +3162,7 @@
 				DF19B6411E9E03DF001B5E69 /* HHAllMemberVCModel.m in Sources */,
 				DF5B3F491E8C98BC00E04C27 /* textField_AtViewWithImage.m in Sources */,
 				DF5B3F051E8C98BC00E04C27 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				C72F43751FB587C7006F4349 /* BHBItem.m in Sources */,
 				DF19B6371E9DFDDD001B5E69 /* HHAllMemberViewController.m in Sources */,
 				DF002BB41EB0518D00CFDE42 /* CountDownView.m in Sources */,
 				DF36F19F1F298BE4003F4C0A /* TESTViewController.m in Sources */,
@@ -3129,7 +3175,6 @@
 				DF5B3F1D1E8C98BC00E04C27 /* WXSTransitionManager+ViewMoveAnimation.m in Sources */,
 				DF5B3F151E8C98BC00E04C27 /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				DF5B3EFA1E8C98BC00E04C27 /* IQUITextFieldView+Additions.m in Sources */,
-				DF49BCF61EA608C300806C80 /* UIColor+ImageGetColor.m in Sources */,
 				DF758B391F025EB300DC245F /* ApproveReceiveModel.m in Sources */,
 				DF39573E1EA7035300D796D1 /* SlideMenuButton.m in Sources */,
 				DF76CC351F3C3000006C9C81 /* PNPieChart.m in Sources */,
@@ -3137,6 +3182,7 @@
 				DF5B40931E8C98DC00E04C27 /* PersonalViewController.m in Sources */,
 				DF5B3F1A1E8C98BC00E04C27 /* WXSTransitionManager+SpreadAnimation.m in Sources */,
 				DF5B40A51E8C98DC00E04C27 /* OtherViewController.m in Sources */,
+				C72F43731FB587C7006F4349 /* BHBCustomBtn.m in Sources */,
 				DF19B6331E9DCF48001B5E69 /* PaymentListVC.m in Sources */,
 				DF868A0D1EA49B1F00378800 /* PeopleWorking-Loading.m in Sources */,
 				DF5B3EF51E8C98BC00E04C27 /* FTRulerScrollView.m in Sources */,
@@ -3179,7 +3225,6 @@
 				C73E6A4F1F94A39C00500928 /* FJSegmentdPageViewController.m in Sources */,
 				C7199B7D1FB00E0D00D44CBC /* FTIntellectMenuVC.m in Sources */,
 				DF76CC431F3C300C006C9C81 /* README.md in Sources */,
-				DF49BCF31EA608BB00806C80 /* PopMenuModel.m in Sources */,
 				DF5B3F3F1E8C98BC00E04C27 /* UIImageView+XHWebCache.m in Sources */,
 				DF5B3F1C1E8C98BC00E04C27 /* WXSTransitionManager+TypeTool.m in Sources */,
 				DF5B3F2E1E8C98BC00E04C27 /* XWCoolAnimator+XWScanning.m in Sources */,
@@ -3189,6 +3234,7 @@
 				DF5B3EF41E8C98BC00E04C27 /* FTPrettyRulerView.m in Sources */,
 				DF758D3E1F035A2F006A43C7 /* ApproveDetailStateCell.m in Sources */,
 				DF76CC2C1F3C3000006C9C81 /* PNBar.m in Sources */,
+				C72F437A1FB587C7006F4349 /* UIButton+BHBSetImage.m in Sources */,
 				DF76CC331F3C3000006C9C81 /* PNLineChartData.m in Sources */,
 				DF76CC301F3C3000006C9C81 /* PNColor.m in Sources */,
 				DF5B3F4A1E8C98BC00E04C27 /* ZY_button.m in Sources */,
@@ -3199,6 +3245,7 @@
 				DF5B3F3C1E8C98BC00E04C27 /* XWMagicMoveAnimator.m in Sources */,
 				C7199B7F1FB00E0D00D44CBC /* FTIntellecMenuMaterialAddfoodModel.m in Sources */,
 				DF5B3F3A1E8C98BC00E04C27 /* XWFilterAnimator.m in Sources */,
+				C72F43761FB587C7006F4349 /* BHBPlaySoundTool.m in Sources */,
 				DF5B3F071E8C98BC00E04C27 /* CAReplicatorLayerAnimal.m in Sources */,
 				DF5B40781E8C98DC00E04C27 /* AllEssenceViewController.m in Sources */,
 				DF758D451F039966006A43C7 /* ApproveCommonTitle.m in Sources */,
@@ -3207,10 +3254,10 @@
 				DF33261B1EE8ECBE00450755 /* EditSignVC.m in Sources */,
 				C7199B841FB00E0D00D44CBC /* FTIntellecMenuTitleView.m in Sources */,
 				DF76CC2D1F3C3000006C9C81 /* PNBarChart.m in Sources */,
-				DF49BCFA1EA608EF00806C80 /* popMenvTopView.m in Sources */,
+				C72F43711FB587C7006F4349 /* BHBBottomBar.m in Sources */,
 				DF758B211F0204FD00DC245F /* ApproveListViewController.m in Sources */,
+				C72F43771FB587C7006F4349 /* BHBPopView.m in Sources */,
 				DF5B3F3D1E8C98BC00E04C27 /* UIButton+XHEnlarged.m in Sources */,
-				DF49BCF21EA608BB00806C80 /* PopMenuButton.m in Sources */,
 				DF5B3F371E8C98BC00E04C27 /* XWFilterAnimator+XWPageCurl.m in Sources */,
 				DF5B40B41E8C98E900E04C27 /* ZY_RootHomeViewController.m in Sources */,
 				C73E6A501F94A39C00500928 /* FJSegmentedBaseViewController.m in Sources */,
@@ -3233,6 +3280,7 @@
 				DF5B3DEA1E8C963000E04C27 /* main.m in Sources */,
 				DF5B3F091E8C98BC00E04C27 /* LoadingViewForOC.m in Sources */,
 				DF76CC361F3C3000006C9C81 /* PNPieChartDataItem.m in Sources */,
+				C72F43721FB587C7006F4349 /* BHBCenterView.m in Sources */,
 				DF5B3F0E1E8C98BC00E04C27 /* NSDictionary+UnicodeReadable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,13 +8,10 @@
 
 #import "AddMainVC.h"
 #import "PrefixHeader.pch"
-#import "HyPopMenuView.h"
-#import "popMenvTopView.h"
+
 #import "PersonalViewController.h"
-@interface AddMainVC ()<HyPopMenuViewDelegate>
+@interface AddMainVC ()
 
-
-@property (nonatomic, strong) HyPopMenuView* menu;
 @end
 
 @implementation AddMainVC
@@ -38,9 +35,5 @@
     PersonalViewController * person = [PersonalViewController new];
     [self.navigationController pushViewController:person animated:YES];
     
-}
-- (void)popMenuView:(HyPopMenuView *)popMenuView didSelectItemAtIndex:(NSUInteger)index
-{
-    [self.navigationController popViewControllerAnimated:false];
 }
 @end

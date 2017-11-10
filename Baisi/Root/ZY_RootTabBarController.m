@@ -17,10 +17,8 @@
 #import "MyInformationController.h"
 #import "PersonalViewController.h"
 #import "MainTabBar.h"
-
-#import "HyPopMenuView.h"
-#import "popMenvTopView.h"
-@interface ZY_RootTabBarController ()<MainTabBarDelegate,HyPopMenuViewDelegate>
+#import "BHBPopView.h"
+@interface ZY_RootTabBarController ()<MainTabBarDelegate>
 @property (nonatomic, weak  )  MainTabBar            * mainTabBar;
 @property (nonatomic, strong) OtherViewController    * otherVC;
 @property (nonatomic, strong) AddMainVC              * addMainVC;
@@ -29,7 +27,7 @@
 @property (nonatomic, strong) FellowViewController   * fellowVC;
 @property (nonatomic, strong) MeViewController       * meVC;
 @property (nonatomic, strong) PersonalViewController * personalVC;
-@property (nonatomic, strong) HyPopMenuView* menu;
+
 @end
 
 @implementation ZY_RootTabBarController
@@ -39,63 +37,8 @@
     
     [self SetupMainTabBar];
     [self SetupAllControllers];
-    [self SetupTabbarClick];
+    
    
-}
--(void)SetupTabbarClick{
-    _menu = [HyPopMenuView sharedPopMenuManager];
-    PopMenuModel* model = [PopMenuModel
-                           allocPopMenuModelWithImageNameString:@"tabbar_compose_idea"
-                           AtTitleString:@"文字/头条"
-                           AtTextColor:[UIColor grayColor]
-                           AtTransitionType:PopMenuTransitionTypeCustomizeApi
-                           AtTransitionRenderingColor:nil];
-    
-    PopMenuModel* model1 = [PopMenuModel
-                            allocPopMenuModelWithImageNameString:@"tabbar_compose_photo"
-                            AtTitleString:@"相册/视频"
-                            AtTextColor:[UIColor grayColor]
-                            AtTransitionType:PopMenuTransitionTypeSystemApi
-                            AtTransitionRenderingColor:nil];
-    
-    PopMenuModel* model2 = [PopMenuModel
-                            allocPopMenuModelWithImageNameString:@"tabbar_compose_camera"
-                            AtTitleString:@"拍摄/短视频"
-                            AtTextColor:[UIColor grayColor]
-                            AtTransitionType:PopMenuTransitionTypeCustomizeApi
-                            AtTransitionRenderingColor:nil];
-    
-    PopMenuModel* model3 = [PopMenuModel
-                            allocPopMenuModelWithImageNameString:@"tabbar_compose_lbs"
-                            AtTitleString:@"签到"
-                            AtTextColor:[UIColor grayColor]
-                            AtTransitionType:PopMenuTransitionTypeSystemApi
-                            AtTransitionRenderingColor:nil];
-    
-    PopMenuModel* model4 = [PopMenuModel
-                            allocPopMenuModelWithImageNameString:@"tabbar_compose_review"
-                            AtTitleString:@"点评"
-                            AtTextColor:[UIColor grayColor]
-                            AtTransitionType:PopMenuTransitionTypeCustomizeApi
-                            AtTransitionRenderingColor:nil];
-    
-    PopMenuModel* model5 = [PopMenuModel
-                            allocPopMenuModelWithImageNameString:@"tabbar_compose_more"
-                            AtTitleString:@"更多"
-                            AtTextColor:[UIColor grayColor]
-                            AtTransitionType:PopMenuTransitionTypeSystemApi
-                            AtTransitionRenderingColor:nil];
-    
-    _menu.dataSource = @[ model, model1, model2, model3, model4, model5 ];
-    _menu.delegate = self;
-    _menu.popMenuSpeed = 12.0f;
-    _menu.automaticIdentificationColor = false;
-    _menu.animationType = HyPopMenuViewAnimationTypeViscous;
-    
-    popMenvTopView* topView = [popMenvTopView popMenvTopView];
-    topView.frame = CGRectMake(0, 44, CGRectGetWidth(self.view.frame), 92);
-    _menu.topView = topView;
-
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -170,19 +113,47 @@
 //    ZY_RootNavigationController *nav = [[ZY_RootNavigationController alloc] initWithRootViewController:writeVc];
 //    
 //    [self presentViewController:nav animated:YES completion:nil];
-    _menu.backgroundType = HyPopMenuViewBackgroundTypeLightBlur;
-    [_menu openMenu];
-}
-- (void)popMenuView:(HyPopMenuView*)popMenuView
-didSelectItemAtIndex:(NSUInteger)index
-{
-//    UIViewController* t =
-//    [self.storyboard instantiateViewControllerWithIdentifier:@"two"];
-//    [self.navigationController pushViewController:t animated:false];
+    //_menu.backgroundType = HyPopMenuViewBackgroundTypeLightBlur;
+    //[_menu openMenu];
     
-        AddMainVC *writeVc = [[AddMainVC alloc] init];
-        ZY_RootNavigationController *nav = [[ZY_RootNavigationController alloc] initWithRootViewController:writeVc];
+    BHBItem * item0 = [[BHBItem alloc]initWithTitle:@"Text" Icon:@"images.bundle/tabbar_compose_idea"];
+    BHBItem * item1 = [[BHBItem alloc]initWithTitle:@"Albums" Icon:@"images.bundle/tabbar_compose_photo"];
+    BHBItem * item2 = [[BHBItem alloc]initWithTitle:@"Camera" Icon:@"images.bundle/tabbar_compose_camera"];
+    //第4个按钮内部有一组
+    BHBGroup * item3 = [[BHBGroup alloc]initWithTitle:@"Check in" Icon:@"images.bundle/tabbar_compose_lbs"];
+    BHBItem * item31 = [[BHBItem alloc]initWithTitle:@"Friend Circle" Icon:@"images.bundle/tabbar_compose_friend"];
+    BHBItem * item32 = [[BHBItem alloc]initWithTitle:@"Weibo Camera" Icon:@"images.bundle/tabbar_compose_wbcamera"];
+    BHBItem * item33 = [[BHBItem alloc]initWithTitle:@"Music" Icon:@"images.bundle/tabbar_compose_music"];
+    item3.items = @[item31,item32,item33];
     
-        [self presentViewController:nav animated:YES completion:nil];
+    BHBItem * item4 = [[BHBItem alloc]initWithTitle:@"Review" Icon:@"images.bundle/tabbar_compose_review"];
+    
+    //第六个按钮内部有一组
+    BHBGroup * item5 = [[BHBGroup alloc]initWithTitle:@"More" Icon:@"images.bundle/tabbar_compose_more"];
+    BHBItem * item51 = [[BHBItem alloc]initWithTitle:@"Friend Circle" Icon:@"images.bundle/tabbar_compose_friend"];
+    BHBItem * item52 = [[BHBItem alloc]initWithTitle:@"Weibo Camera" Icon:@"images.bundle/tabbar_compose_wbcamera"];
+    BHBItem * item53 = [[BHBItem alloc]initWithTitle:@"Music" Icon:@"images.bundle/tabbar_compose_music"];
+    BHBItem * item54 = [[BHBItem alloc]initWithTitle:@"Blog" Icon:@"images.bundle/tabbar_compose_weibo"];
+    BHBItem * item55 = [[BHBItem alloc]initWithTitle:@"Collection" Icon:@"images.bundle/tabbar_compose_transfer"];
+    BHBItem * item56 = [[BHBItem alloc]initWithTitle:@"Voice" Icon:@"images.bundle/tabbar_compose_voice"];
+    item5.items = @[item51,item52,item53,item54,item55,item56];
+    
+    
+    //添加popview
+    
+    [BHBPopView showToView:self.view.window withItems:@[item0,item1,item2,item3,item4,item5]andSelectBlock:^(BHBItem *item) {
+        if ([item isKindOfClass:[BHBGroup class]]) {
+            NSLog(@"选中%@分组",item.title);
+        }else{
+            NSLog(@"选中%@项",item.title);
+            if ([item.title isEqualToString:@"Text"]) {
+                AddMainVC *writeVc = [[AddMainVC alloc] init];
+                ZY_RootNavigationController *nav = [[ZY_RootNavigationController alloc] initWithRootViewController:writeVc];
+                
+                [self presentViewController:nav animated:YES completion:nil];
+            }
+        }
+    }];
+
 }
 @end
