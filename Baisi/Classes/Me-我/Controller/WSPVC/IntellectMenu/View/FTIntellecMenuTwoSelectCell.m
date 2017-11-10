@@ -47,12 +47,12 @@
 - (void)leftClick:(UIButton *)btn{
     UITableView *tableview = (UITableView *)[[self superview] superview];
     NSIndexPath *indexPath = [tableview indexPathForCell:self];
-    [self.delegate ClickdelegateMethod:indexPath str:@"left"];
+    [self.delegate ClickdelegateMethod:indexPath str:@"left" type:_models.type2];
 }
 - (void)rightClick:(UIButton *)btn{
     UITableView *tableview = (UITableView *)[[self superview] superview];
     NSIndexPath *indexPath = [tableview indexPathForCell:self];
-    [self.delegate ClickdelegateMethod:indexPath str:@"right"];
+    [self.delegate ClickdelegateMethod:indexPath str:@"right" type:_models.type2];
 }
 - (UIButton *)Leftbtn{
     if (_Leftbtn == nil) {

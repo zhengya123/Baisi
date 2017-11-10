@@ -10,7 +10,7 @@
 #import "FTIntellecMenuSelectModel.h"
 @protocol FTIntellecMenuTwoSelectCellDelegate <NSObject>
 
-- (void)ClickdelegateMethod:(NSIndexPath *)index str:(NSString *)Str;
+- (void)ClickdelegateMethod:(NSIndexPath *)index str:(NSString *)Str type:(NSString *)type;
 
 
 @end

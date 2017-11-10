@@ -30,6 +30,7 @@ FTMaterialStepDelegate>
 @property (nonatomic, strong) NSMutableArray * mutArray;
 @property (nonatomic, strong) NSMutableArray * dataArry;
 @property (nonatomic, strong) UIButton * navcancelBtn;
+@property (nonatomic, strong) UIButton * navFinishBtn;
 @property (nonatomic, strong) FTIntellecMenuTitleView * titleView;
 @end
 
@@ -57,9 +58,20 @@ FTMaterialStepDelegate>
     self.navcancelBtn.frame = CGRectMake(0, 0, 40, 40);
     UIBarButtonItem * LeftMenu = [[UIBarButtonItem alloc]initWithCustomView:self.navcancelBtn];
     self.navigationItem.leftBarButtonItem = LeftMenu;
+   
+    self.navFinishBtn.frame = CGRectMake(0, 0, 40, 40);
+    UIBarButtonItem * rightMenu = [[UIBarButtonItem alloc]initWithCustomView:self.navFinishBtn];
+    self.navigationItem.rightBarButtonItem = rightMenu;
 }
+#pragma mark - 取消
 - (void)navCancelClick:(UIButton *)btn{
     [self dismissViewControllerAnimated:YES completion:nil];
+
+}
+- (void)navFinishClick:(UIButton *)btn{
+    [self.tableView setEditing:NO animated:YES];
+    btn.hidden = YES;
+
 
 }
 - (void)createUI{
@@ -153,13 +165,33 @@ FTMaterialStepDelegate>
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     return 0;
 }
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return UITableViewCellEditingStyleNone;
+    
+}
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath{
+    return YES;
+}
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
+    NSLog(@"正在移动的 == %ld",(long)sourceIndexPath.section);
+    NSLog(@"移动后的 == %ld",(long)destinationIndexPath.section);
+    [self.dataArry removeAllObjects];
+    NSMutableDictionary * dic = [NSMutableDictionary new];
+    dic = self.mutArray[sourceIndexPath.section];
+    NSLog(@"11111  == %@",dic);
+    [self.mutArray removeObjectAtIndex:sourceIndexPath.section];
+    [self.mutArray insertObject:dic atIndex:destinationIndexPath.section];
+    [self detailDataisreload:YES];
+   
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
 }
 #pragma mark - delegate
-- (void)ClickdelegateMethod:(NSIndexPath *)index str:(NSString *)Str{
-    if (index.section > 1) {
+- (void)ClickdelegateMethod:(NSIndexPath *)index str:(NSString *)Str type:(NSString *)type{
+    if ([type isEqualToString:@"2"]) {
         if ([Str isEqualToString:@"left"]) {
             ZYLog(@"添加一步");
             [self.dataArry removeAllObjects];
@@ -171,7 +203,8 @@ FTMaterialStepDelegate>
             
         }else{
             ZYLog(@"调整步骤");
-        
+            self.navFinishBtn.hidden = NO;
+            [self.tableView setEditing:YES animated:YES];
         }
     }else{
     
@@ -300,6 +333,17 @@ FTMaterialStepDelegate>
     }
     return _navcancelBtn;
 }
+- (UIButton *)navFinishBtn{
+    if (_navFinishBtn == nil) {
+        _navFinishBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_navFinishBtn setTitle:@"完成" forState:UIControlStateNormal];
+        [_navFinishBtn setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        _navFinishBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+        [_navFinishBtn addTarget:self action:@selector(navFinishClick:) forControlEvents:UIControlEventTouchUpInside];
+        _navFinishBtn.hidden = YES;
+    }
+    return _navFinishBtn;
+}
 - (FTIntellecMenuTitleView *)titleView{
     if (_titleView == nil) {
         _titleView = [FTIntellecMenuTitleView new];
@@ -319,6 +363,7 @@ FTMaterialStepDelegate>
         [_mutArray addObjectsFromArray:@[
                                         @{
                                             @"type":@"1",
+                                            @"type2":@"1",
                                             @"left":@"耗时选择",
                                             @"right":@"难度选择"
                                         },
@@ -347,6 +392,7 @@ FTMaterialStepDelegate>
                                             },
                                         @{
                                             @"type":@"1",
+                                            @"type2":@"2",
                                             @"left":@"添加一步",
                                             @"right":@"调整步骤"
                                             }

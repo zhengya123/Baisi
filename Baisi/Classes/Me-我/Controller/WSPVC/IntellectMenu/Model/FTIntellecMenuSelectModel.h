@@ -10,6 +10,7 @@
 
 @interface FTIntellecMenuSelectModel : NSObject
 @property (nonatomic, strong) NSString * type;
+@property (nonatomic, strong) NSString * type2;
 @property (nonatomic, strong) NSString * leftStr;
 @property (nonatomic, strong) NSString * rightStr;
 + (instancetype)setParameter:(NSDictionary *)dic;

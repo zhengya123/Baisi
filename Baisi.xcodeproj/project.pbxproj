@@ -8,24 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0401190C723F42EDEDC788BC /* libPods-Baisi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */; };
-		C7199B7D1FB00E0D00D44CBC /* FTIntellectMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C7199B5F1FB00E0D00D44CBC /* FTIntellectMenuVC.m */; };
-		C7199B7E1FB00E0D00D44CBC /* FTIntellectMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7199B601FB00E0D00D44CBC /* FTIntellectMenuVC.xib */; };
-		C7199B7F1FB00E0D00D44CBC /* FTIntellecMenuMaterialAddfoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7199B631FB00E0D00D44CBC /* FTIntellecMenuMaterialAddfoodModel.m */; };
-		C7199B801FB00E0D00D44CBC /* FTIntellecMenuMaterialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7199B651FB00E0D00D44CBC /* FTIntellecMenuMaterialModel.m */; };
-		C7199B811FB00E0D00D44CBC /* FTIntellecMenuSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7199B671FB00E0D00D44CBC /* FTIntellecMenuSelectModel.m */; };
-		C7199B821FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7199B6A1FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.m */; };
-		C7199B831FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7199B6B1FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.xib */; };
-		C7199B841FB00E0D00D44CBC /* FTIntellecMenuTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7199B6D1FB00E0D00D44CBC /* FTIntellecMenuTitleView.m */; };
-		C7199B851FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7199B6F1FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.m */; };
-		C7199B861FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7199B701FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.xib */; };
-		C7199B871FB00E0D00D44CBC /* FTMaterialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7199B721FB00E0D00D44CBC /* FTMaterialCell.m */; };
-		C7199B881FB00E0D00D44CBC /* FTMaterialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7199B731FB00E0D00D44CBC /* FTMaterialCell.xib */; };
-		C7199B891FB00E0D00D44CBC /* FTMaterialStepCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7199B751FB00E0D00D44CBC /* FTMaterialStepCell.m */; };
-		C7199B8A1FB00E0D00D44CBC /* FTMaterialStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7199B761FB00E0D00D44CBC /* FTMaterialStepCell.xib */; };
-		C7199B8B1FB00E0D00D44CBC /* FTMaterialTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7199B781FB00E0D00D44CBC /* FTMaterialTextFieldCell.m */; };
-		C7199B8C1FB00E0D00D44CBC /* FTMaterialTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7199B791FB00E0D00D44CBC /* FTMaterialTextFieldCell.xib */; };
-		C7199B8D1FB00E0D00D44CBC /* FTMaterialTipsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C7199B7B1FB00E0D00D44CBC /* FTMaterialTipsCell.m */; };
-		C7199B8E1FB00E0D00D44CBC /* FTMaterialTipsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7199B7C1FB00E0D00D44CBC /* FTMaterialTipsCell.xib */; };
 		C71C80D81FB2A12E004B0932 /* TableViewRefreshMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = C71C80D71FB2A12E004B0932 /* TableViewRefreshMethod.m */; };
 		C71C80E61FB2A6C0004B0932 /* ifree_load_010@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C71C80DA1FB2A6C0004B0932 /* ifree_load_010@2x.png */; };
 		C71C80E71FB2A6C0004B0932 /* ifree_load_011@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C71C80DB1FB2A6C0004B0932 /* ifree_load_011@2x.png */; };
@@ -52,6 +34,24 @@
 		C72F437B1FB587C7006F4349 /* UIImage+BHBEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F436C1FB587C7006F4349 /* UIImage+BHBEffects.m */; };
 		C72F437C1FB587C7006F4349 /* UIImageView+BHBSetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F436E1FB587C7006F4349 /* UIImageView+BHBSetImage.m */; };
 		C72F437D1FB587C7006F4349 /* UIView+BHBAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43701FB587C7006F4349 /* UIView+BHBAnimation.m */; };
+		C72F439F1FB59C9B006F4349 /* FTIntellectMenuVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43811FB59C9B006F4349 /* FTIntellectMenuVC.m */; };
+		C72F43A01FB59C9B006F4349 /* FTIntellectMenuVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72F43821FB59C9B006F4349 /* FTIntellectMenuVC.xib */; };
+		C72F43A11FB59C9B006F4349 /* FTIntellecMenuMaterialAddfoodModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43851FB59C9B006F4349 /* FTIntellecMenuMaterialAddfoodModel.m */; };
+		C72F43A21FB59C9B006F4349 /* FTIntellecMenuMaterialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43871FB59C9B006F4349 /* FTIntellecMenuMaterialModel.m */; };
+		C72F43A31FB59C9B006F4349 /* FTIntellecMenuSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43891FB59C9B006F4349 /* FTIntellecMenuSelectModel.m */; };
+		C72F43A41FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F438C1FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.m */; };
+		C72F43A51FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72F438D1FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.xib */; };
+		C72F43A61FB59C9B006F4349 /* FTIntellecMenuTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F438F1FB59C9B006F4349 /* FTIntellecMenuTitleView.m */; };
+		C72F43A71FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43911FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.m */; };
+		C72F43A81FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72F43921FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.xib */; };
+		C72F43A91FB59C9B006F4349 /* FTMaterialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43941FB59C9B006F4349 /* FTMaterialCell.m */; };
+		C72F43AA1FB59C9B006F4349 /* FTMaterialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72F43951FB59C9B006F4349 /* FTMaterialCell.xib */; };
+		C72F43AB1FB59C9B006F4349 /* FTMaterialStepCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F43971FB59C9B006F4349 /* FTMaterialStepCell.m */; };
+		C72F43AC1FB59C9B006F4349 /* FTMaterialStepCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72F43981FB59C9B006F4349 /* FTMaterialStepCell.xib */; };
+		C72F43AD1FB59C9C006F4349 /* FTMaterialTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F439A1FB59C9B006F4349 /* FTMaterialTextFieldCell.m */; };
+		C72F43AE1FB59C9C006F4349 /* FTMaterialTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72F439B1FB59C9B006F4349 /* FTMaterialTextFieldCell.xib */; };
+		C72F43AF1FB59C9C006F4349 /* FTMaterialTipsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C72F439D1FB59C9B006F4349 /* FTMaterialTipsCell.m */; };
+		C72F43B01FB59C9C006F4349 /* FTMaterialTipsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C72F439E1FB59C9B006F4349 /* FTMaterialTipsCell.xib */; };
 		C73E6A231F94A13300500928 /* FJFirstShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A1D1F94A13300500928 /* FJFirstShopViewController.m */; };
 		C73E6A241F94A13300500928 /* FJSecondShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A1F1F94A13300500928 /* FJSecondShopViewController.m */; };
 		C73E6A251F94A13300500928 /* QNPersonalHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A211F94A13300500928 /* QNPersonalHeaderView.m */; };
@@ -420,35 +420,6 @@
 /* Begin PBXFileReference section */
 		36D9D7AC75B5EC04B0B5B839 /* Pods-Baisi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Baisi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Baisi/Pods-Baisi.debug.xcconfig"; sourceTree = "<group>"; };
 		84A88913DBCEC89186DFAAC5 /* libPods-Baisi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Baisi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7199B5E1FB00E0D00D44CBC /* FTIntellectMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellectMenuVC.h; sourceTree = "<group>"; };
-		C7199B5F1FB00E0D00D44CBC /* FTIntellectMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellectMenuVC.m; sourceTree = "<group>"; };
-		C7199B601FB00E0D00D44CBC /* FTIntellectMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTIntellectMenuVC.xib; sourceTree = "<group>"; };
-		C7199B621FB00E0D00D44CBC /* FTIntellecMenuMaterialAddfoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuMaterialAddfoodModel.h; sourceTree = "<group>"; };
-		C7199B631FB00E0D00D44CBC /* FTIntellecMenuMaterialAddfoodModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuMaterialAddfoodModel.m; sourceTree = "<group>"; };
-		C7199B641FB00E0D00D44CBC /* FTIntellecMenuMaterialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuMaterialModel.h; sourceTree = "<group>"; };
-		C7199B651FB00E0D00D44CBC /* FTIntellecMenuMaterialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuMaterialModel.m; sourceTree = "<group>"; };
-		C7199B661FB00E0D00D44CBC /* FTIntellecMenuSelectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuSelectModel.h; sourceTree = "<group>"; };
-		C7199B671FB00E0D00D44CBC /* FTIntellecMenuSelectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuSelectModel.m; sourceTree = "<group>"; };
-		C7199B691FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuAddFoodMaterialCell.h; sourceTree = "<group>"; };
-		C7199B6A1FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuAddFoodMaterialCell.m; sourceTree = "<group>"; };
-		C7199B6B1FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTIntellecMenuAddFoodMaterialCell.xib; sourceTree = "<group>"; };
-		C7199B6C1FB00E0D00D44CBC /* FTIntellecMenuTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuTitleView.h; sourceTree = "<group>"; };
-		C7199B6D1FB00E0D00D44CBC /* FTIntellecMenuTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuTitleView.m; sourceTree = "<group>"; };
-		C7199B6E1FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuTwoSelectCell.h; sourceTree = "<group>"; };
-		C7199B6F1FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuTwoSelectCell.m; sourceTree = "<group>"; };
-		C7199B701FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTIntellecMenuTwoSelectCell.xib; sourceTree = "<group>"; };
-		C7199B711FB00E0D00D44CBC /* FTMaterialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMaterialCell.h; sourceTree = "<group>"; };
-		C7199B721FB00E0D00D44CBC /* FTMaterialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMaterialCell.m; sourceTree = "<group>"; };
-		C7199B731FB00E0D00D44CBC /* FTMaterialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTMaterialCell.xib; sourceTree = "<group>"; };
-		C7199B741FB00E0D00D44CBC /* FTMaterialStepCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMaterialStepCell.h; sourceTree = "<group>"; };
-		C7199B751FB00E0D00D44CBC /* FTMaterialStepCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMaterialStepCell.m; sourceTree = "<group>"; };
-		C7199B761FB00E0D00D44CBC /* FTMaterialStepCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTMaterialStepCell.xib; sourceTree = "<group>"; };
-		C7199B771FB00E0D00D44CBC /* FTMaterialTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMaterialTextFieldCell.h; sourceTree = "<group>"; };
-		C7199B781FB00E0D00D44CBC /* FTMaterialTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMaterialTextFieldCell.m; sourceTree = "<group>"; };
-		C7199B791FB00E0D00D44CBC /* FTMaterialTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTMaterialTextFieldCell.xib; sourceTree = "<group>"; };
-		C7199B7A1FB00E0D00D44CBC /* FTMaterialTipsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMaterialTipsCell.h; sourceTree = "<group>"; };
-		C7199B7B1FB00E0D00D44CBC /* FTMaterialTipsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMaterialTipsCell.m; sourceTree = "<group>"; };
-		C7199B7C1FB00E0D00D44CBC /* FTMaterialTipsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTMaterialTipsCell.xib; sourceTree = "<group>"; };
 		C71C80D61FB2A12E004B0932 /* TableViewRefreshMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewRefreshMethod.h; sourceTree = "<group>"; };
 		C71C80D71FB2A12E004B0932 /* TableViewRefreshMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewRefreshMethod.m; sourceTree = "<group>"; };
 		C71C80DA1FB2A6C0004B0932 /* ifree_load_010@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ifree_load_010@2x.png"; sourceTree = "<group>"; };
@@ -488,6 +459,35 @@
 		C72F436E1FB587C7006F4349 /* UIImageView+BHBSetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BHBSetImage.m"; sourceTree = "<group>"; };
 		C72F436F1FB587C7006F4349 /* UIView+BHBAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+BHBAnimation.h"; sourceTree = "<group>"; };
 		C72F43701FB587C7006F4349 /* UIView+BHBAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+BHBAnimation.m"; sourceTree = "<group>"; };
+		C72F43801FB59C9B006F4349 /* FTIntellectMenuVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellectMenuVC.h; sourceTree = "<group>"; };
+		C72F43811FB59C9B006F4349 /* FTIntellectMenuVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellectMenuVC.m; sourceTree = "<group>"; };
+		C72F43821FB59C9B006F4349 /* FTIntellectMenuVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTIntellectMenuVC.xib; sourceTree = "<group>"; };
+		C72F43841FB59C9B006F4349 /* FTIntellecMenuMaterialAddfoodModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuMaterialAddfoodModel.h; sourceTree = "<group>"; };
+		C72F43851FB59C9B006F4349 /* FTIntellecMenuMaterialAddfoodModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuMaterialAddfoodModel.m; sourceTree = "<group>"; };
+		C72F43861FB59C9B006F4349 /* FTIntellecMenuMaterialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuMaterialModel.h; sourceTree = "<group>"; };
+		C72F43871FB59C9B006F4349 /* FTIntellecMenuMaterialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuMaterialModel.m; sourceTree = "<group>"; };
+		C72F43881FB59C9B006F4349 /* FTIntellecMenuSelectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuSelectModel.h; sourceTree = "<group>"; };
+		C72F43891FB59C9B006F4349 /* FTIntellecMenuSelectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuSelectModel.m; sourceTree = "<group>"; };
+		C72F438B1FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuAddFoodMaterialCell.h; sourceTree = "<group>"; };
+		C72F438C1FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuAddFoodMaterialCell.m; sourceTree = "<group>"; };
+		C72F438D1FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTIntellecMenuAddFoodMaterialCell.xib; sourceTree = "<group>"; };
+		C72F438E1FB59C9B006F4349 /* FTIntellecMenuTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuTitleView.h; sourceTree = "<group>"; };
+		C72F438F1FB59C9B006F4349 /* FTIntellecMenuTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuTitleView.m; sourceTree = "<group>"; };
+		C72F43901FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTIntellecMenuTwoSelectCell.h; sourceTree = "<group>"; };
+		C72F43911FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTIntellecMenuTwoSelectCell.m; sourceTree = "<group>"; };
+		C72F43921FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTIntellecMenuTwoSelectCell.xib; sourceTree = "<group>"; };
+		C72F43931FB59C9B006F4349 /* FTMaterialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMaterialCell.h; sourceTree = "<group>"; };
+		C72F43941FB59C9B006F4349 /* FTMaterialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMaterialCell.m; sourceTree = "<group>"; };
+		C72F43951FB59C9B006F4349 /* FTMaterialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTMaterialCell.xib; sourceTree = "<group>"; };
+		C72F43961FB59C9B006F4349 /* FTMaterialStepCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMaterialStepCell.h; sourceTree = "<group>"; };
+		C72F43971FB59C9B006F4349 /* FTMaterialStepCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMaterialStepCell.m; sourceTree = "<group>"; };
+		C72F43981FB59C9B006F4349 /* FTMaterialStepCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTMaterialStepCell.xib; sourceTree = "<group>"; };
+		C72F43991FB59C9B006F4349 /* FTMaterialTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMaterialTextFieldCell.h; sourceTree = "<group>"; };
+		C72F439A1FB59C9B006F4349 /* FTMaterialTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMaterialTextFieldCell.m; sourceTree = "<group>"; };
+		C72F439B1FB59C9B006F4349 /* FTMaterialTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTMaterialTextFieldCell.xib; sourceTree = "<group>"; };
+		C72F439C1FB59C9B006F4349 /* FTMaterialTipsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTMaterialTipsCell.h; sourceTree = "<group>"; };
+		C72F439D1FB59C9B006F4349 /* FTMaterialTipsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTMaterialTipsCell.m; sourceTree = "<group>"; };
+		C72F439E1FB59C9B006F4349 /* FTMaterialTipsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FTMaterialTipsCell.xib; sourceTree = "<group>"; };
 		C73E6A1C1F94A13300500928 /* FJFirstShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJFirstShopViewController.h; sourceTree = "<group>"; };
 		C73E6A1D1F94A13300500928 /* FJFirstShopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJFirstShopViewController.m; sourceTree = "<group>"; };
 		C73E6A1E1F94A13300500928 /* FJSecondShopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJSecondShopViewController.h; sourceTree = "<group>"; };
@@ -1105,66 +1105,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C7199B5C1FB00E0D00D44CBC /* IntellectMenu */ = {
-			isa = PBXGroup;
-			children = (
-				C7199B5D1FB00E0D00D44CBC /* Controller */,
-				C7199B611FB00E0D00D44CBC /* Model */,
-				C7199B681FB00E0D00D44CBC /* View */,
-			);
-			path = IntellectMenu;
-			sourceTree = "<group>";
-		};
-		C7199B5D1FB00E0D00D44CBC /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				C7199B5E1FB00E0D00D44CBC /* FTIntellectMenuVC.h */,
-				C7199B5F1FB00E0D00D44CBC /* FTIntellectMenuVC.m */,
-				C7199B601FB00E0D00D44CBC /* FTIntellectMenuVC.xib */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		C7199B611FB00E0D00D44CBC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				C7199B621FB00E0D00D44CBC /* FTIntellecMenuMaterialAddfoodModel.h */,
-				C7199B631FB00E0D00D44CBC /* FTIntellecMenuMaterialAddfoodModel.m */,
-				C7199B641FB00E0D00D44CBC /* FTIntellecMenuMaterialModel.h */,
-				C7199B651FB00E0D00D44CBC /* FTIntellecMenuMaterialModel.m */,
-				C7199B661FB00E0D00D44CBC /* FTIntellecMenuSelectModel.h */,
-				C7199B671FB00E0D00D44CBC /* FTIntellecMenuSelectModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		C7199B681FB00E0D00D44CBC /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C7199B691FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.h */,
-				C7199B6A1FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.m */,
-				C7199B6B1FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.xib */,
-				C7199B6C1FB00E0D00D44CBC /* FTIntellecMenuTitleView.h */,
-				C7199B6D1FB00E0D00D44CBC /* FTIntellecMenuTitleView.m */,
-				C7199B6E1FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.h */,
-				C7199B6F1FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.m */,
-				C7199B701FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.xib */,
-				C7199B711FB00E0D00D44CBC /* FTMaterialCell.h */,
-				C7199B721FB00E0D00D44CBC /* FTMaterialCell.m */,
-				C7199B731FB00E0D00D44CBC /* FTMaterialCell.xib */,
-				C7199B741FB00E0D00D44CBC /* FTMaterialStepCell.h */,
-				C7199B751FB00E0D00D44CBC /* FTMaterialStepCell.m */,
-				C7199B761FB00E0D00D44CBC /* FTMaterialStepCell.xib */,
-				C7199B771FB00E0D00D44CBC /* FTMaterialTextFieldCell.h */,
-				C7199B781FB00E0D00D44CBC /* FTMaterialTextFieldCell.m */,
-				C7199B791FB00E0D00D44CBC /* FTMaterialTextFieldCell.xib */,
-				C7199B7A1FB00E0D00D44CBC /* FTMaterialTipsCell.h */,
-				C7199B7B1FB00E0D00D44CBC /* FTMaterialTipsCell.m */,
-				C7199B7C1FB00E0D00D44CBC /* FTMaterialTipsCell.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		C71C80D91FB2A6C0004B0932 /* 小汽车动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1222,6 +1162,66 @@
 				C72F43681FB587C7006F4349 /* music.bundle */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		C72F437E1FB59C9B006F4349 /* IntellectMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C72F437F1FB59C9B006F4349 /* Controller */,
+				C72F43831FB59C9B006F4349 /* Model */,
+				C72F438A1FB59C9B006F4349 /* View */,
+			);
+			path = IntellectMenu;
+			sourceTree = "<group>";
+		};
+		C72F437F1FB59C9B006F4349 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C72F43801FB59C9B006F4349 /* FTIntellectMenuVC.h */,
+				C72F43811FB59C9B006F4349 /* FTIntellectMenuVC.m */,
+				C72F43821FB59C9B006F4349 /* FTIntellectMenuVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C72F43831FB59C9B006F4349 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C72F43841FB59C9B006F4349 /* FTIntellecMenuMaterialAddfoodModel.h */,
+				C72F43851FB59C9B006F4349 /* FTIntellecMenuMaterialAddfoodModel.m */,
+				C72F43861FB59C9B006F4349 /* FTIntellecMenuMaterialModel.h */,
+				C72F43871FB59C9B006F4349 /* FTIntellecMenuMaterialModel.m */,
+				C72F43881FB59C9B006F4349 /* FTIntellecMenuSelectModel.h */,
+				C72F43891FB59C9B006F4349 /* FTIntellecMenuSelectModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C72F438A1FB59C9B006F4349 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C72F438B1FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.h */,
+				C72F438C1FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.m */,
+				C72F438D1FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.xib */,
+				C72F438E1FB59C9B006F4349 /* FTIntellecMenuTitleView.h */,
+				C72F438F1FB59C9B006F4349 /* FTIntellecMenuTitleView.m */,
+				C72F43901FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.h */,
+				C72F43911FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.m */,
+				C72F43921FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.xib */,
+				C72F43931FB59C9B006F4349 /* FTMaterialCell.h */,
+				C72F43941FB59C9B006F4349 /* FTMaterialCell.m */,
+				C72F43951FB59C9B006F4349 /* FTMaterialCell.xib */,
+				C72F43961FB59C9B006F4349 /* FTMaterialStepCell.h */,
+				C72F43971FB59C9B006F4349 /* FTMaterialStepCell.m */,
+				C72F43981FB59C9B006F4349 /* FTMaterialStepCell.xib */,
+				C72F43991FB59C9B006F4349 /* FTMaterialTextFieldCell.h */,
+				C72F439A1FB59C9B006F4349 /* FTMaterialTextFieldCell.m */,
+				C72F439B1FB59C9B006F4349 /* FTMaterialTextFieldCell.xib */,
+				C72F439C1FB59C9B006F4349 /* FTMaterialTipsCell.h */,
+				C72F439D1FB59C9B006F4349 /* FTMaterialTipsCell.m */,
+				C72F439E1FB59C9B006F4349 /* FTMaterialTipsCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C73E6A151F949FFD00500928 /* MySegment */ = {
@@ -1364,7 +1364,7 @@
 		DF3326141EE8EC7E00450755 /* WSPVC */ = {
 			isa = PBXGroup;
 			children = (
-				C7199B5C1FB00E0D00D44CBC /* IntellectMenu */,
+				C72F437E1FB59C9B006F4349 /* IntellectMenu */,
 				DF3326151EE8EC7E00450755 /* Controller */,
 				DF3326161EE8EC7E00450755 /* Model */,
 				DF3326171EE8EC7E00450755 /* View */,
@@ -2823,7 +2823,6 @@
 				C73E6A261F94A13300500928 /* QNPersonalHeaderView.xib in Resources */,
 				DF5B3FF21E8C98D100E04C27 /* Running_Loading_5.png in Resources */,
 				DF36F1A01F298BE4003F4C0A /* TESTViewController.xib in Resources */,
-				C7199B861FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.xib in Resources */,
 				DF5B3FA71E8C98D000E04C27 /* backImage.png in Resources */,
 				DF33261C1EE8ECBE00450755 /* EditSignVC.xib in Resources */,
 				DF868A0F1EA49BC300378800 /* peopleworking_Images.gif in Resources */,
@@ -2841,20 +2840,17 @@
 				DF5B3FDF1E8C98D100E04C27 /* mine-icon-search@2x.png in Resources */,
 				DF5B3FC11E8C98D100E04C27 /* login_sina_icon@2x.png in Resources */,
 				DF5B408B1E8C98DC00E04C27 /* Untitled-1.html in Resources */,
-				C7199B831FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.xib in Resources */,
 				C71C80E91FB2A6C0004B0932 /* ifree_load_01@2x.png in Resources */,
 				DF5B3FEB1E8C98D100E04C27 /* mine_msg_icon@3x.png in Resources */,
 				DF5B3FB31E8C98D100E04C27 /* login_register_background@2x.png in Resources */,
 				C71C80EC1FB2A6C0004B0932 /* ifree_load_04@2x.png in Resources */,
 				DF76CC421F3C300C006C9C81 /* LICENSE in Resources */,
 				DF5B3FAC1E8C98D000E04C27 /* login_QQ_icon.png in Resources */,
-				C7199B8A1FB00E0D00D44CBC /* FTMaterialStepCell.xib in Resources */,
 				DF5B3FBF1E8C98D100E04C27 /* login_rgister_textfield_bg@3x.png in Resources */,
 				DF5B3FB51E8C98D100E04C27 /* login_register_button.png in Resources */,
 				DF5B40901E8C98DC00E04C27 /* KaidianCompanyInfoController.xib in Resources */,
 				DF5B3FD41E8C98D100E04C27 /* mine-icon-manhua.png in Resources */,
 				DF4BA7EB1F15D02600212B36 /* flash_icon@3x.png in Resources */,
-				C7199B8E1FB00E0D00D44CBC /* FTMaterialTipsCell.xib in Resources */,
 				DF868A141EA49E3C00378800 /* wait_Images.gif in Resources */,
 				DF5B3FAD1E8C98D100E04C27 /* login_QQ_icon@2x.png in Resources */,
 				DF5B3FCF1E8C98D100E04C27 /* loginBtnBgClick@2x.png in Resources */,
@@ -2874,7 +2870,9 @@
 				DF5B3FF71E8C98D100E04C27 /* screenShotTwo.gif in Resources */,
 				DF33262E1EE92AB700450755 /* SeconddescribeTableViewCell.xib in Resources */,
 				DF74B21C1EEA951000B266CC /* MY_MapVC.xib in Resources */,
+				C72F43B01FB59C9C006F4349 /* FTMaterialTipsCell.xib in Resources */,
 				DF5B3F261E8C98BC00E04C27 /* restrictedshine.tiff in Resources */,
+				C72F43A51FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.xib in Resources */,
 				DF5B3FD91E8C98D100E04C27 /* mine-icon-nearby@2x.png in Resources */,
 				DF4BA7E11F15C16C00212B36 /* photograph@3x.png in Resources */,
 				DF5B3FF41E8C98D100E04C27 /* Running_Loading_7.png in Resources */,
@@ -2883,6 +2881,7 @@
 				DF2481201F145C51009D1F38 /* FaceRecogintionVC.xib in Resources */,
 				DF5B3FDC1E8C98D100E04C27 /* mine-icon-recentHot.png in Resources */,
 				DF5B3FEE1E8C98D100E04C27 /* Running_Loading_1.png in Resources */,
+				C72F43AA1FB59C9B006F4349 /* FTMaterialCell.xib in Resources */,
 				DF5B3FE51E8C98D100E04C27 /* mine_icon_nearby.png in Resources */,
 				DF5B3FE01E8C98D100E04C27 /* mine-my-post.png in Resources */,
 				DF5B3FB01E8C98D100E04C27 /* login_QQ_icon_click@2x.png in Resources */,
@@ -2918,7 +2917,6 @@
 				DF5B3FBA1E8C98D100E04C27 /* login_register_right_line.png in Resources */,
 				DF5B3FE11E8C98D100E04C27 /* mine-my-post@2x.png in Resources */,
 				DF4BA7E01F15C16C00212B36 /* photograph@2x.png in Resources */,
-				C7199B7E1FB00E0D00D44CBC /* FTIntellectMenuVC.xib in Resources */,
 				DF002BB11EB050DD00CFDE42 /* HHjiujiuDetailViewController.xib in Resources */,
 				DF5B3FE91E8C98D100E04C27 /* mine_msg_icon.png in Resources */,
 				DF5B3F241E8C98BC00E04C27 /* line.png in Resources */,
@@ -2927,6 +2925,7 @@
 				DF5B3DF51E8C963000E04C27 /* Assets.xcassets in Resources */,
 				C71C80F01FB2A6C0004B0932 /* ifree_load_08@2x.png in Resources */,
 				DF5B3FED1E8C98D100E04C27 /* setup-head-default@2x.png in Resources */,
+				C72F43AE1FB59C9C006F4349 /* FTMaterialTextFieldCell.xib in Resources */,
 				DF19B63D1E9E0242001B5E69 /* HHAllMemberViewCell.xib in Resources */,
 				DF5B40A01E8C98DC00E04C27 /* CollectionTableViewCell.xib in Resources */,
 				DF5B3FBC1E8C98D100E04C27 /* login_register_right_line@3x.png in Resources */,
@@ -2941,7 +2940,6 @@
 				DF5B3FCE1E8C98D100E04C27 /* loginBtnBgClick.png in Resources */,
 				DF4BA7DF1F15C16C00212B36 /* photograph_Select@3x.png in Resources */,
 				DF5B3FD11E8C98D100E04C27 /* mine-icon-activity@2x.png in Resources */,
-				C7199B8C1FB00E0D00D44CBC /* FTMaterialTextFieldCell.xib in Resources */,
 				C72F43791FB587C7006F4349 /* music.bundle in Resources */,
 				DF5B3FB81E8C98D100E04C27 /* login_register_left_line@2x.png in Resources */,
 				DF5B3FCB1E8C98D100E04C27 /* login_tecent_icon_click@3x.png in Resources */,
@@ -2951,10 +2949,12 @@
 				C71C80E71FB2A6C0004B0932 /* ifree_load_011@2x.png in Resources */,
 				DF758D3F1F035A2F006A43C7 /* ApproveDetailStateCell.xib in Resources */,
 				DF5B3FC91E8C98D100E04C27 /* login_tecent_icon_click.png in Resources */,
+				C72F43A81FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.xib in Resources */,
 				DF5B3FB71E8C98D100E04C27 /* login_register_left_line.png in Resources */,
 				DF5B3FD01E8C98D100E04C27 /* mine-icon-activity.png in Resources */,
 				DF5B3FC21E8C98D100E04C27 /* login_sina_icon@3x.png in Resources */,
 				DF4BA7EA1F15D02600212B36 /* flash_icon@2x.png in Resources */,
+				C72F43A01FB59C9B006F4349 /* FTIntellectMenuVC.xib in Resources */,
 				DF4BA7EC1F15D02600212B36 /* flash_icon1@2x.png in Resources */,
 				DF5B3FC61E8C98D100E04C27 /* login_tecent_icon.png in Resources */,
 				DF5B3FF61E8C98D100E04C27 /* screenShotone.gif in Resources */,
@@ -2962,8 +2962,8 @@
 				DF5B3FBD1E8C98D100E04C27 /* login_rgister_textfield_bg.png in Resources */,
 				DFB2B9111F78DCDF00EFE003 /* TestVC.xib in Resources */,
 				DF19B6381E9DFDDD001B5E69 /* HHAllMemberViewController.xib in Resources */,
+				C72F43AC1FB59C9B006F4349 /* FTMaterialStepCell.xib in Resources */,
 				C72F43781FB587C7006F4349 /* images.bundle in Resources */,
-				C7199B881FB00E0D00D44CBC /* FTMaterialCell.xib in Resources */,
 				DF5B3FAE1E8C98D100E04C27 /* login_QQ_icon@3x.png in Resources */,
 				DF5B3FB11E8C98D100E04C27 /* login_QQ_icon_click@3x.png in Resources */,
 				C71C80EE1FB2A6C0004B0932 /* ifree_load_06@2x.png in Resources */,
@@ -3049,6 +3049,7 @@
 			files = (
 				C72F437D1FB587C7006F4349 /* UIView+BHBAnimation.m in Sources */,
 				DF758D481F03A168006A43C7 /* ApproveCommonModel.m in Sources */,
+				C72F43A31FB59C9B006F4349 /* FTIntellecMenuSelectModel.m in Sources */,
 				C73E6A4C1F94A39C00500928 /* FJConfigModel.m in Sources */,
 				DF5B3F421E8C98BC00E04C27 /* XHWebImageDownload.m in Sources */,
 				DF5B3F221E8C98BC00E04C27 /* XWInteractiveTransition.m in Sources */,
@@ -3063,9 +3064,7 @@
 				DF5B40851E8C98DC00E04C27 /* FirstHTMLVC.m in Sources */,
 				DF76CC3C1F3C3000006C9C81 /* README.md in Sources */,
 				DF5B3F131E8C98BC00E04C27 /* WXSPercentDrivenInteractiveTransition.m in Sources */,
-				C7199B8D1FB00E0D00D44CBC /* FTMaterialTipsCell.m in Sources */,
 				C73E6A251F94A13300500928 /* QNPersonalHeaderView.m in Sources */,
-				C7199B851FB00E0D00D44CBC /* FTIntellecMenuTwoSelectCell.m in Sources */,
 				DF002BB01EB050DD00CFDE42 /* HHjiujiuDetailViewController.m in Sources */,
 				DF5B40B61E8C98E900E04C27 /* ZY_RootTabBarController.m in Sources */,
 				DF19B63C1E9E0242001B5E69 /* HHAllMemberViewCell.m in Sources */,
@@ -3094,6 +3093,7 @@
 				DF5B40B51E8C98E900E04C27 /* ZY_RootNavigationController.m in Sources */,
 				DF5B3F291E8C98BC00E04C27 /* XWCoolAnimator+XWFold.m in Sources */,
 				DF5B3F1E1E8C98BC00E04C27 /* WXSTransitionManager.m in Sources */,
+				C72F43A11FB59C9B006F4349 /* FTIntellecMenuMaterialAddfoodModel.m in Sources */,
 				DF5B407F1E8C98DC00E04C27 /* VideoVC.m in Sources */,
 				DF76CC391F3C3000006C9C81 /* PNScatterChart.m in Sources */,
 				DF5B3F4B1E8C98BC00E04C27 /* ZY_ErrorView.m in Sources */,
@@ -3109,6 +3109,7 @@
 				DF5B3F391E8C98BC00E04C27 /* XWFilterAnimator+XWSwipe.m in Sources */,
 				DF5B409B1E8C98DC00E04C27 /* ZPDFView.m in Sources */,
 				DF76CC371F3C3000006C9C81 /* PNRadarChart.m in Sources */,
+				C72F43A21FB59C9B006F4349 /* FTIntellecMenuMaterialModel.m in Sources */,
 				DF5B3F0B1E8C98BC00E04C27 /* TXScrollLabelView.m in Sources */,
 				DF5B40821E8C98DC00E04C27 /* HHjiujiuHomeViewController.m in Sources */,
 				DF5B40881E8C98DC00E04C27 /* Utils.m in Sources */,
@@ -3116,15 +3117,13 @@
 				DF5B3F331E8C98BC00E04C27 /* XWFilterAnimator+XWCopyMachine.m in Sources */,
 				C73E6A2D1F94A33400500928 /* SegmentVC.m in Sources */,
 				C73E6A4D1F94A39C00500928 /* FJSegementContentCell.m in Sources */,
+				C72F43AF1FB59C9C006F4349 /* FTMaterialTipsCell.m in Sources */,
 				DF5B3EFD1E8C98BC00E04C27 /* IQUIWindow+Hierarchy.m in Sources */,
-				C7199B801FB00E0D00D44CBC /* FTIntellecMenuMaterialModel.m in Sources */,
 				C73E6A511F94A39C00500928 /* FJPageCollectionViewCell.m in Sources */,
-				C7199B871FB00E0D00D44CBC /* FTMaterialCell.m in Sources */,
 				C72F43741FB587C7006F4349 /* BHBGroup.m in Sources */,
 				DF5B3EF71E8C98BC00E04C27 /* HeartLive.m in Sources */,
 				DF758B301F0248C000DC245F /* ApproveGoOutTitle.m in Sources */,
 				DF33261F1EE8FBA500450755 /* DescribeView.m in Sources */,
-				C7199B811FB00E0D00D44CBC /* FTIntellecMenuSelectModel.m in Sources */,
 				DF758B361F02552000DC245F /* ApproveReceiveTitle.m in Sources */,
 				DF5B408F1E8C98DC00E04C27 /* KaidianCompanyInfoController.m in Sources */,
 				DF3326231EE9136900450755 /* describeTableViewCell.m in Sources */,
@@ -3139,6 +3138,7 @@
 				C73E6A4A1F94A39C00500928 /* UIViewController+FJCurrentViewController.m in Sources */,
 				DF5B40801E8C98DC00E04C27 /* EssenceViewController.m in Sources */,
 				DF5B408E1E8C98DC00E04C27 /* HHPatientDataViewController.m in Sources */,
+				C72F43A61FB59C9B006F4349 /* FTIntellecMenuTitleView.m in Sources */,
 				DF76CC2F1F3C3000006C9C81 /* PNCircleChart.m in Sources */,
 				DF5B40941E8C98DC00E04C27 /* MY_HeartNumVCViewController.m in Sources */,
 				DF5B3F3B1E8C98BC00E04C27 /* XWFilterTransitionView.m in Sources */,
@@ -3176,6 +3176,7 @@
 				DF5B3F151E8C98BC00E04C27 /* WXSTransitionManager+BrickAnimation.m in Sources */,
 				DF5B3EFA1E8C98BC00E04C27 /* IQUITextFieldView+Additions.m in Sources */,
 				DF758B391F025EB300DC245F /* ApproveReceiveModel.m in Sources */,
+				C72F43A41FB59C9B006F4349 /* FTIntellecMenuAddFoodMaterialCell.m in Sources */,
 				DF39573E1EA7035300D796D1 /* SlideMenuButton.m in Sources */,
 				DF76CC351F3C3000006C9C81 /* PNPieChart.m in Sources */,
 				DF5B40C31E8CA5D300E04C27 /* ZY_BottonView.m in Sources */,
@@ -3184,13 +3185,14 @@
 				DF5B40A51E8C98DC00E04C27 /* OtherViewController.m in Sources */,
 				C72F43731FB587C7006F4349 /* BHBCustomBtn.m in Sources */,
 				DF19B6331E9DCF48001B5E69 /* PaymentListVC.m in Sources */,
+				C72F43AB1FB59C9B006F4349 /* FTMaterialStepCell.m in Sources */,
 				DF868A0D1EA49B1F00378800 /* PeopleWorking-Loading.m in Sources */,
 				DF5B3EF51E8C98BC00E04C27 /* FTRulerScrollView.m in Sources */,
 				DF4EC5851EC05F9600B1681C /* SureCustomActionSheet.m in Sources */,
 				DF5B3EFE1E8C98BC00E04C27 /* IQKeyboardManager.m in Sources */,
-				C7199B8B1FB00E0D00D44CBC /* FTMaterialTextFieldCell.m in Sources */,
 				DF5B3F101E8C98BC00E04C27 /* UINavigationController+WXSTransition.m in Sources */,
 				DF868A121EA49D5F00378800 /* Waiting_Loading.m in Sources */,
+				C72F43A71FB59C9B006F4349 /* FTIntellecMenuTwoSelectCell.m in Sources */,
 				DF6684401F73959F0037521B /* RelationSelectView.m in Sources */,
 				C73E6A4B1F94A39C00500928 /* FJBaseTableView.m in Sources */,
 				DF66844C1F73BF6E0037521B /* GenderSelectView.m in Sources */,
@@ -3207,7 +3209,6 @@
 				DF76CC341F3C3000006C9C81 /* PNLineChartDataItem.m in Sources */,
 				DF5B3EF31E8C98BC00E04C27 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				DF5B40991E8C98DC00E04C27 /* ZPDFReaderController.m in Sources */,
-				C7199B821FB00E0D00D44CBC /* FTIntellecMenuAddFoodMaterialCell.m in Sources */,
 				DF5B3F181E8C98BC00E04C27 /* WXSTransitionManager+InsideThenPushAnimation.m in Sources */,
 				C73E6A231F94A13300500928 /* FJFirstShopViewController.m in Sources */,
 				DF758D421F03750F006A43C7 /* ApproveDetailStateModel.m in Sources */,
@@ -3223,12 +3224,12 @@
 				DF5B3EFF1E8C98BC00E04C27 /* IQKeyboardReturnKeyHandler.m in Sources */,
 				DF5B3F041E8C98BC00E04C27 /* IQToolbar.m in Sources */,
 				C73E6A4F1F94A39C00500928 /* FJSegmentdPageViewController.m in Sources */,
-				C7199B7D1FB00E0D00D44CBC /* FTIntellectMenuVC.m in Sources */,
 				DF76CC431F3C300C006C9C81 /* README.md in Sources */,
 				DF5B3F3F1E8C98BC00E04C27 /* UIImageView+XHWebCache.m in Sources */,
 				DF5B3F1C1E8C98BC00E04C27 /* WXSTransitionManager+TypeTool.m in Sources */,
 				DF5B3F2E1E8C98BC00E04C27 /* XWCoolAnimator+XWScanning.m in Sources */,
 				DF5B407A1E8C98DC00E04C27 /* ALLEssenceModel.m in Sources */,
+				C72F43A91FB59C9B006F4349 /* FTMaterialCell.m in Sources */,
 				DF5B3F2D1E8C98BC00E04C27 /* XWCoolAnimator+XWPortal.m in Sources */,
 				C73E6A241F94A13300500928 /* FJSecondShopViewController.m in Sources */,
 				DF5B3EF41E8C98BC00E04C27 /* FTPrettyRulerView.m in Sources */,
@@ -3243,16 +3244,15 @@
 				DF5B3F191E8C98BC00E04C27 /* WXSTransitionManager+PageAnimation.m in Sources */,
 				DF5B3F231E8C98BC00E04C27 /* XWTransitionAnimator.m in Sources */,
 				DF5B3F3C1E8C98BC00E04C27 /* XWMagicMoveAnimator.m in Sources */,
-				C7199B7F1FB00E0D00D44CBC /* FTIntellecMenuMaterialAddfoodModel.m in Sources */,
 				DF5B3F3A1E8C98BC00E04C27 /* XWFilterAnimator.m in Sources */,
 				C72F43761FB587C7006F4349 /* BHBPlaySoundTool.m in Sources */,
 				DF5B3F071E8C98BC00E04C27 /* CAReplicatorLayerAnimal.m in Sources */,
 				DF5B40781E8C98DC00E04C27 /* AllEssenceViewController.m in Sources */,
 				DF758D451F039966006A43C7 /* ApproveCommonTitle.m in Sources */,
 				DF5B3F081E8C98BC00E04C27 /* UIView+Extension.m in Sources */,
+				C72F439F1FB59C9B006F4349 /* FTIntellectMenuVC.m in Sources */,
 				DF5B409E1E8C98DC00E04C27 /* MyHeaderView.m in Sources */,
 				DF33261B1EE8ECBE00450755 /* EditSignVC.m in Sources */,
-				C7199B841FB00E0D00D44CBC /* FTIntellecMenuTitleView.m in Sources */,
 				DF76CC2D1F3C3000006C9C81 /* PNBarChart.m in Sources */,
 				C72F43711FB587C7006F4349 /* BHBBottomBar.m in Sources */,
 				DF758B211F0204FD00DC245F /* ApproveListViewController.m in Sources */,
@@ -3261,7 +3261,6 @@
 				DF5B3F371E8C98BC00E04C27 /* XWFilterAnimator+XWPageCurl.m in Sources */,
 				DF5B40B41E8C98E900E04C27 /* ZY_RootHomeViewController.m in Sources */,
 				C73E6A501F94A39C00500928 /* FJSegmentedBaseViewController.m in Sources */,
-				C7199B891FB00E0D00D44CBC /* FTMaterialStepCell.m in Sources */,
 				DF5B3F501E8C98BC00E04C27 /* ZYTextField.m in Sources */,
 				DF76CC2E1F3C3000006C9C81 /* PNChartLabel.m in Sources */,
 				DF5B3F461E8C98BC00E04C27 /* UIView+Toast.m in Sources */,
@@ -3269,6 +3268,7 @@
 				DF5B3F351E8C98BC00E04C27 /* XWFilterAnimator+XWMask.m in Sources */,
 				DF5B40A41E8C98DC00E04C27 /* UIView+UIView_ZYExtension.m in Sources */,
 				DFB2B9101F78DCDF00EFE003 /* TestVC.m in Sources */,
+				C72F43AD1FB59C9C006F4349 /* FTMaterialTextFieldCell.m in Sources */,
 				DF5B40891E8C98DC00E04C27 /* TeamSearchVC.m in Sources */,
 				DF5B3F381E8C98BC00E04C27 /* XWFilterAnimator+XWRipple.m in Sources */,
 				DF5B3F121E8C98BC00E04C27 /* UIViewController+WXSTransitionProperty.m in Sources */,

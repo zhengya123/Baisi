@@ -15,6 +15,7 @@
         
         model.leftStr  = [NSString stringWithFormat:@"%@",dic[@"left"]];
         model.rightStr = [NSString stringWithFormat:@"%@",dic[@"right"]];
+        model.type2    = [NSString stringWithFormat:@"%@",dic[@"type2"]];
         
     }
     return model;
